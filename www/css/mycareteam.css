@@ -1,0 +1,1408 @@
+﻿body {
+}
+
+#myCareTeamPage {
+	background-image: url('/www/img/mycareteam/bg.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	height:768px;
+	overflow:hidden;
+}
+
+#mycareteam_title {
+	margin-left:152px;
+	margin-top:93px;
+	font-family:'segoe ui';
+	font-weight:400;
+	text-shadow:none;
+}
+
+#myCareTeam_backbutton {
+	position:absolute;
+	background-image: url('/www/img/mycareteam/back_btn.png');
+	background-repeat:no-repeat;
+	width:50px;
+	height:50px;
+	background-size:contain;
+	border:none;
+	background-color:transparent;
+	margin-left:60px;
+	margin-top:-5px;
+	border-radius: 25px;
+}
+
+#myCareTeam_backbutton:hover {
+	opacity:0.5;
+}
+#mycareTeamHeader_Listview {
+	height:402px;
+	width:332px;
+	margin-left:152px;
+	margin-top:63px;
+}
+
+#mycareTeamHeader_frame {
+	width:330px;
+	height:73px;
+}
+#mycareTeamHeader_frame:hover{
+	outline:1px solid white;
+}
+
+#mycareTeam_frame1_img {
+	background-repeat:no-repeat;
+}
+
+#mycareTeam_frame1_title {
+	position:Absolute;
+	top: 0px;
+	bottom: -6.68px;
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-size:25px;
+	margin-left:100px;
+	margin-top:-2px;
+}
+
+#mycareteam_MyDoctor {
+	margin-left:581px;
+	margin-top:-523px;
+	height:631px;
+	display:none;
+}
+
+#mycareteamDoctors_title {
+	position:Absolute;
+	font-family:'segoe ui';
+	font-weight:400;
+	text-shadow:none;
+	margin-left:570px;
+	margin-top:-52px;
+	display:none;
+}
+
+#mycareteamDoctors_subtitle {
+	position:absolute;
+	font-family:'segoe ui';
+	font-size:23px;
+	margin-top:-6px;
+	text-shadow:none;
+	margin-left:570px;
+	display:none;
+}
+
+#mycareteamMyDoctor_ListView {
+	margin-top:109px;
+	position:Absolute;
+	height:480px;
+	
+	width:770px;
+}
+#mycareteamMyDoctor_frame:hover {
+outline:1px solid white;
+}
+#mycareteamMyDoctor_frame {
+
+	float:left;
+    margin-left:25px;
+	margin-bottom:15px;
+	position:relative;
+	width:343px;
+	height:149px;
+	display:-ms-grid;
+	-ms-grid-columns: 141px auto;
+	
+}
+
+#mycareteamMyDoctor_image {
+	width:141px;
+	height:141px;
+}
+
+#mycareteamMyDoctor_title {
+	-ms-grid-column: 2;
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-size:23px;
+	margin-left:10px;
+	color:#74b91b;
+	margin-top:5px;
+	margin-right: -85px;
+}
+
+#mycareteamMyDoctor_subtitle {
+    text-shadow:none;
+	-ms-grid-column:2;
+	margin-left:10px;
+	font-size:20px;
+	margin-top:30px;
+}
+
+#mycareteamMyDoctor_experience {
+	font-family:'segoe ui';
+	-ms-grid-column:2;
+	font-size:15px;
+	margin-top:53px;
+	margin-left:10px;
+}
+
+#mycareteamMyDoctor_university {
+	font-family:'segoe ui';
+	font-size:15px;
+	-ms-grid-column:2;
+	margin-left:10px;
+	margin-top:70px;
+}
+
+#mycareteamMyDoctor_chat {
+	-ms-grid-column:2;
+	height:50px;
+	width:50px;
+	border:none;
+	margin-top:90px;
+	margin-left:10px;
+	background-size:contain;
+	text-shadow:none;
+	box-shadow:none;
+	outline:none;
+	border-color:none;
+	color:none;
+	background-color:transparent;
+	background-repeat:no-repeat;
+	background-image: url('../../www/img/mycareteam/speak_icon_1.png');
+	border-radius: 25px;
+}
+#mycareteamMyDoctor_chat:hover{
+	background-image: url('/www/img/mycareteam/speak_icon_1green.png');
+	
+}
+#mycareteamMyDoctors_detailsview {
+	margin-left:581px;
+	margin-top:-530px;
+	height:524px;
+	width:470px;
+	display:none;
+}
+
+#mycareteamMyDoctors_detailsview_pic {
+width:150px;
+height:150px;
+}
+
+#mycareteamMyDoctors_detailsview_title {
+
+font-family:'segoe ui';
+font-size:30px;
+color:#74b91b;
+font-weight:350;
+text-shadow:none;
+}
+
+#mycareteamMyDoctors_detailsview_subtitle {
+font-family:'segoe ui';
+font-size:30px;
+text-shadow:none;
+margin-top:-8px;
+}
+
+#mycareteamMyDoctors_detailsview_desc {
+font-family:'segoe ui';
+position:Absolute;
+
+color:#818b8f;
+width:490px;
+word-wrap:break-word;
+white-space:normal;
+font-weight:lighter;
+text-shadow:none;
+font-size:20px;
+height:278px;
+}
+
+#mycareteam_scrollcontent_button {
+	position:absolute;
+	display:none;	
+	background-image: url('/www/img/mydayschedule/Slide_icon_1.png');
+	width:45px;
+	height:45px;
+	background-size:contain;
+	min-width:78px;
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;
+	background-repeat:no-repeat;
+	margin-left:1100px;
+	border-color:transparent;
+	background-color:transparent;
+	margin-top:-595px;
+	
+	border-radius: 39px/38.9999923706055px 38.9999923706055px 38.9999923706055px;
+    
+}
+#mycareteam_scrollcontent_button:hover{
+	opacity:0.5;
+}
+
+#mycareteamMyDoctors_popup {
+	position:absolute;
+	width:273px;
+	height:262px;
+	margin-left:1394px;
+	margin-top:-396px;
+	
+}
+
+#mycareteamMyDoctors_popup_pic {
+	height:128px;
+	width:128px;
+	text-shadow:none;
+	margin-left:71px;
+	margin-top:12px;
+	position:Absolute;
+	
+}
+
+#mycareteamMyDoctors_popup_title {
+	text-align:center;
+	position:absolute;
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:#61ccf1;
+	font-size:22px;
+	font-weight:400;
+	margin-left:62px;
+	margin-top:140px;
+	right: 10px;
+	top: 0px;
+	bottom: 87px;
+	left: -62px;
+}
+
+#mycareteamMyDoctors_popup_subtitle {
+color:#babebf;
+text-align:center;
+position:absolute;
+font-family:'segoe ui';
+font-size:22px;
+margin-left:75px;
+margin-top:165px;
+text-shadow:none;
+left: -75px;
+right: 0px;
+top: 0px;
+bottom: 61px;
+}
+
+#mycareteamMyDoctors_popupbg {
+	position:absolute;
+	width:273px;
+	height:262px;
+	
+	background-color:#767879;
+	opacity:0.95;
+}
+
+#mycareteampopup_scrollcontent_button {
+
+position:absolute;
+		transform:rotate(180deg);
+	background-image: url('../../www/img/cafeandgiftshop/liat-btn.png');
+	width:60px;
+	height:60px;
+	min-width:60px;
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;
+	background-repeat:no-repeat;
+	margin-left:10px;
+	margin-top:10px;
+	border-color:transparent;
+	background-color:transparent;
+	
+	background-size:contain;
+	border-radius: 39px/38.9999923706055px 38.9999923706055px 38.9999923706055px;
+    }
+	#mycareteampopup_scrollcontent_button:hover {
+		opacity:0.5;
+	}
+
+	#mycareteampopup_chaticon {
+		position:absolute;
+		width:60px;
+	height:60px;
+	min-width:60px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-top:190px;
+	margin-left:37px;
+		background-image: url('../../www/img/mycareteam/chat_icon.png');
+	border-radius: 30px;
+	border:none;
+	background-color:transparent;
+	}
+	#mycareteampopup_chaticon:hover {
+		background-image: url('../../www/img/mycareteam/chat_icon_select.png');
+	
+	}
+	#mycareteampopup_callicon {
+		position:absolute;
+			width:60px;
+	height:60px;
+	min-width:60px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-top:190px;
+	margin-left:107px;
+		background-image: url('../../www/img/mycareteam/call_icon.png');
+	border-radius: 30px;
+	border:none;
+	background-color:transparent;
+	}
+	#mycareteampopup_callicon:hover {
+		background-image: url('../../www/img/mycareteam/call_icon_select.png');
+	
+	}
+	#mycareteampopup_videoicon {
+		position:absolute;
+		border:none;
+		
+			width:60px;
+	height:60px;
+	min-width:60px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-top:190px;
+	margin-left:177px;
+		background-image: url('../../www/img/mycareteam/video_icon.png');
+		border-radius: 30px;
+	background-color:transparent;
+	}
+	
+	#mycareteampopup_videoicon:hover {
+		background-image: url('../../www/img/mycareteam/video_icon_select.png');
+	
+	}
+
+	#mycareteamMyDoctor_onlinestatus {
+	position:absolute;
+	margin-left:125px;
+	margin-top:7px;
+	width:22px;
+	height:22px;
+	background-repeat:no-repeat;
+	}
+
+
+    /*Nurse section*/
+    #mycareteam_MyNurses {
+	margin-left:581px;
+	margin-top:-523px;
+	height:631px;
+	display:none;
+}
+
+#mycareteamMyNurses_title {
+	
+-ms-grid-column: 2;
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-size:23px;
+	margin-left:10px;
+	color:#74b91b;
+	margin-top:5px;
+	margin-right: -85px;
+	
+}
+
+#mycareteamMyNurses_subtitle {
+	
+	 text-shadow:none;
+	-ms-grid-column:2;
+	margin-left:10px;
+	font-size:20px;
+	margin-top:30px;
+	margin-right: -81px;
+	
+}
+
+#mycareteamMyNurses_ListView {
+	margin-top:109px;
+	position:Absolute;
+	height:480px;
+	
+	width:775px;
+	top: 75px;
+}
+#mycareteamMyNurses_frame:hover {
+outline:1px solid white;
+}
+#mycareteamMyNurses_frame {
+
+	float:left;
+    margin-left:25px;
+	margin-bottom:15px;
+	position:relative;
+	width:350px;
+	height:149px;
+	display:-ms-grid;
+	-ms-grid-columns: 141px auto;
+	
+}
+
+#mycareteamMyNurses_image {
+	width:141px;
+	height:141px;
+}
+
+mycareteamMyNurses_title {
+	-ms-grid-column: 2;
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-size:23px;
+	margin-left:10px;
+	color:#74b91b;
+	margin-top:5px;
+	margin-right: -85px;
+}
+
+
+#mycareteamMyNurses_experience {
+	font-family:'segoe ui';
+	-ms-grid-column:2;
+	font-size:15px;
+	margin-top:53px;
+	margin-left:10px;
+}
+
+#mycareteamMyNurses_university {
+	font-family:'segoe ui';
+	font-size:15px;
+	-ms-grid-column:2;
+	margin-left:10px;
+	margin-top:70px;
+}
+
+#mycareteamMyNurses_chat {
+	-ms-grid-column:2;
+	height:50px;
+	width:50px;
+	border:none;
+	margin-top:90px;
+	margin-left:10px;
+	background-size:contain;
+	text-shadow:none;
+	box-shadow:none;
+	outline:none;
+	border-color:none;
+	color:none;
+	background-color:transparent;
+	background-repeat:no-repeat;
+	background-image: url('../../www/img/mycareteam/speak_icon_1.png');
+	border-radius: 25px;
+}
+#mycareteamMyNurses_chat:hover{
+	background-image: url('/www/img/mycareteam/speak_icon_1green.png');
+	
+}
+#mycareteamMyNurses_onlinestatus {
+	position:absolute;
+	margin-left:125px;
+	margin-top:7px;
+	}
+
+#mycareteamMyNurses_detailsview {
+	margin-left:581px;
+	margin-top:-530px;
+	height:524px;
+	width:470px;
+	display:none;
+}
+
+#mycareteamMyNurses_detailsview_pic {
+width:150px;
+height:150px;
+}
+
+#mycareteamMyNurses_detailsview_title {
+
+font-family:'segoe ui';
+font-size:30px;
+color:#74b91b;
+font-weight:350;
+text-shadow:none;
+}
+
+#mycareteamMyNurses_detailsview_subtitle {
+font-family:'segoe ui';
+font-size:30px;
+text-shadow:none;
+margin-top:-8px;
+}
+
+#mycareteamMyNurses_detailsview_desc {
+font-family:'segoe ui';
+position:Absolute;
+
+color:#818b8f;
+width:490px;
+word-wrap:break-word;
+white-space:normal;
+font-weight:lighter;
+text-shadow:none;
+font-size:20px;
+height:278px;
+}
+
+#mycareteammynurses_scrollcontent_button {
+	position:absolute;
+	display:none;	
+	background-image: url('/www/img/mydayschedule/Slide_icon_1.png');
+	width:45px;
+	height:45px;
+	background-size:CONTAIN;
+	min-width:78px;
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;
+	background-repeat:no-repeat;
+	margin-left:1100px;
+	border-color:transparent;
+	background-color:transparent;
+	margin-top:-595px;	
+	border-radius: 39px/38.9999923706055px 38.9999923706055px 38.9999923706055px;    
+}
+
+#mycareteammynurses_scrollcontent_button:hover{
+	opacity:0.5;
+}
+#mycareteam_blocker{
+	position:Absolute;
+	height:768px;
+	width:1366px;
+	margin-top:-708px;
+	
+	background-color:red;
+	opacity:0;
+	display:none;
+}
+
+#mycareteamMyNurses_popup {
+	position:absolute;
+	width:273px;
+	height:262px;
+	margin-left:1394px;
+	margin-top:-396px;
+	
+}
+
+#mycareteamMyNurses_popup_pic {
+	height:128px;
+	width:128px;
+	text-shadow:none;
+	margin-left:71px;
+	margin-top:12px;
+	position:Absolute;
+	
+}
+
+#mycareteamMyNurses_popup_title {
+	text-align:center;
+	position:absolute;
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:#61ccf1;
+	font-size:22px;
+	font-weight:400;
+	margin-left:62px;
+	margin-top:140px;
+	right: 0px;
+	top: 0px;
+	bottom: 66px;
+	left: -62px;
+}
+
+#mycareteamMyNurses_popup_subtitle {
+color:#babebf;
+position:absolute;
+font-family:'segoe ui';
+font-size:22px;
+margin-left:75px;
+margin-top:165px;
+text-shadow:none;
+text-align:center;
+left: -75px;
+top: 0px;
+right: 0px;
+bottom: 39px;
+}
+
+#mycareteamMyNurses_popupbg {
+	position:absolute;
+	width:273px;
+	height:262px;
+	
+	background-color:#767879;
+	opacity:0.95;
+}
+
+#mycareteampopupmynurses_scrollcontent_button {
+
+position:absolute;
+	transform:rotate(180deg);	
+	background-image: url('/www/img/cafeandgiftshop/liat-btn.png');
+	width:60px;
+	height:60px;
+	min-width:60px;
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;
+	background-repeat:no-repeat;
+	margin-left:10px;
+	margin-top:10px;
+	border-color:transparent;
+	background-color:transparent;
+	
+	background-size:contain;
+	border-radius: 39px/38.9999923706055px 38.9999923706055px 38.9999923706055px;
+    }
+	#mycareteampopupmynurses_scrollcontent_button:hover {
+		opacity:0.5;
+	}
+
+	#mycareteampopupmynurses_chaticon {
+		position:absolute;
+		width:60px;
+	height:60px;
+	min-width:60px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-top:190px;
+	margin-left:37px;
+		background-image: url('/www/img/mycareteam/chat_icon.png');
+	border-radius: 30px;
+	border:none;
+	background-color:transparent;
+	}
+	#mycareteampopupmynurses_chaticon:hover {
+		background-image: url('/www/img/mycareteam/chat_icon_select.png');
+	
+	}
+	#mycareteampopupmynurses_callicon {
+		position:absolute;
+			width:60px;
+	height:60px;
+	min-width:60px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-top:190px;
+	margin-left:107px;
+		background-image: url('/www/img/mycareteam/call_icon.png');
+	border-radius: 30px;
+	border:none;
+	background-color:transparent;
+	}
+	#mycareteampopupmynurses_callicon:hover {
+		background-image: url('/www/img/mycareteam/call_icon_select.png');
+	
+	}
+	#mycareteampopupmynurses_videoicon {
+		position:absolute;
+		border:none;
+		
+			width:60px;
+	height:60px;
+	min-width:60px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-top:190px;
+	margin-left:177px;
+		background-image: url('/www/img/mycareteam/video_icon.png');
+		border-radius: 30px;
+	background-color:transparent;
+	}
+	
+	#mycareteampopupmynurses_videoicon:hover {
+		background-image: url('/www/img/mycareteam/video_icon_select.png');
+	
+	}
+
+	#mycareteamMyNurses_onlinestatus {
+	position:absolute;
+	margin-left:125px;
+	margin-top:7px;
+	width:22px;
+	height:22px;
+	background-repeat:no-repeat;
+	}
+
+	#myCareTeam_ChatPage {
+		overflow-y:hidden;
+	}
+
+	#mycareteam_chatpage_maindiv {
+		height:768px;
+		background-image: url('/www/img/mycareteam/My-care-team_BG.png');
+		margin-top:-6px;
+		
+	}
+
+	#mycareteamchat_button {
+		position:absolute;
+		width:94px;
+		height:94px;
+		background-color: #80BD31;
+		background-repeat:no-repeat;
+		background-image: url('/www/img/mycareteam/arrow.png');
+		background-position-x:center;
+		background-position-y:23px;
+		border-radius: 47px;
+		color:white;
+		font-family:'segoe ui';
+		font-size:20px;
+		padding-top:32px;
+		border:none;
+		margin-left:1120px;
+		margin-top:206px;
+		background-size:34px 26px;
+	}
+	#mycareteamchat_button:hover {
+		
+		opacity:0.5;
+		
+	}
+  
+
+/*Weather and time*/
+
+#mycareheaderWrapper {
+	position:fixed;
+	margin-top:-740px;
+	margin-left:799px;
+	right: 0px;
+	bottom: 680px;
+	left: -675px;
+	top: 769px;
+	
+}
+#mycaredatetimetext{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:20px;
+	color:black;
+	float:right;
+	margin-right:10px;
+	margin-top:10px;
+	text-shadow:none;
+}
+#mycareheaderWrapper_seperator2{
+	float:right;
+	font-size:20px;
+	color:black;
+	margin-right:10px;
+	text-shadow:none;
+}
+#mycarewelcometext{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	color:black;
+	float:right;
+	margin-right:-54px;
+	margin-top:-9px;
+	
+}
+#mycarelocationinfo{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:12px;
+	color:black;
+	float:left;
+	margin-top:-35px;
+}
+#mycareweatherdetailsinfo{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	color:black;
+	float:right;
+	margin-top:-7px;
+	margin-right:5px;
+}
+#mycareweatherdetailwrapper{
+	float:right;
+	width:700px;
+	margin-top:-12px;
+}
+#mycarenameandlocationwrapper{
+	width:190px;
+	float:right;
+}
+#mycarepatientname_container{
+	width:190px;
+	height:36px;
+	float:right;
+}
+#mycarepatientname{
+		font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	font-weight:600;
+	color:black;
+	float:right;
+	margin-right:5px;
+	margin-top:20px;
+	width:120px;
+	text-align:right;
+}
+#mycarewelcome_patientimage{
+	float:right;
+	width: 40px;
+	height: 40px;
+	display:inline;
+	margin-top: -17px;
+	margin-right:-102px;
+	background-size:contain;
+	background-image: url('/www/img/mycareteam/profile_1.png');
+	}
+#mycareweather {
+	height: 46px;
+	position:fixed;
+	top: 24px;
+	right: 10px;
+	left: 1081px;
+}
+
+#mycareresultContainer {
+float:right;
+	
+	display:inline-block;
+	font-size:20px;
+	color:black;
+	margin-top:10px;
+	text-shadow:none;
+
+}
+#mycaretimeanddatecontainer{
+	float:right;
+	width:170px;
+}
+#mycarebigwrapper{
+	float:right;
+	width:570px;
+	height:60px;
+}
+#mycareresultContainerdate{
+	float:left;
+	font-weight:600;
+	display:inline-block;
+	font-size:28px;
+	color:black;
+	margin-top:16px;
+	text-shadow:none;
+	margin-top:-15px;
+	position:relative;
+	top:-2px;
+}
+#mycareresultContainertime{
+	float:left;
+	
+	display:inline-block;
+	font-size:12px;
+	color:black;
+	padding-top:0px;
+	margin-top:0px;
+	text-shadow:none;
+	margin-top:-12px;
+	top:-16px;
+	position:relative;
+}
+#mycareweather_icon{
+float:right;
+	width: 20px;
+	height: 20px;
+	display:inline;
+	margin-top: -10px;
+	margin-right:104px;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+#mycareheaderWrapper_seperator{
+	float:right;
+	font-size:50px;
+	color:black;
+	margin-right:5px;
+	text-shadow:none;
+	margin-top:-22px;
+	opacity:0.7;
+}
+
+/*Global menu*/
+#mycareglobalcontainer{
+	position:absolute;
+	z-index:5;
+	right: 707px;
+	left: 0px;
+	bottom: -43px;
+	top: 715px;
+
+}
+#mycareglobalmenu_background{
+	position:absolute;
+	background-color:black;
+	width:1366px;
+	height:768px;
+	margin-top:-706px;
+	opacity:0.6;
+	display:none;
+}
+#mycareglobalmenu {
+	
+	margin-left:454px;
+	background-repeat:no-repeat;
+	margin-top:4px;
+	width:84px;
+	height:51px;
+	background-size:contain;
+	background-image: url(/www/img/globalmenu/Hub_global_ashu_06.png);
+    
+}
+#mycareglobalmenu_mydaySchedule:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-day-schedule.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+
+}
+#mycareglobalmenu_mydaySchedule {
+	display:none;
+background-image: url('/www/img/globalmenu/my-day-schedule.png');
+
+margin-top:-58px;
+margin-left:382px;
+width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+
+border:none;
+
+
+}
+#mycareglobalmenu_mycareteam:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-care-team.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#mycareglobalmenu_mycareteam {
+	display:none;
+		width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-care-team.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-109px;
+margin-left:400px;
+border:none;
+}
+#mycareglobalmenu_myclinicalDashboard:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-clinical-dashboard.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#mycareglobalmenu_myclinicalDashboard {
+			display:none;
+			width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-clinical-dashboard.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+/*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+-ms-grid-column-span: 1;
+margin-top:-140px;
+margin-left:445px;
+border:none; 
+}
+#mycareglobalmenu_cafe:hover{
+	background-position:center;
+   opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/cafe.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+
+}
+#mycareglobalmenu_cafe {
+				display:none;
+				width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/cafe.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-140px;
+margin-left:500px;
+border:none;}
+#mycareglobalmenu_myhospital:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/My-hospital.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+
+#mycareglobalmenu_myhospital {
+	display:none;
+					width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/My-hospital.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-109px;
+margin-left:544px;
+border:none;
+}
+#mycareglobalmenu_mypatientsurveys:hover{
+	background-position:center;
+   opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-patient-survay.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#mycareglobalmenu_mypatientsurveys {
+	display:none;
+	width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-patient-survay.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+-ms-grid-column-span: 1;
+margin-top:-58px;
+margin-left:561px;
+border:none;
+}
+
+
+#mycareglobalmenumh_newsfeed h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:81px;
+	margin-left:26px;
+	width:192px;
+	text-align:center;
+}
+#mycareglobalmenumh_newsfeed{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:228px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/Newsfeed.png');
+}
+#mycareglobalmenumh_video h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:100px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#mycareglobalmenumh_video{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:564px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/Video.png');
+
+}
+
+#mycareglobalmenumh_hospitalmap h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:90px;
+	margin-left:32px;
+	width:192px;
+	text-align:center;
+}
+#mycareglobalmenumh_hospitalmap{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:904px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/HospitalMap.png');
+
+}
+/*Access entertainment global sub level*/
+#mycareglobalmenucg_shoppingmall h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:92px;
+	margin-left:26px;
+	width:221px;
+	
+}
+#mycareglobalmenucg_shoppingmall{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:228px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/shoppingmallaroundus.png');
+}
+#mycareglobalmenucg_cafengift h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:100px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#mycareglobalmenucg_cafengift{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:564px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/cafengiftshop.png');
+
+}
+
+#mycareglobalmenucg_restaurant h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:45px;
+	width:192px;
+	
+}
+#mycareglobalmenucg_restaurant{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:904px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/restaurantaroundus.png');
+
+}
+/*Survey global sub level*/
+#mycareglobalmenus_generalsurveys h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#mycareglobalmenus_generalsurveys{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:350px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/GeneralSurveys.png');
+
+}
+
+#mycareglobalmenus_dailysurveys h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:32px;
+	width:182px;
+	text-align:center;
+	
+}
+#mycareglobalmenus_dailysurveys{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:734px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/DailySurveys.png');
+
+}
+a {
+   outline: 0;
+}
+a:hover, a:active, a:focus {
+   outline: 0;
+   text-decoration:none;
+}

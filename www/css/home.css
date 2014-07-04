@@ -1,0 +1,1708 @@
+﻿
+#homePage {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#homePagecontent {
+    width: 100%;
+    height: 100%;
+    top: auto;
+    margin-top: -40px;
+}
+
+#scrolldivhome {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 768px;
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+    top:6px;
+   
+    margin-top: 35px;
+}
+
+#homeContentHost {
+    width: 4115px;
+    margin-left: auto;
+	display:-ms-grid;
+	-ms-grid-columns: 74px 591px 108px 536px 131px 536px 134px 503px 200px 553px 113px 635px;
+}
+
+#space1 {
+    
+    padding: 0;
+    height: 768px;
+    width: 77px;
+}
+
+#homeFrame_myDaySchedule {
+    
+    padding: 0;
+    height: 768px;
+    width: 590px;
+    -ms-grid-column: 2;
+}
+
+#space2 {
+   
+    padding: 0;
+    height: 768px;
+    width: 107px;
+}
+
+#homeFrame_myCareTeam {
+    
+    padding: 0;
+    height: 768px;
+    width: 536px;
+    -ms-grid-column: 4;
+}
+
+#space3 {
+    
+    padding: 0;
+    height: 768px;
+    width: 133px;
+}
+
+#homeFrame_myClinicalDashboard {
+  -ms-grid-column: 6;
+    padding: 0;
+    height: 768px;
+    width: 534px;
+}
+
+#space4 {
+  
+    padding: 0;
+    height: 768px;
+    width: 134px;
+}
+
+#homeFrame_accessEntertainmentServices {
+    -ms-grid-column: 8;
+    padding: 0;
+    height: 768px;
+    width: 503px;
+}
+
+#space5 {
+    
+    padding: 0;
+    height: 768px;
+    width: 200px;
+}
+
+#homeFrame_myHospital {
+-ms-grid-column: 10;
+    padding: 0;
+    height: 768px;
+    width: 553px;
+}
+
+#space6 {
+   
+    padding: 0;
+    height: 768px;
+    width: 113px;
+}
+
+#homeFrame_myPatientSurveys {
+   -ms-grid-column: 12;
+    padding: 0;
+    height: 768px;
+    width: 635px;
+}
+
+#title_MyDaySchedule {
+    text-shadow: none;
+    position: absolute;
+    font-family: 'Segoe UI';
+    font-size: 29.15pt;
+    font-style: normal;
+    color: #414141;
+    text-align: left;
+    margin-top: 95px;
+}
+
+#text_GoalsAndFeelings {
+    text-shadow: none;
+    position: absolute;
+    font-family: 'Segoe UI';
+    font-size: 15pt;
+    font-weight: 100;
+    color: #646464;
+    text-align: left;
+    margin-top: 142px;
+}
+
+#title_MyCareTeam {
+    text-shadow: none;
+    position: absolute;
+    font-family: 'Segoe UI';
+    font-size: 29.15pt;
+    font-style: normal;
+    color: #414141;
+    text-align: left;
+    margin-top: 95px;
+}
+
+#text_Communicate {
+    text-shadow: none;
+    position: absolute;
+    font-family: 'Segoe UI';
+    font-size: 15pt;
+    font-weight: 100;
+    color: #646464;
+    text-align: left;
+    margin-top: 142px;
+    right: -52px;
+    left: 0px;
+    bottom: 561px;
+    top: 0px;
+}
+
+#title_MyClinicalDashboard {
+    text-shadow: none;
+    position: absolute;
+    font-family: 'Segoe UI';
+    font-size: 29.15pt;
+    font-style: normal;
+    color: #414141;
+    text-align: left;
+    margin-top: 95px;
+}
+
+#text_MyClinicalDashboard {
+    text-shadow: none;
+    position: absolute;
+    font-family: 'Segoe UI';
+    font-size: 15pt;
+    font-weight: 100;
+    color: #646464;
+    text-align: left;
+    margin-top: 142px;
+}
+
+#title_accessEntertainmentServices {
+    position: absolute;
+    text-shadow: none;
+    font-family: 'Segoe UI';
+    font-size: 29.15pt;
+    font-style: normal;
+    color: #414141;
+    text-align: left;
+    margin-top: 95px;
+}
+
+#text_accessEntertainmentServices {
+    position: absolute;
+    text-shadow: none;
+    font-family: 'Segoe UI';
+    font-size: 15pt;
+    font-weight: 100;
+    color: #646464;
+    text-align: left;
+    margin-top: 142px;
+}
+
+#title_myHospital {
+    position: absolute;
+    text-shadow: none;
+    font-family: 'Segoe UI';
+    font-size: 29.15pt;
+    font-style: normal;
+    color: #414141;
+    text-align: left;
+    margin-top: 95px;
+}
+
+#text_myHospital {
+    position: absolute;
+    text-shadow: none;
+    font-family: 'Segoe UI';
+    font-size: 15pt;
+    font-weight: 100;
+    color: #646464;
+    text-align: left;
+    margin-top: 142px;
+}
+
+#title_myPatientSurveys {
+    position: absolute;
+    font-family: 'Segoe UI';
+    font-size: 29.15pt;
+    text-shadow: none;
+    font-style: normal;
+    color: #414141;
+    text-align: left;
+    margin-top: 95px;
+}
+
+#text_myPatientSurveys {
+    position: absolute;
+    font-family: 'Segoe UI';
+    text-shadow: none;
+    font-size: 15pt;
+    font-weight: 100;
+    color: #646464;
+    text-align: left;
+    margin-top: 142px;
+}
+/*My Dayschedule elements*/
+/*Frame 1*/
+#frame1data1_ListView {
+    position: absolute;
+    height: 228px;
+    width: 230px;
+    margin-top: 457px;
+    margin-left: 21px;
+}
+
+#frame1data1_wrapper {
+    height: 223px;
+    width: 225px;
+}
+
+#frame1data1_img {
+    height: 223px;
+    width: 225px;
+}
+
+.metro .tile {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+    .metro .tile *:focus {
+        outline: 0;
+    }
+
+    .metro .tile:hover {
+        outline: none;
+    }
+
+/*frame1data2*/
+#frame1data2_ListView {
+    position: absolute;
+    height: 384px;
+    width: 393px;
+    margin-top: 230px;
+    margin-left: 110px;
+}
+
+#frame1data2_wrapper {
+    height: 379px;
+    width: 388px;
+}
+#mydayscheduleclick_anchor:hover{
+	text-decoration:none;
+}
+#frame1data2_img {
+    height: 379px;
+    width: 388px;
+}
+
+#frame1data2_daytext {
+    text-shadow: none;
+    position: absolute;
+    font-family: 'segoe ui';
+    font-size: 30px;
+    font-weight: lighter;
+    color: #ffffff;
+    margin-left: 83px;
+    margin-top: -309px;
+}
+
+#frame1data2_dayvalue {
+    text-shadow: none;
+    position: absolute;
+    font-family: 'segoe ui';
+    font-size: 50px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-left: 70px;
+    margin-top: -318px;
+    right: 185px;
+    top: 383px;
+    bottom: 261px;
+    left: 68px;
+}
+#frame1data2_title:hover{
+	text-decoration:none;
+}
+#frame1data2_title {
+    line-height: 30px;
+    font-family: 'segoe ui';
+    font-size: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-left: 83px;
+    margin-top: -265px;
+    right: 100px;
+    top: 383px;
+    word-wrap: break-word;
+    white-space: normal;
+    width: 184px;
+    text-shadow: none;
+}
+
+#frame1data2_text {
+    line-height: 20px;
+    font-family: 'segoe ui';
+    font-size: 17px;
+    font-weight: lighter;
+    color: #ffffff;
+    margin-left: 83px;
+    margin-top: 0px;
+    white-space: normal;
+    word-wrap: break-word;
+    width: 295px;
+    text-shadow: none;
+}
+
+#frame1data2_backpicture {
+    position: relative;
+    background-image: url('/www/img/home/MyDaySchedule_backbtn.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    margin-left: 45px;
+    margin-top: -297px;
+    height: 31px;
+    width: 31px;
+    min-width: 31px;
+    border: none;
+}
+#mydayscheduleclick_anchor:hover{
+	text-decoration:none;
+}
+    #frame1data2_backpicture:hover {
+        opacity: 0.8;
+    }
+
+/*frame1data3*/
+#frame1data3_ListView {
+    height: 211px;
+    width: 208px;
+    margin-top: 184px;
+    margin-left: 361px;
+}
+
+#frame1data3_wrapper {
+    height: 201px;
+    width: 198px;
+}
+#frame1data3_anchor:hover{
+	cursor:default;
+}
+
+#frame1data3_img {
+    height: 201px;
+    width: 198px;
+}
+
+#frame1data3_title {
+    line-height: 30px;
+    word-wrap: break-word;
+    white-space: normal;
+    position: absolute;
+    font-family: 'segoe ui';
+    font-size: 25px;
+    font-weight: lighter;
+    color: #ffffff;
+    margin-left: 89px;
+    margin-top: -312px;
+    right: 10px;
+    top: 383px;
+    left: -60px;
+    bottom: 49px;
+}
+
+
+#circle1 {
+    position: relative;
+    background-image: url('/www/img/home/circle.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 58px;
+    height: 59px;
+    margin-top: -198px;
+    margin-left: 514px;
+}
+
+#circle2 {
+    position: relative;
+    background-image: url('/www/img/home/circle.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 58px;
+    height: 59px;
+    margin-left: 539px;
+}
+
+#circle3 {
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('/www/img/home/circle.png');
+    background-size: contain;
+    width: 58px;
+    height: 59px;
+    margin-left: 526px;
+}
+
+#circle1_heart {
+    width: 28px;
+    height: 26px;
+    min-width: 28px;
+    min-height: 26px;
+    margin-left: -40px;
+    margin-top: 17px;
+    background-image: url('/www/img/home/h1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+    #circle1_heart:hover {
+        opacity: 0.5;
+    }
+
+#circle2_heart {
+    border-color: transparent;
+    width: 28px;
+    height: 26px;
+    min-width: 28px;
+    min-height: 26px;
+    margin-left: -15px;
+    margin-top: 17px;
+    background-image: url('/www/img/home/h2.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: contain;
+}
+
+    #circle2_heart:hover {
+        opacity: 0.5;
+    }
+
+#circle3_heart {
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: -28px;
+    min-height: 26px;
+    margin-top: 17px;
+    width: 28px;
+    height: 26px;
+    min-width: 28px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/www/img/home/h3.png');
+}
+
+    #circle3_heart:hover {
+        opacity: 0.5;
+    }
+
+.disabletextselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*Frame1Data4*/
+#frame1data4_ListView {
+    margin-left: 374px;
+    margin-top: 123px;
+    width: 145px;
+    height: 145px;
+}
+
+#frame1data4_wrapper {
+    width: 140px;
+    height: 140px;
+}
+
+#frame1data4_img {
+    width: 140px;
+    height: 140px;
+}
+
+#frame1data4_hours {
+    position: Absolute;
+    margin-top: -91px;
+    margin-left: 63px;
+    font-weight: 300;
+    font-family: 'segoe ui';
+    font-size: 25px;
+    color: #685a7a;
+}
+
+#frame1data4_hourstext {
+    word-wrap: break-word;
+    white-space: normal;
+    margin-left: 45px;
+    margin-top: -56px;
+    font-family: 'segoe ui';
+    font-size: 12px;
+    color: #685a7a;
+    right: 45px;
+    top: 144px;
+    bottom: 20px;
+    text-align: center;
+    width: 51px;
+    height: 60px;
+    line-height: 15px;
+}
+
+/*Frame2data1*/
+#frame2data1_ListView {
+    margin-top: 230px;
+    margin-left: 109px;
+    width: 389px;
+    height: 387px;
+}
+
+#frame2data1_wrapper {
+    width: 383px;
+    height: 380px;
+}
+
+#frame2data1_img {
+    width: 383px;
+    height: 380px;
+}
+
+#frame2data1_title {
+    text-shadow: none;
+    position: Absolute;
+    margin-top: -210px;
+    margin-left: 40px;
+    font-family: 'segoe ui';
+    font-size: 25px;
+    font-style: normal;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 500;
+}
+
+#frame2data1_description {
+    text-shadow: none;
+    word-wrap: break-word;
+    white-space: normal;
+    position: absolute;
+    font-family: 'segoe ui';
+    font-size: 17px;
+    font-weight: lighter;
+    color: #ffffff;
+    margin-left: 40px;
+    margin-top: -181px;
+}
+
+/*Frame2data2*/
+#frame2data2_ListView {
+    width: 229px;
+    height: 239px;
+    margin-left: 316px;
+    margin-top: -439px;
+}
+
+#frame2data2_wrapper {
+    width: 221px;
+    height: 230px;
+    margin-top: -436px;
+}
+
+#frame2data2_title {
+    text-shadow: none;
+    line-height: 30px;
+    color: white;
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+    width: 171px;
+    height: 135px;
+    font-size: 25px;
+    font-weight: lighter;
+    margin-left: 23px;
+    margin-top: -145px;
+	text-decoration:none;
+}
+#frame2data2_anchor{
+	text-decoration:none;
+}
+#frame2data2_anchor:hover{
+	text-decoration:none;
+}
+
+#frame2data2_img {
+    width: 221px;
+    height: 230px;
+    background-size: contain;
+}
+
+
+#frame2data3_ListView {
+	position:Absolute;
+	width:141px;
+	height:141px;
+	margin-left:366px;
+	margin-top:90px;
+}
+
+#frame2data3_img {
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+#frame2data3_title {
+	position:absolute;
+	margin-top:-98px;
+	margin-left:70px;
+	font-family:'segoe ui';
+	font-size:15px;
+	color:red;
+}
+/*Frame3data1*/
+#frame3data1_ListView {
+    margin-top: 229px;
+    margin-left: 109px;
+    width: 390px;
+    height: 390px;
+}
+
+#frame3data1_wrapper {
+    width: 380px;
+    height: 380px;
+}
+
+#frame3data1_img {
+    width: 380px;
+    height: 380px;
+}
+
+
+
+#frame3data1_title {
+	text-shadow:none;
+	line-height:25px;
+	white-space:normal;
+	word-wrap:break-word;
+    margin-left: 64px;
+    margin-top: -118px;
+    position: absolute;
+    font-family: 'segoe ui';
+    font-size: 17px;
+    width: 265px;
+    font-weight: lighter;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*Frame3data2*/
+#frame3data2_ListView {
+	width:231px;
+	height:240px;
+	margin-top:-434px;
+	margin-left:313px;
+}
+
+#frame3data2_title {
+	color:white;
+	text-shadow:none;
+	margin-top:-125px;
+	font-size:34px;
+	font-weight:500;
+	margin-left:56px;
+	font-family:'segoe ui';
+}
+
+#frame3data2_subtext {
+	color:white;
+	text-shadow:none;
+	margin-top:-22px;
+	font-size:24px;
+	margin-left:59px;
+	font-family:'segoe ui';
+}
+
+#frame3data2_wrapper {
+	width:221px;
+	height:230px;
+	margin-top:-432px;
+}
+
+#frame3data2_img {
+	background-size:contain;
+	width:221px;
+	height:230px;
+}
+
+/*Frame4data1*/
+#frame4data1_ListView {
+	width:390px;
+	height:390px;
+	margin-top:230px;
+	margin-left:121px;
+}
+
+#frame4data1_subtext {
+	text-shadow:none;
+	line-height:13px;
+	word-wrap:break-word;
+	white-space:normal;
+	text-align:right;
+	margin-left:32px;
+	margin-top:-243px;
+	
+	width:222px;
+	position:absolute;
+	font-family:'segoe ui';
+	font-size:11px;
+	font-weight:lighter;
+	text-align:justify;
+	color:#ffffff;
+}
+#frame4data1_wrapper {
+    width:380px;
+	height:380px;
+}
+
+#frame4data1_img {
+	width:380px;
+	height:380px;
+	
+	background-size:contain;
+}
+
+#frame4data1_title {
+	position:Absolute;
+	text-shadow:none;
+	font-family:'segoe ui';
+
+	font-size: 24px;
+	font-style: normal;
+	color:#ffffff;
+	text-align: left;
+	font-weight:500;
+	margin-left:32px;
+	margin-top:-289px;
+}
+
+/*frame4data2*/
+#frame4data2_ListView {
+	width:231px;
+	height:239px;
+	margin-top:-159px;
+	margin-left:31px;
+}
+
+#frame4data2_wrapper {
+	width:221px;
+	height:221px;
+	
+	margin-top:-159px;
+}
+
+#frame4data2_img {
+	width:221px;
+	height:221px;
+	background-size:contain;
+}
+
+#frame4data2_title {
+	color:white;
+	word-wrap:break-word;
+	white-space:normal;
+	line-height:30px;
+	text-shadow:none;
+	position:Absolute;
+	margin-top:-107px;
+	font-family:'segoe ui';
+	margin-left:26px;
+	font-size:24px;
+	width: 164px;
+	max-width:164px;
+	font-weight:500;
+	text-align:center;
+}
+
+#frame4data2_subtext {
+	line-height:30px;
+	word-wrap:break-word;
+	white-space:normal;
+	color:white;
+	text-shadow:none;
+	position:absolute;
+	font-family:'segoe ui';
+	font-size:24px;
+	margin-top:-80px;
+	margin-left:44px;
+	text-align:center;
+	width: 132px;
+}
+/*frame4data3*/
+#frame4data3_ListView {
+	width:231px;
+	height:239px;
+	
+	margin-left:369px;
+}
+
+#frame4data3_wrapper {
+	width:221px;
+	height:221px;
+	margin-top:-535px;
+	
+}
+
+#frame4data3_img {
+	width:221px;
+	height:221px;
+	background-size:contain;
+}
+
+#frame4data3_title {
+	color:white;
+	word-wrap:break-word;
+	white-space:normal;
+	line-height:30px;
+	text-shadow:none;
+	position:Absolute;
+	margin-top:-107px;
+	font-family:'segoe ui';
+	margin-left:26px;
+	font-size:24px;
+	width: 164px;
+	max-width:164px;
+	font-weight:500;
+	text-align:center;
+}
+
+#frame4data3_subtext {
+	line-height:30px;
+	word-wrap:break-word;
+	white-space:normal;
+	color:white;
+	text-shadow:none;
+	position:absolute;
+	font-family:'segoe ui';
+	font-size:24px;
+	margin-top:-80px;
+	margin-left:44px;
+	text-align:center;
+	width: 132px;
+}
+/*frame5data1*/
+#frame5data1_ListView {
+	width:233px;
+	height:234px;
+	margin-top:-159px;
+	margin-left:15px;
+	
+}
+#frame5data1_wrapper {
+	width:223px;
+	height:224px;
+	margin-top:-155px;
+}
+
+#frame5data1_img {
+	width:223px;
+	height:224px;
+}
+
+#frame5data1_title {
+	text-shadow:none;
+	margin-top:-95px;
+	font-family:'segoe ui';
+	font-size:28px;
+	font-weight:500;
+	margin-left:43px;
+	color:white;
+}
+
+#frame5data1_subtext {
+	line-height:13px;
+	word-wrap:break-word;
+	white-space:normal;
+	color:#262626;
+	font-family:'segoe ui';
+	margin-top:-15px;
+	font-size:13px;
+	margin-left:16px;
+	text-shadow:none;
+}
+/*frame5data2*/
+#frame5data2_ListView {
+	width:388px;
+	height:387px;
+	margin-top:230px;
+	margin-left:107px;
+}
+#frame5data2_wrapper {
+	width:378px;
+	height:377px;
+}
+#frame5data2_anchor{
+	width:378px;
+	height:377px;
+}
+#frame5data2_img {
+	width:378px;
+	height:377px;
+}
+/*frame5data3*/
+#frame5data3_ListView {
+	width:208px;
+	height:211px;
+	margin-top:-508px;
+	margin-left:355px;
+}
+#frame5data3_title{
+	font-size:22px;
+	color:white;
+	margin-top:-80px;
+	margin-left:34px;
+}
+#frame5data3_wrapper {
+	margin-top:-433px;
+	width:198px;
+	height:201px;
+}
+
+#frame5data3_img {
+	width:198px;
+	height:201px;
+}
+
+/*frame6data1*/
+#frame6data1_ListView {
+	width:389px;
+	height:390px;
+	margin-top:230px;
+	margin-left:111px;
+	
+}
+#frame6data1_patientsurveys{
+	width:379px;
+	height:380px;
+	
+}
+#frame6data1_wrapper {
+	width:379px;
+	height:380px;
+}
+
+
+#frame6data1_img {
+	width:379px;
+	height:380px;
+	background-size:contain;
+}
+
+#frame6data1_title {
+	color:white;
+	text-shadow:none;
+	margin-top:-221px;
+	margin-left:78px;
+	font-family:'segoe ui';
+	font-size:25px;
+	font-weight:500;
+}
+
+#frame6data1_subtext {
+	line-height:20px;
+	text-shadow:none;
+	color:white;
+	white-space:normal;
+	word-wrap:break-word;
+	margin-top:-10px;
+	margin-left:78px;
+	font-family:'segoe ui';
+	font-size:14px;
+	font-weight:lighter;
+	width:233px;
+}
+/*Frame 6 data 2*/
+#frame6data2_ListView{
+	height:198px;
+	width:198px;
+	margin-top:-436px;
+	position:absolute;
+	margin-left:360px;
+	
+}
+#frame6data2_frame{
+	height:198px;
+	width:198px;
+}
+#frame6data2_anchor{
+	height:198px;
+	width:198px;
+}
+#frame6data2_picture{
+	height:198px;
+	width:198px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	}
+#frame6data2_title{
+	text-shadow:none;
+	font-family:'segoe ui';
+	font-size:28px;
+	margin-top:-110px;
+	margin-left:20px;
+	font-weight:400;
+}
+
+/*Weather and time*/
+
+#headerWrapper {
+	position:fixed;
+	margin-top:-740px;
+	margin-left:799px;
+	right: 0px;
+	bottom: 680px;
+	left: -675px;
+	top: 769px;
+	
+}
+#datetimetext{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:20px;
+	color:black;
+	float:right;
+	margin-right:10px;
+	margin-top:10px;
+	text-shadow:none;
+}
+#headerWrapper_seperator2{
+	float:right;
+	font-size:20px;
+	color:black;
+	margin-right:10px;
+	text-shadow:none;
+}
+#welcometext{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	color:black;
+	float:right;
+	margin-right:-54px;
+	margin-top:-9px;
+	
+}
+#locationinfo{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:12px;
+	color:black;
+	float:left;
+	margin-top:-35px;
+	
+}
+#weatherdetailsinfo{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	color:black;
+	float:right;
+	margin-top:-7px;
+	margin-right:5px;
+}
+#weatherdetailwrapper{
+	float:right;
+	width:700px;
+	margin-top:-12px;
+}
+#nameandlocationwrapper{
+	width:190px;
+	float:right;
+}
+#patientname_container{
+	width:190px;
+	height:36px;
+	float:right;
+}
+#patientname{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	font-weight:600;
+	color:black;
+	float:right;
+	margin-right:5px;
+	margin-top:20px;
+	width:120px;
+	text-align:right;
+}
+#welcome_patientimage{
+	float:right;
+	width: 40px;
+	height: 40px;
+	display:inline;
+	margin-top: -17px;
+	margin-right:-102px;
+	background-size:contain;
+	background-image: url('/www/img/mycareteam/profile_1.png');
+	}
+#weather {
+	height: 46px;
+	position:fixed;
+	top: 24px;
+	right: 10px;
+	left: 1081px;
+}
+
+#resultContainer {
+float:right;
+	
+	display:inline-block;
+	font-size:20px;
+	color:black;
+	margin-top:10px;
+	text-shadow:none;
+
+}
+#timeanddatecontainer{
+	float:right;
+	width:170px;
+}
+#bigwrapper{
+	float:right;
+	width:570px;
+	height:60px;
+}
+#resultContainerdate{
+	float:left;
+	font-weight:600;
+	display:inline-block;
+	font-size:28px;
+	color:black;
+	margin-top:16px;
+	text-shadow:none;
+	margin-top:-15px;
+	position:relative;
+	top:-2px;
+}
+#resultContainertime{
+	float:left;
+	
+	display:inline-block;
+	font-size:12px;
+	color:black;
+	padding-top:0px;
+	margin-top:0px;
+	text-shadow:none;
+	margin-top:-12px;
+	top:-16px;
+	position:relative;
+}
+#weather_icon{
+float:right;
+	width: 20px;
+	height: 20px;
+	display:inline;
+	margin-top: -10px;
+	margin-right:104px;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+#headerWrapper_seperator{
+	float:right;
+	font-size:50px;
+	color:black;
+	margin-right:5px;
+	text-shadow:none;
+	margin-top:-22px;
+	opacity:0.7;
+}
+/*background slides*/
+#homePageslides{
+	position:absolute;
+	height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#homePageslidesul{
+	margin-left:-40px;
+	height: 100%;
+    width: 102.93%;
+    overflow: hidden;
+	
+}
+/*Global menu*/
+#globalmenu_background{
+	position:absolute;
+	background-color:black;
+	width:1366px;
+	height:768px;
+	margin-top:-763px;
+	opacity:0.6;
+	display:none;
+}
+#globalmenu {
+	position:fixed;
+	margin-left:454px;
+	background-repeat:no-repeat;
+	margin-top:-46px;
+	width:84px;
+	height:51px;
+	background-size:contain;
+	background-image: url('/www/img/globalmenu/Hub_global_ashu_06.png');
+    
+}
+#globalmenu_mydaySchedule:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-day-schedule.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+
+}
+#globalmenu_mydaySchedule {
+	display:none;
+background-image: url('/www/img/globalmenu/my-day-schedule.png');
+
+margin-top:-49px;
+margin-left:382px;
+width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+
+border:none;
+
+
+}
+#globalmenu_mycareteam:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-care-team.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#globalmenu_mycareteam {
+		width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-care-team.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-101px;
+margin-left:400px;
+border:none;
+display:none;
+}
+#globalmenu_myclinicalDashboard:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-clinical-dashboard.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#globalmenu_myclinicalDashboard {
+	display:none;
+			width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-clinical-dashboard.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+/*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-136px;
+margin-left:445px;
+border:none; 
+}
+#globalmenu_cafe:hover{
+	background-position:center;
+   opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/cafe.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+
+}
+#globalmenu_cafe {
+	display:none;
+				width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/cafe.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-136px;
+margin-left:500px;
+border:none;}
+#globalmenu_myhospital:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/My-hospital.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+
+#globalmenu_myhospital {
+	display:none;
+					width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/My-hospital.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+-ms-grid-column-span: 1;
+margin-top:-101px;
+margin-left:544px;
+border:none;
+}
+#globalmenu_mypatientsurveys:hover{
+	background-position:center;
+   opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-patient-survay.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#globalmenu_mypatientsurveys {
+	display:none;
+	width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-patient-survay.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-49px;
+margin-left:561px;
+border:none;
+}
+
+#globalmenumh_newsfeed h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:81px;
+	margin-left:26px;
+	width:192px;
+	text-align:center;
+}
+#globalmenumh_newsfeed{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:228px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/Newsfeed.png');
+}
+#globalmenumh_video h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:100px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#globalmenumh_video{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:564px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/Video.png');
+
+}
+
+#globalmenumh_hospitalmap h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:90px;
+	margin-left:32px;
+	width:192px;
+	text-align:center;
+}
+#globalmenumh_hospitalmap{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:904px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/HospitalMap.png');
+
+}
+/*Access entertainment global sub level*/
+#globalmenucg_shoppingmall h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:92px;
+	margin-left:26px;
+	width:221px;
+	
+}
+#globalmenucg_shoppingmall{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:228px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/shoppingmallaroundus.png');
+}
+#globalmenucg_cafengift h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:100px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#globalmenucg_cafengift{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:564px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/cafengiftshop.png');
+
+}
+
+#globalmenucg_restaurant h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:45px;
+	width:192px;
+	
+}
+#globalmenucg_restaurant{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:904px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/restaurantaroundus.png');
+
+}
+/*Survey global sub level*/
+#globalmenus_generalsurveys h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#globalmenus_generalsurveys{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:350px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/GeneralSurveys.png');
+
+}
+
+#globalmenus_dailysurveys h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:32px;
+	width:182px;
+	text-align:center;
+	
+}
+#globalmenus_dailysurveys{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:734px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/DailySurveys.png');
+
+}
+a {
+   outline: 0;
+}
+a:hover, a:active, a:focus {
+   outline: 0;
+   text-decoration:none;
+}

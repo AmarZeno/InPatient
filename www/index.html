@@ -1,0 +1,2199 @@
+﻿<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>InPatient</title>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/jquery-2.1.0.js"></script>
+    <link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet" />
+    <script src="js/jquery.mobile-1.4.2.min.js"></script>
+
+
+    <link href="css/metro-bootstrap.css" rel="stylesheet" />
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.knob.js"></script>
+    <script src="js/knockout-3.1.0.js"></script>
+    <link href="css/index.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <!-- Bing Maps references -->
+
+</head>
+<body>
+    <div class="app">
+        <div id="loginPage" data-role="page">
+
+            <div data-role="content" data-theme='c'>
+                <div id="loginmaindiv">
+
+                    <div id="loginwrapperbg">
+
+                    </div>
+                    <div id="loginwrapper">
+                        <div id="login_inpatientlogo"></div>
+                        <label id="logintext" class="disabletextselect">Please enter your Patient Id and Password</label>
+                        <input id="pintext" type="text" placeholder="Patient ID" value="dell" data-role="none" class="form-control">
+                        <input id="passwordtext" type="password" placeholder="Password" value="dell" data-role="none" class="form-control">
+                        <button id="signin" type="submit" class="btn disabletextselect" data-role="none">SIGN IN</button>
+                        <label id="errormsg" class="disabletextselect" data-role="none"></label>
+                    </div>
+
+                    <div id="#login_delllogo"></div>
+                </div>
+            </div>
+
+            <script src="js/freeAPI.js"></script>
+
+
+        </div>
+
+
+        <!--Page 2 begins-->
+        <div id="homePage" data-role="page">
+            <div id="homePageslides" class="slides">
+                <ul id="homePageslidesul">
+                    <!-- slides -->
+                    <li>
+                        <img class="changesrc" src="img/home/bg_1.jpg" draggable="false" alt="image01" />
+                    </li>
+                </ul>
+            </div>
+
+            <div id="homePagecontent" data-role="none">
+                <div id="scrolldivhome">
+
+
+
+
+                    <div id="homeContentHost">
+
+                        <div id="homeFrame_myDaySchedule">
+                            <label id="title_MyDaySchedule" class="disabletextselect" data-role="none">My Day Schedule</label>
+                            <label id="text_GoalsAndFeelings" class="disabletextselect" data-role="none">Goals And Feelings</label>
+                            <!--frame1data2 Listview elements-->
+                            <div id="frame1data2_ListView" class="metro" data-role="none">
+                                <div id="frame1data2_wrapper" class="tile" data-click="transform">
+                                    <a id="mydayscheduleclick_anchor" href="#mydayschedulePage">
+                                        <div data-role="none" data-bind="template: { name: 'frame1data2-template', data: MyDaySchedule[1] }"></div>
+                                        <script type="text/html" id="frame1data2-template">
+                                            <img data-bind="attr:{src: picture}"
+                                                 src="#" id="frame1data2_img" draggable="false" />
+                                            <h1 id="frame1data2_daytext" class="disabletextselect">Day</h1>
+                                            <h1 id="frame1data2_dayvalue" class="disabletextselect" data-bind="text:day"></h1>
+                                            <h1 id="frame1data2_title" class="disabletextselect" data-bind="text:title"></h1>
+                                            <h1 id="frame1data2_text" class="disabletextselect" data-bind="text:text"></h1>
+                                            <input type="button" id="frame1data2_backpicture" data-role="none">
+                                        </script>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--frame1data1 Listview elements-->
+
+                            <div id="frame1data1_ListView" class="metro" data-role="none">
+
+                                <div id="frame1data1_wrapper" class="tile" data-click="transform">
+                                    <div data-bind="template: { name: 'frame1data1-template', data: MyDaySchedule[0] }"></div>
+                                    <script type="text/html" id="frame1data1-template">
+                                        <!-- Displays the "picture" field. -->
+                                        <img data-bind="attr:{src: picture}"
+                                             id="frame1data1_img" draggable="false" />
+                                    </script>
+                                </div>
+
+                            </div>
+
+
+
+                            <!--frame1data3 Listview elements-->
+
+                            <div id="frame1data3_ListView" class="metro" data-role="none">
+
+                                <div id="frame1data3_wrapper" class="tile" data-click="transform">
+                                    <a id="frame1data3_anchor" href="#mydayschedulePage">
+                                        <div data-bind="template: { name: 'frame1data3-template', data: MyDaySchedule[2] }"></div>
+                                        <script type="text/html" id="frame1data3-template">
+                                            <!-- Displays the "picture" field. -->
+                                            <img data-bind="attr:{src: picture}"
+                                                 src="#" id="frame1data3_img" draggable="false" />
+                                            <h1 id="frame1data3_title" data-bind="text: title"></h1>
+                                        </script>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div id="circle1">
+                                <input type="button" id="circle1_heart" data-role="none" />
+                            </div>
+                            <div id="circle2">
+                                <input type="button" id="circle2_heart" data-role="none" />
+                            </div>
+                            <div id="circle3">
+                                <input type="button" id="circle3_heart" data-role="none" />
+                            </div>
+                        </div>
+                        <div id="homeFrame_myCareTeam" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                            <label id="title_MyCareTeam" class="disabletextselect" data-role="none">My Care Team</label>
+                            <label id="text_Communicate" class="disabletextselect" data-role="none">Communicate with nursing staff and other clinicians</label>
+
+
+                            <!--frame2data1 Listview elements-->
+
+                            <div id="frame2data1_ListView" class="metro" data-role="none">
+                                <div id="frame2data1_wrapper" class="tile" data-click="transform" data-role="none">
+                                    <a href="#myCareTeamPage">
+                                        <div data-bind="template: { name: 'frame2data1-template', data: MyCareTeam[0] }"></div>
+                                        <script type="text/html" id="frame2data1-template">
+                                            <!-- Displays the "picture" field. -->
+                                            <img data-bind="attr:{src: picture}"
+                                                 src="#" id="frame2data1_img" draggable="false" />
+                                            <h1 id="frame2data1_title" class="disabletextselect" data-bind="text:title"></h1>
+                                            <h1 id="frame2data1_description" class="disabletextselect" data-bind="text:description"></h1>
+                                        </script>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--frame2data2 Listview elements-->
+                            <div id="frame2data2_ListView" class="metro" data-role="none">
+                                <div id="frame2data2_wrapper" class="tile" data-click="transform" data-role="none">
+                                    <a id="frame2data2_anchor" href="#myCareTeamPage">
+                                        <div data-bind="template: { name: 'frame2data2-template', data: MyCareTeam[1] }"></div>
+                                        <script type="text/html" id="frame2data2-template">
+                                            <!-- Displays the "picture" field. -->
+                                            <img data-bind="attr:{src: picture}"
+                                                 src="#" id="frame2data2_img" draggable="false" />
+                                            <h1 id="frame2data2_title" class="disabletextselect" data-bind="text:title"></h1>
+                                        </script>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--frame2data3 Listview elements-->
+                            <div id="frame2data3_ListView" class="metro" data-role="none">
+                                <div id="frame2data3_wrapper" class="tile" data-click="transform" data-role="none">
+                                    <a href="#myCareTeamPage">
+                                        <img data-bind="attr:{src: MyCareTeam[2].picture}"
+                                             src="#" id="frame2data3_img" draggable="false" />
+                                        <h1 id="frame2data3_title" class="disabletextselect" data-bind="text:MyCareTeam[2].title"></h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="homeFrame_myClinicalDashboard">
+                            <label id="title_MyClinicalDashboard" class="disabletextselect" data-role="none">My Clinical Dashboard</label>
+                            <label id="text_MyClinicalDashboard" class="disabletextselect" data-role="none">How am I doing?</label>
+
+
+                            <!--frame3data1 Listview elements-->
+                            <div id="frame3data1_ListView" class="metro" data-role="none">
+                                <div id="frame3data1_wrapper" class="tile" data-click="transform" data-role="none">
+                                    <div data-bind="template: { name: 'frame3data1-template', data: MyClinicalDashboard[0] }"></div>
+                                    <script type="text/html" id="frame3data1-template">
+                                        <!-- Displays the "picture" field. -->
+                                        <img data-bind="attr:{src: picture}"
+                                             src="#" id="frame3data1_img" draggable="false" />
+                                        <h1 id="frame3data1_title" class="disabletextselect" data-bind="text:title"></h1>
+                                    </script>
+                                </div>
+                            </div>
+
+                            <!--frame3data2 Listview elements-->
+                            <div id="frame3data2_ListView" class="metro" data-role="none">
+                                <div id="frame3data2_wrapper" class="tile" data-role="none" data-click="transform">
+                                    <div data-bind="template: { name: 'frame3data2-template', data: MyClinicalDashboard[1] }"></div>
+                                    <script type="text/html" id="frame3data2-template">
+                                        <!-- Displays the "picture" field. -->
+                                        <img data-bind="attr:{src: picture}"
+                                             src="#" id="frame3data2_img" draggable="false" />
+                                        <h1 id="frame3data2_title" class="disabletextselect" data-bind="text:title"></h1>
+                                        <h1 id="frame3data2_subtext" class="disabletextselect" data-bind="text:subtext"></h1>
+                                    </script>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div id="homeFrame_accessEntertainmentServices">
+                            <label id="title_accessEntertainmentServices" class="disabletextselect" data-role="none">Access Entertainment Services</label>
+                            <label id="text_accessEntertainmentServices" class="disabletextselect" data-role="none">Restaurant, Shopping malls, Hospital Cafe & Gift Shops</label>
+
+                            <!--frame4data1 Listview elements-->
+                            <div id="frame4data1_ListView" class="metro" data-role="none">
+
+                                <div id="frame4data1_wrapper" class="tile" data-role="none" data-click="transform">
+                                    <a href="#cafeandgiftshopPage">
+                                        <div data-bind="template: { name: 'frame4data1-template', data: AccessEntertainmentServices[0] }"></div>
+                                        <script type="text/html" id="frame4data1-template">
+                                            <!-- Displays the "picture" field. -->
+                                            <img data-bind="attr:{src: picture}"
+                                                 src="#" id="frame4data1_img" draggable="false" />
+                                            <h1 id="frame4data1_title" class="disabletextselect" data-bind="text:title"></h1>
+
+                                            <h1 id="frame4data1_subtext" class="disabletextselect" data-bind="text:subtext"></h1>
+                                        </script>
+                                    </a>
+                                </div>
+
+                            </div>
+
+
+                            <!--frame4data2 Listview elements-->
+
+
+                            <div id="frame4data2_ListView" class="metro" data-role="none">
+
+                                <div id="frame4data2_wrapper" class="tile" data-role="none" data-click="transform">
+                                    <a href="#shoppingmallPage">
+                                        <div data-bind="template: { name: 'frame4data2-template', data: AccessEntertainmentServices[1] }"></div>
+                                        <script type="text/html" id="frame4data2-template">
+                                            <!-- Displays the "picture" field. -->
+                                            <img data-bind="attr:{src: picture}"
+                                                 src="#" id="frame4data2_img" draggable="false" />
+                                            <h1 id="frame4data2_title" class="disabletextselect" data-bind="text:title"></h1>
+
+                                            <h1 id="frame4data2_subtext" class="disabletextselect" data-bind="text:subtext"></h1>
+                                        </script>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <!--frame4data3 Listview elements-->
+
+
+                            <div id="frame4data3_ListView" class="metro" data-role="none">
+
+                                <div id="frame4data3_wrapper" class="tile" data-role="none" data-click="transform">
+                                    <a href="#restaurantPage">
+                                        <div data-bind="template: { name: 'frame4data3-template', data: AccessEntertainmentServices[2] }"></div>
+                                        <script type="text/html" id="frame4data3-template">
+                                            <!-- Displays the "picture" field. -->
+                                            <img data-bind="attr:{src: picture}"
+                                                 src="#" id="frame4data3_img" draggable="false" />
+                                            <h1 id="frame4data3_title" class="disabletextselect" data-bind="text:title"></h1>
+
+                                            <h1 id="frame4data3_subtext" class="disabletextselect" data-bind="text:subtext"></h1>
+                                        </script>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="homeFrame_myHospital">
+                            <label id="title_myHospital" class="disabletextselect" data-role="none">My Hospital</label>
+                            <label id="text_myHospital" class="disabletextselect" data-role="none">Hospital Map, News, Videos</label>
+
+
+
+                            <!--frame5data2 Listview elements-->
+                            <div id="frame5data2_ListView" class="metro" data-role="none">
+                                <a href="#myhospitalvideo_page" id="frame5data2_anchor">
+                                    <div id="frame5data2_wrapper" data-role="none" class="tile" data-click="transform">
+                                        <div data-bind="template: { name: 'frame5data2-template', data: MyHospital[1] }"></div>
+                                        <script type="text/html" id="frame5data2-template">
+                                            <!-- Displays the "picture" field. -->
+                                            <img data-bind="attr:{src: picture}"
+                                                 src="#" id="frame5data2_img" draggable="false" />
+                                        </script>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!--frame5data1 Listview elements-->
+
+
+                            <div id="frame5data1_ListView" class="metro" data-role="none">
+                                <a href="#healthnewsPage">
+                                    <div id="frame5data1_wrapper" data-role="none" class="tile" data-click="transform">
+                                        <div data-bind="template: { name: 'frame5data1-template', data: MyHospital[0] }"></div>
+                                        <script type="text/html" id="frame5data1-template">
+                                            <!-- Displays the "picture" field. -->
+                                            <img data-bind="attr:{src: picture}"
+                                                 src="#" id="frame5data1_img" draggable="false" />
+
+                                            <h1 id="frame5data1_title" class="disabletextselect" data-bind="text:title"></h1>
+
+                                        </script>
+
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!--frame5data3 Listview elements-->
+                            <div id="frame5data3_ListView" class="metro" data-role="none">
+                                <a href="#hospitalmapPage">
+                                    <div id="frame5data3_wrapper" class="tile" data-role="none" data-click="transform">
+                                        <div data-bind="template: { name: 'frame5data3-template', data: MyHospital[2] }"></div>
+                                        <script type="text/html" id="frame5data3-template">
+                                            <!-- Displays the "picture" field. -->
+                                            <img data-bind="attr:{src: picture}"
+                                                 src="#" id="frame5data3_img" draggable="false" />
+                                            <h1 id="frame5data3_title" data-bind="text:title">Hospital Map</h1>
+                                        </script>
+
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                        <div id="homeFrame_myPatientSurveys">
+                            <label id="title_myPatientSurveys" class="disabletextselect" data-role="none">My Patient Surveys</label>
+                            <label id="text_myPatientSurveys" class="disabletextselect" data-role="none">Promptness of service, cleanliness of facility, quality of care, etc.</label>
+
+                            <!--frame6data1 Listview elements-->
+
+
+                            <div id="frame6data1_ListView" class="metro" data-role="none">
+                                <a href="#patientsurveys" id="frame6data1_patientsurveys">
+                                    <div id="frame6data1_wrapper" class="tile" data-role="none" data-click="transform">
+                                        <div data-bind="template: { name: 'frame6data1-template', data: MyPatientSurveys[0] }"></div>
+                                        <script type="text/html" id="frame6data1-template">
+                                            <!-- Displays the "picture" field. -->
+                                            <img data-bind="attr:{src: picture}"
+                                                 src="#" id="frame6data1_img" draggable="false" />
+                                            <h1 id="frame6data1_title" class="disabletextselect" data-bind="text:title"></h1>
+
+                                            <h1 id="frame6data1_subtext" class="disabletextselect" data-bind="text:subtext"></h1>
+                                        </script>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="frame6data2_ListView" class="metro" data-role="none">
+                                <a href="#dailysurveys_page" id="frame6data2_anchor">
+                                    <div id="frame6data2_frame" class="tile" data-role="none">
+                                        <div data-bind="template: { name: 'frame6data2-template', data: MyPatientSurveys[1] }"></div>
+                                        <script type="text/html" id="frame6data2-template">
+                                            <!-- Displays the "picture" field. -->
+
+                                            <div id="frame6data2_picture" data-bind="style:{backgroundImage:picture}"></div>
+                                            <h1 id="frame6data2_title" data-bind="text:title" class="disabletextselect"></h1>
+
+                                        </script>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="headerWrapper">
+                    <div id="bigwrapper">
+                        <div id="timeanddatecontainer">
+                            <h1 id="resultContainerdate" class="disabletextselect"></h1>
+                            <br /><br />
+                            <h1 id="resultContainertime" class="disabletextselect"></h1>
+                            <br />
+                            <h1 id="locationinfo" class="disabletextselect"></h1>
+
+                        </div>
+                        <h6 id="headerWrapper_seperator" class="disabletextselect"> | </h6>
+                        <div id="nameandlocationwrapper">
+                            <div id="patientname_container">
+                                <h1 id="patientname">Jason Flynn</h1>
+                                <div id="welcome_patientimage" draggable="false"></div>
+
+                                <h1 id="welcometext" class="disabletextselect">Welcome</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="weatherdetailwrapper">
+                        <div id="weather_icon" draggable="false"></div>
+                        <h1 id="weatherdetailsinfo" class="disabletextselect"></h1>
+
+                    </div>
+
+                </div>
+                <div id="globalmenu_background"></div>
+                <div id="globalmenu">
+                </div>
+                <a href="#mydayschedulePage" id="globalmenu_mydaySchedule"></a>
+                <a href="#myCareTeamPage" id="globalmenu_mycareteam"></a>
+                <input id="globalmenu_myclinicalDashboard" type="button" value="" />
+
+                <input id="globalmenu_cafe" type="button" value="" />
+                <input id="globalmenu_myhospital" type="button" value="" />
+                <input id="globalmenu_mypatientsurveys" type="button" value="" />
+
+                <a href="#healthnewsPage" id="globalmenumh_newsfeed">
+                    <h1>News Feed</h1>
+                </a>
+                <a href="#myhospitalvideo_page" id="globalmenumh_video">
+                    <h1>Video</h1>
+                </a>
+                <a href="#hospitalmapPage" id="globalmenumh_hospitalmap">
+                    <h1>Hospital Map</h1>
+                </a>
+
+                <a href="#shoppingmallPage" id="globalmenucg_shoppingmall">
+                    <h1>Near Shopping Mall</h1>
+                </a>
+                <a href="#cafeandgiftshopPage" id="globalmenucg_cafengift">
+                    <h1>Cafe and Gift Shops</h1>
+                </a>
+                <a href="#restaurantPage" id="globalmenucg_restaurant">
+                    <h1>Near Restaurants</h1>
+                </a>
+                <a href="#patientsurveys" id="globalmenus_generalsurveys">
+                    <h1>General Surveys</h1>
+                </a>
+                <a href="#dailysurveys_page" id="globalmenus_dailysurveys">
+                    <h1>Daily Surveys</h1>
+                </a>
+            </div>
+
+
+            <!--Jquery UI References-->
+            <script src="js/jquery.ui.widget.js"></script>
+            <!--Metro bootstrap references-Tile tap feedback-->
+            <link href="css/metro-bootstrap2.css" rel="stylesheet" />
+            <script src="js/metro.min.js"></script>
+
+            <!--Stylesheet reference-->
+
+
+            <link href="css/home.css" rel="stylesheet" />
+            <script src="js/home.js"></script>
+
+        </div>
+
+
+        <!--Cafe and gift shop-->
+        <div id="cafeandgiftshopPage" data-role="page">
+
+            <div id="cafeandgiftHost">
+                <h1>
+                    <span id="maintitle" class="pagetitle disabletextselect">Access Entertainment Services</span>
+
+                </h1>
+                <label id="text_accessEntertainmentServicesinner">Hospital Cafe & Gift shops</label>
+                <!--<a href="#homePage" id="back_button" draggable="false">
+                    <i id="back_button_icon" class="icon-arrow-left-3 fg-darker smaller"></i>
+                </a>-->
+                <a id="cafe_backbutton" data-rel="back"></a>
+                <div id="cafeandgift_container">
+                    <h1 id="cafe_title1" class="disabletextselect">Cafe</h1>
+                    <h1 id="giftshops_title" class="disabletextselect">Gift Shops</h1>
+
+
+
+                    <!--cafeandgiftshop_ListView-->
+                    <div id="cafeandgiftshop_Listview" class="metro" data-role="none" data-bind="foreach: CafeandGiftshop_data">
+
+                        <!-- ko if: type === 'cafe' -->
+
+                        <div id="cafeandgiftshop_frame" class="tile" data-bind="click: $parent.cafeclick" data-click=" transform" data-role="none">
+                            <!-- Displays the "picture" field. -->
+                            <img id="cafeandgiftshop_img"
+                                 data-bind="attr:{src: picture}" draggable="false" />
+                            <div id="cafeandgiftshop_details">
+                                <!-- Displays the "title" field. -->
+                                <h4 id="cafeandgiftshop_title" class="disabletextselect" data-bind="text: title"></h4>
+                                <img id="cafeandgiftshop_phonepic" draggable="false"
+                                     data-bind="attr:{src: phonepic}" />
+                                <h4 id="cafeandgiftshop_phone" class="disabletextselect" data-bind="text: phone"></h4>
+                                <img id="cafeandgiftshop_durationpic" draggable="false"
+                                     data-bind="attr:{src: durationpic}" />
+                                <h4 id="cafeandgiftshop_duration" class="disabletextselect" data-bind="text:durationtextinitial"></h4>
+                                <h4 id="cafeandgiftshop_time" class="disabletextselect" data-bind="text: time"></h4>
+                                <img id="cafeandgiftshop_addresspic" draggable="false"
+                                     data-bind="attr:{src:addresspic}" />
+                                <h4 id="cafeandgiftshop_address" class="disabletextselect" data-bind="text: address"></h4>
+                                <h4 id="cafeandgiftshop_pincode" class="disabletextselect" data-bind="text:pincode"></h4>
+                            </div>
+                        </div>
+
+                        <!-- /ko -->
+
+
+
+                    </div>
+
+                    <!--Gift shops-->
+                    <div id="cafeandgiftshop_Listview2" class="metro" data-role="none" data-bind="foreach: CafeandGiftshop_data">
+
+                        <!-- ko if: type === 'giftshop' -->
+
+                        <div id="cafeandgiftshop_frame2" class="tile" data-bind="click: $parent.cafeclick" data-click=" transform" data-role="none">
+                            <!-- ko if: (hour === '9'||hour==="10"||hour==="11"||hour==="12"||hour==="13"||hour==="14"||hour==="15"||hour==="16"||hour==="17"||hour==="18")&&time==="9:00 am - 6:00 pm" -->
+                            <!-- Displays the "picture" field. -->
+                            <img id="cafeandgiftshop_img2"
+                                 data-bind="attr:{src: picture}" draggable="false" />
+                            <!-- /ko -->
+                            <!-- ko if: (hour === '19'||hour==="20"||hour==="21"||hour==="22"||hour==="23"||hour==="24"||hour==="01"||hour==="02"||hour==="03"||hour==="04"||hour==="05"||hour==="06"||hour==="07"||hour==="08"||hour==="09")&&time==="9:00 am - 6:00 pm" -->
+                            <!-- Displays the "picture" field. -->
+                            <img id="cafeandgiftshop_img2"
+                                 data-bind="attr:{src: pictureclosed}" draggable="false" />
+                            <!-- /ko -->
+                            <div id="cafeandgiftshop_details2">
+                                <!-- Displays the "title" field. -->
+                                <h4 id="cafeandgiftshop_title2" class="disabletextselect" data-bind="text: title"></h4>
+                                <img id="cafeandgiftshop_phonepic2" draggable="false"
+                                     data-bind="attr:{src: phonepic}" />
+                                <h4 id="cafeandgiftshop_phone2" class="disabletextselect" data-bind="text: phone"></h4>
+                                <img id="cafeandgiftshop_durationpic2" draggable="false"
+                                     data-bind="attr:{src: durationpic}" />
+                                <h4 id="cafeandgiftshop_duration2" class="disabletextselect" data-bind="text:duration"></h4>
+                                <h4 id="cafeandgiftshop_time2" class="disabletextselect" data-bind="text: time"></h4>
+                                <img id="cafeandgiftshop_addresspic2" draggable="false"
+                                     data-bind="attr:{src:addresspic}" />
+                                <h4 id="cafeandgiftshop_address2" class="disabletextselect" data-bind="text: address"></h4>
+                                <h4 id="cafeandgiftshop_pincode2" class="disabletextselect" data-bind="text:pincode"></h4>
+
+                            </div>
+                        </div>
+
+                        <!-- /ko -->
+
+                    </div>
+
+
+                </div>
+                <div id="cafeandgiftshop_blocker"></div>
+
+                <!--Cafe Details menu-->
+                <div id="cafeandgiftshop_detailview">
+
+
+                    <div id="cafeandgiftshopframe1_Listview">
+                        <div id="cafeandgiftshopframe1_frame" data-bind="foreach:cafeframe1_Data">
+
+                            <!-- Displays the "picture" field. -->
+                            <img id="cafeandgiftshopframe1_img"
+                                 data-bind="attr:{src: bigpicture}" draggable="false" />
+
+
+                            <!-- Displays the "title" field. -->
+                            <h4 id="cafeandgiftshopframe1_duration" data-bind="text: duration" class="disabletextselect"></h4>
+                            <h4 id="cafeandgiftshopframe1_time" data-bind="text: time" class="disabletextselect"></h4>
+                            <h4 id="cafeandgiftshopframe1_durationtext" data-bind="text: durationtext" class="disabletextselect"></h4>
+                            <h4 id="cafeandgiftshopframe1_title" data-bind="text: title" class="disabletextselect"></h4>
+                            <h4 id="cafeandgiftshopframe1_description" data-bind="text: description" class="disabletextselect"></h4>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div id="cafeandgiftshopframe2_Listview">
+                        <div id="cafeandgiftshopframe1_frame" data-bind="foreach:cafeframe2_Data">
+
+                            <!-- Displays the "picture" field. -->
+                            <img id="cafeandgiftshopframe2_img"
+                                 data-bind="attr:{src: smallpicture}" draggable="false" />
+
+                            <div id="cafeandgiftshopframe2_wrapper">
+                                <!-- Displays the "title" field. -->
+                                <img id="cafeandgiftshopframe2_phonepic"
+                                     data-bind="attr:{src: phonepic}" draggable="false" />
+
+                                <h4 id="cafeandgiftshopframe2_phone" data-bind="text: phone" class="disabletextselect"></h4>
+                                <img id="cafeandgiftshopframe2_durationpic"
+                                     data-bind="attr:{src: durationpic}" draggable="false" />
+
+                                <h4 id="cafeandgiftshopframe2_duration" data-bind="text: duration" class="disabletextselect"></h4>
+                                <h4 id="cafeandgiftshopframe2_time" data-bind="text: time" class="disabletextselect"></h4>
+                                <img id="cafeandgiftshopframe2_addresspic"
+                                     data-bind="attr:{src: addresspic}" draggable="false" />
+
+                                <h4 id="cafeandgiftshopframe2_address" data-bind="text: address" class="disabletextselect"></h4>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 id="cafemenu_title" class="disabletextselect">Cafe Menu</h4>
+                    <div id="cafemenu_icon" draggable="false"></div>
+                    <h4 id="cafemenufood_title" class="disabletextselect">FOOD</h4>
+                    <h4 id="cafemenubeverages_title" class="disabletextselect">BEVERAGES</h4>
+                    <h4 id="cafemenuothers_title" class="disabletextselect">OTHERS</h4>
+
+
+                    <div id="cafeandgiftshopframe3_Listview" data-bind="foreach: windowcafefood_data">
+                        <div id="cafeandgiftshopframe3_frame">
+
+                            <h4 id="cafeandgiftshopframe3_text" data-bind="text: text" class="disabletextselect"></h4>
+                            <h1 id="cafeandgiftshopframe3_cal" data-bind="text:cal" class="disabletextselect"></h1>
+                        </div>
+                    </div>
+
+
+                    <div id="cafeandgiftshopframe4_Listview" data-bind="foreach: windowcafebeverages_data">
+                        <div id="cafeandgiftshopframe4_frame">
+                            <h4 id="cafeandgiftshopframe4_text" data-bind="text: text" class="disabletextselect"></h4>
+                            <h1 id="cafeandgiftshopframe4_cal" data-bind="text:cal" class="disabletextselect"></h1>
+                        </div>
+                    </div>
+
+
+                    <div id="cafeandgiftshopframe5_Listview" data-bind="foreach: windowcafeothers_data">
+                        <div id="cafeandgiftshopframe5_frame">
+                            <h4 id="cafeandgiftshopframe5_text" data-bind="text: text" class="disabletextselect"></h4>
+                        </div>
+                    </div>
+
+                </div>
+                <input type="button" id="scrollcontent_button" data-role="none" />
+                <div id="cafeheaderWrapper">
+                    <div id="cafebigwrapper">
+                        <div id="cafetimeanddatecontainer">
+                            <h1 id="caferesultContainerdate" class="disabletextselect"></h1>
+                            <br /><br />
+                            <h1 id="caferesultContainertime" class="disabletextselect"></h1>
+                            <br />
+                            <h1 id="cafelocationinfo" class="disabletextselect"></h1>
+
+                        </div>
+                        <h6 id="cafeheaderWrapper_seperator" class="disabletextselect"> | </h6>
+                        <div id="cafenameandlocationwrapper">
+                            <div id="cafepatientname_container">
+                                <h1 id="cafepatientname">Jason Flynn</h1>
+                                <div id="cafewelcome_patientimage" draggable="false"></div>
+
+                                <h1 id="cafewelcometext" class="disabletextselect">Welcome</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="cafeweatherdetailwrapper">
+                        <div id="cafeweather_icon" draggable="false"></div>
+                        <h1 id="cafeweatherdetailsinfo" class="disabletextselect"></h1>
+
+                    </div>
+
+                </div>
+                <div id="cafeglobalmenu_background"></div>
+                <div id="cafeglobalmenu">
+                </div>
+                <a href="#mydayschedulePage" id="cafeglobalmenu_mydaySchedule"></a>
+
+                <a href="#myCareTeamPage" id="cafeglobalmenu_mycareteam"></a>
+                <input id="cafeglobalmenu_myclinicalDashboard" type="button" value="" />
+                <a id="cafeglobalmenu_cafe" href="#cafeandgiftshopPage"></a>
+                <input id="cafeglobalmenu_myhospital" type="button" value="" />
+                <input id="cafeglobalmenu_mypatientsurveys" type="button" value="" />
+              
+
+                <a href="#healthnewsPage" id="cafeglobalmenumh_newsfeed">
+                    <h1>News Feed</h1>
+                </a>
+                <a href="#myhospitalvideo_page" id="cafeglobalmenumh_video">
+                    <h1>Video</h1>
+                </a>
+                <a href="#hospitalmapPage" id="cafeglobalmenumh_hospitalmap">
+                    <h1>Hospital Map</h1>
+                </a>
+                <a href="#shoppingmallPage" id="cafeglobalmenucg_shoppingmall">
+                    <h1>Near Shopping Mall</h1>
+                </a>
+                <a href="#cafeandgiftshopPage" id="cafeglobalmenucg_cafengift">
+                    <h1>Cafe and Gift Shops</h1>
+                </a>
+                <a href="#restaurantPage" id="cafeglobalmenucg_restaurant">
+                    <h1>Near Restaurants</h1>
+                </a>
+                <a href="#patientsurveys" id="cafeglobalmenus_generalsurveys">
+                    <h1>General Surveys</h1>
+                </a>
+                <a href="#dailysurveys_page" id="cafeglobalmenus_dailysurveys">
+                    <h1>Daily Surveys</h1>
+                </a>
+            </div>
+
+
+
+            <!--Jquery UI References-->
+            <script src="js/jquery.ui.widget.js"></script>
+            <script src="js/jquery-ui.min.js"></script>
+
+            <!--Metro bootstrap references-Tile tap feedback-->
+            <link href="css/metro-bootstrap2.css" rel="stylesheet" />
+            <script src="js/metro.min.js"></script>
+
+
+            <!--Stylesheet reference-->
+            <link href="css/cafeandgiftshop.css" rel="stylesheet" />
+
+
+            <!--fontIcon reference-->
+            <link href="css/iconFont.css" rel="stylesheet" />
+
+            <script src="js/cafeandgiftshop.js"></script>
+
+
+
+
+        </div>
+
+
+
+        <!--My Care team Page-->
+        <div id="myCareTeamPage" data-role="page">
+            <div id="mycareteamHost">
+                <a data-rel="back" id="myCareTeam_backbutton"></a>
+                <h1 id="mycareteam_title" class="disabletextselect">My Care Team</h1>
+
+                <h1 id="mycareteamDoctors_title" class="disabletextselect">Doctors</h1>
+                <h1 id="mycareteamDoctors_subtitle" class="disabletextselect">Doctors I'm Currently Engaged With & All Other Doctors</h1>
+
+
+                <!--cafeandgiftshop_ListView-->
+                <div id="mycareTeamHeader_Listview" class="metro" data-role="none" data-bind="foreach: myCareTeam_data">
+                    <div id="mycareTeamHeader_frame" class="tile" data-bind="click:$parent.mycareteamframe1_click" data-click=" transform" data-role="none">
+
+                        <img data-bind="attr:{src: picture}"
+                             src="#" id="mycareTeam_frame1_img" draggable="false" />
+                        <h1 id="mycareTeam_frame1_title" class="disabletextselect" data-bind="text:title,style: { color: colorvalue}"></h1>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div id="mycareteam_MyDoctor">
+
+                    <div id="mycareteamMyDoctor_ListView" data-bind="foreach:myCareTeamMyDoctor_data">
+                        <div id="mycareteamMyDoctor_frame" data-bind="click:$parent.myCareTeamMyDoctor_click">
+                            <img id="mycareteamMyDoctor_image" data-bind="attr:{src: picture}" draggable="false" />
+                            <h1 id="mycareteamMyDoctor_title" class="disabletextselect" data-bind="text:title"></h1>
+                            <h1 id="mycareteamMyDoctor_subtitle" class="disabletextselect" data-bind="text:subtitle"></h1>
+                            <h1 id="mycareteamMyDoctor_experience" class="disabletextselect" data-bind="text:experience"></h1>
+                            <h1 id="mycareteamMyDoctor_university" class="disabletextselect" data-bind="text:university"></h1>
+                            <input type="button" id="mycareteamMyDoctor_chat" data-bind="preventBubble: 'click',click:$parent.mycareteamMyDoctor_chatclick" />
+                            <div id="mycareteamMyDoctor_onlinestatus" data-bind="style: { backgroundImage: onlinestatus }" draggable="false"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mycareteamMyDoctors_detailsview" data-bind="foreach:mycareteammydoctor_detailview_data" data-role="none">
+                    <img id="mycareteamMyDoctors_detailsview_pic" draggable="false" data-bind="attr:{src:picture}" data-role="none" />
+                    <h1 id="mycareteamMyDoctors_detailsview_title" class="disabletextselect" data-bind="text:title" data-role="none"></h1>
+                    <h1 id="mycareteamMyDoctors_detailsview_subtitle" class="disabletextselect" data-bind="text:subtitle" data-role="none"></h1>
+                    <h1 id="mycareteamMyDoctors_detailsview_desc" class="disabletextselect" data-bind="text:description" data-role="none"></h1>
+
+                </div>
+
+                <input type="button" id="mycareteam_scrollcontent_button" data-role="none" />
+
+                <div id="mycareteamMyDoctors_popup" data-bind="foreach:mycareteammydoctor_popup_data">
+                    <div id="mycareteamMyDoctors_popupbg"></div>
+                    <img id="mycareteamMyDoctors_popup_pic" draggable="false" data-bind="attr:{src:picture}" data-role="none" />
+                    <h1 id="mycareteamMyDoctors_popup_title" class="disabletextselect" data-bind="text:title" data-role="none"></h1>
+                    <h1 id="mycareteamMyDoctors_popup_subtitle" class="disabletextselect" data-bind="text:subtitle" data-role="none"></h1>
+                    <input type="button" id="mycareteampopup_scrollcontent_button" data-bind="preventBubble: 'click',click:$parent.mycareteamMyDoctor_popupscrollclick" data-role="none" />
+                    <a id="mycareteampopup_chaticon" href="#myCareTeam_ChatPage"></a>
+                    <input type="button" id="mycareteampopup_callicon" data-bind="preventBubble: 'click'" />
+                    <input type="button" id="mycareteampopup_videoicon" data-bind="preventBubble: 'click'" />
+                </div>
+                <!--My Nurses section-->
+                <div id="mycareteam_MyNurses">
+
+                    <div id="mycareteamMyNurses_ListView" data-bind="foreach:myCareTeamMyNurses_data">
+                        <div id="mycareteamMyNurses_frame" data-bind="click:$parent.myCareTeamMyNurses_click">
+                            <img id="mycareteamMyNurses_image" data-bind="attr:{src: picture}" draggable="false" />
+                            <h1 id="mycareteamMyNurses_title" class="disabletextselect" data-bind="text:title"></h1>
+                            <h1 id="mycareteamMyNurses_subtitle" class="disabletextselect" data-bind="text:subtitle"></h1>
+                            <h1 id="mycareteamMyNurses_experience" class="disabletextselect" data-bind="text:experience"></h1>
+                            <h1 id="mycareteamMyNurses_university" class="disabletextselect" data-bind="text:university"></h1>
+                            <input type="button" id="mycareteamMyNurses_chat" data-bind="preventBubble: 'click',click:$parent.mycareteamMyNurses_chatclick" />
+                            <div id="mycareteamMyNurses_onlinestatus" data-bind="style: { backgroundImage: onlinestatus }" draggable="false"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mycareteamMyNurses_detailsview" data-bind="foreach:mycareteammynurses_detailview_data" data-role="none">
+                    <img id="mycareteamMyNurses_detailsview_pic" draggable="false" data-bind="attr:{src:picture}" data-role="none" />
+                    <h1 id="mycareteamMyNurses_detailsview_title" class="disabletextselect" data-bind="text:title" data-role="none"></h1>
+                    <h1 id="mycareteamMyNurses_detailsview_subtitle" class="disabletextselect" data-bind="text:subtitle" data-role="none"></h1>
+                    <h1 id="mycareteamMyNurses_detailsview_desc" class="disabletextselect" data-bind="text:description" data-role="none"></h1>
+                </div>
+                <input type="button" id="mycareteammynurses_scrollcontent_button" data-role="none" />
+
+
+                <div id="mycareteamMyNurses_popup" data-bind="foreach:mycareteammynurses_popup_data">
+                    <div id="mycareteamMyNurses_popupbg"></div>
+                    <img id="mycareteamMyNurses_popup_pic" draggable="false" data-bind="attr:{src:picture}" data-role="none" />
+                    <h1 id="mycareteamMyNurses_popup_title" class="disabletextselect" data-bind="text:title" data-role="none"></h1>
+                    <h1 id="mycareteamMyNurses_popup_subtitle" class="disabletextselect" data-bind="text:subtitle" data-role="none"></h1>
+                    <input type="button" id="mycareteampopupmynurses_scrollcontent_button" data-bind="preventBubble: 'click',click:$parent.mycareteamMyNurses_popupscrollclick" data-role="none" />
+
+                    <a href="#myCareTeam_ChatPage" id="mycareteampopupmynurses_chaticon"></a>
+                    <input type="button" id="mycareteampopupmynurses_callicon" data-bind="preventBubble: 'click'" />
+                    <input type="button" id="mycareteampopupmynurses_videoicon" data-bind="preventBubble: 'click'" />
+                </div>
+
+
+
+            </div>
+            <div id="mycareteam_blocker"></div>
+            <div id="mycareheaderWrapper">
+                <div id="mycarebigwrapper">
+                    <div id="mycaretimeanddatecontainer">
+                        <h1 id="mycareresultContainerdate" class="disabletextselect"></h1>
+                        <br /><br />
+                        <h1 id="mycareresultContainertime" class="disabletextselect"></h1>
+                        <br />
+                        <h1 id="mycarelocationinfo" class="disabletextselect"></h1>
+
+                    </div>
+                    <h6 id="mycareheaderWrapper_seperator" class="disabletextselect"> | </h6>
+                    <div id="mycarenameandlocationwrapper">
+                        <div id="mycarepatientname_container">
+                            <h1 id="mycarepatientname">Jason Flynn</h1>
+                            <div id="mycarewelcome_patientimage" draggable="false"></div>
+
+                            <h1 id="mycarewelcometext" class="disabletextselect">Welcome</h1>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="mycareweatherdetailwrapper">
+                    <div id="mycareweather_icon" draggable="false"></div>
+                    <h1 id="mycareweatherdetailsinfo" class="disabletextselect"></h1>
+
+                </div>
+
+            </div>
+            <div id="mycareglobalmenu_background"></div>
+            <div id="mycareglobalcontainer">
+                <div id="mycareglobalmenu">
+                </div>
+                <a href="#mydayschedulePage" id="mycareglobalmenu_mydaySchedule"></a>
+
+                <a href="#myCareTeamPage" id="mycareglobalmenu_mycareteam"></a>
+                <input id="mycareglobalmenu_myclinicalDashboard" type="button" value="" />
+                
+                <input id="mycareglobalmenu_cafe" type="button" value="" />
+                <input id="mycareglobalmenu_myhospital" type="button" value="" />
+                <input id="mycareglobalmenu_mypatientsurveys" type="button" value="" />
+               
+
+                <a href="#healthnewsPage" id="mycareglobalmenumh_newsfeed">
+                    <h1>News Feed</h1>
+                </a>
+                <a href="#myhospitalvideo_page" id="mycareglobalmenumh_video">
+                    <h1>Video</h1>
+                </a>
+                <a href="#hospitalmapPage" id="mycareglobalmenumh_hospitalmap">
+                    <h1>Hospital Map</h1>
+                </a>
+                <a href="#shoppingmallPage" id="mycareglobalmenucg_shoppingmall">
+                    <h1>Near Shopping Mall</h1>
+                </a>
+                <a href="#cafeandgiftshopPage" id="mycareglobalmenucg_cafengift">
+                    <h1>Cafe and Gift Shops</h1>
+                </a>
+                <a href="#restaurantPage" id="mycareglobalmenucg_restaurant">
+                    <h1>Near Restaurants</h1>
+                </a>
+                <a href="#patientsurveys" id="mycareglobalmenus_generalsurveys">
+                    <h1>General Surveys</h1>
+                </a>
+                <a href="#dailysurveys_page" id="mycareglobalmenus_dailysurveys">
+                    <h1>Daily Surveys</h1>
+                </a>
+            </div>
+
+
+            <!--Jquery UI References-->
+            <script src="js/jquery.ui.widget.js"></script>
+
+
+            <!--Metro bootstrap references-Tile tap feedback-->
+            <script src="js/metro.min.js"></script>
+
+
+            <!--Stylesheet reference-->
+            <link href="css/mycareteam.css" rel="stylesheet" />
+            <script src="js/mycareteam.js"></script>
+
+        </div>
+
+
+        <!--Chat page-->
+        <div id="myCareTeam_ChatPage" data-role="page">
+            <div id="mycareteam_chatpage_maindiv">
+                <div id="mycareteam_chatpage_chats">
+                    <div id="mycareteamChatPage_ListView" data-bind="foreach:myCareTeamMy_ChatPage_data">
+                        <div id="mycareteamChatPage_frame">
+
+
+                            <!-- ko if: BodyAsList[0].Value === 'Patient' -->
+                            <div id="mycareteamChatPage_patientwrapper">
+                                <div id="mycareteamChatPage_patienticon"></div>
+                                <h1 id="mycareteamChatPage_title" class="disabletextselect">George</h1>
+                                <div id="mycareteamchat_textcontainer">
+                                    <h1 id="mycareteamChatPage_subtitle" class="disabletextselect" data-bind="text:BodyAsList[1].Value"></h1>
+
+                                    <h1 id="mycareteamchat_timestamp" data-bind="text:'Sent, '+moment(Sent).format('MMM')+' '+moment(Sent).format('D')+', '+moment(Sent).format('hh')+':'+moment(Sent).format('mmA')"></h1>
+
+                                </div>
+                                <div id="mycareteamchat_patientarrow"></div>
+
+
+                            </div>
+                            <!-- /ko -->
+                            <!-- ko if: BodyAsList[0].Value === 'Doctor' -->
+                            <div id="mycareteamChatPage_doctorwrapper">
+                                <div id="mycareteamChatPage_doctoricon" class="doctoricon"></div>
+
+                                <div id="mycareteamchat_doctorarrow"></div>
+
+
+                                <h1 id="mycareteamChatPage_doctorsubtitle" class="disabletextselect" data-bind="text:BodyAsList[1].Value"></h1><br />
+                                <h1 id="mycareteamchat_doctortimestamp" data-bind="text:'Sent, '+moment(Sent).format('MMM')+' '+moment(Sent).format('D')+', '+moment(Sent).format('hh')+':'+moment(Sent).format('mmA')"></h1>
+                                <h1 id="mycareteamChatPage_doctortitle" class="doctortitle disabletextselect"></h1><br />
+
+                            </div>
+                            <!-- /ko -->
+                        </div>
+
+                    </div>
+
+                </div>
+                <input type="button" id="mycareteamchat_button" value="Send" data-bind="click:mycareteamchat_buttonclick" />
+                <input type="text" id="mycateteamchat_input">
+                <div id="mycareteamChat_picture"></div>
+                <h1 id="mycareteamChat_title"></h1>
+                <h1 id="mycareteamChat_subtitle"></h1>
+                <div id="mycareteamChat_onlinestatus"></div>
+                <div id="mycareteamChat_icon"></div>
+
+                <a data-rel="back" id="mycareteamChat_backbtn"></a>
+                <div id="mycarechatheaderWrapper">
+                    <div id="mycarechatbigwrapper">
+                        <div id="mycarechattimeanddatecontainer">
+                            <h1 id="mycarechatresultContainerdate" class="disabletextselect"></h1>
+                            <br /><br />
+                            <h1 id="mycarechatresultContainertime" class="disabletextselect"></h1>
+                            <br />
+                            <h1 id="mycarechatlocationinfo" class="disabletextselect"></h1>
+
+                        </div>
+                        <h6 id="mycarechatheaderWrapper_seperator" class="disabletextselect"> | </h6>
+                        <div id="mycarechatnameandlocationwrapper">
+                            <div id="mycarechatpatientname_container">
+                                <h1 id="mycarechatpatientname">Jason Flynn</h1>
+                                <div id="mycarechatwelcome_patientimage" draggable="false"></div>
+
+                                <h1 id="mycarechatwelcometext" class="disabletextselect">Welcome</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="mycarechatweatherdetailwrapper">
+                        <div id="mycarechatweather_icon" draggable="false"></div>
+                        <h1 id="mycarechatweatherdetailsinfo" class="disabletextselect"></h1>
+
+                    </div>
+
+                </div>
+                <div id="mycarechatglobalmenu_background"></div>
+
+                <div id="mycarechatglobalmenu">
+                </div>
+                <a href="#mydayschedulePage" id="mycarechatglobalmenu_mydaySchedule"></a>
+
+                <a href="#myCareTeamPage" id="mycarechatglobalmenu_mycareteam"></a>
+                <input id="mycarechatglobalmenu_myclinicalDashboard" type="button" value="" />
+                
+                <input id="mycarechatglobalmenu_cafe" type="button" value="" />
+                <input id="mycarechatglobalmenu_myhospital" type="button" value="" />
+                <input id="mycarechatglobalmenu_mypatientsurveys" type="button" value="" />
+             
+
+                <a href="#healthnewsPage" id="mycarechatglobalmenumh_newsfeed">
+                    <h1>News Feed</h1>
+                </a>
+                <a href="#myhospitalvideo_page" id="mycarechatglobalmenumh_video">
+                    <h1>Video</h1>
+                </a>
+                <a href="#hospitalmapPage" id="mycarechatglobalmenumh_hospitalmap">
+                    <h1>Hospital Map</h1>
+                </a>
+                <a href="#shoppingmallPage" id="mycarechatglobalmenucg_shoppingmall">
+                    <h1>Near Shopping Mall</h1>
+                </a>
+                <a href="#cafeandgiftshopPage" id="mycarechatglobalmenucg_cafengift">
+                    <h1>Cafe and Gift Shops</h1>
+                </a>
+                <a href="#restaurantPage" id="mycarechatglobalmenucg_restaurant">
+                    <h1>Near Restaurants</h1>
+                </a>
+                <a href="#patientsurveys" id="mycarechatglobalmenus_generalsurveys">
+                    <h1>General Surveys</h1>
+                </a>
+                <a href="#dailysurveys_page" id="mycarechatglobalmenus_dailysurveys">
+                    <h1>Daily Surveys</h1>
+                </a>
+            </div>
+
+            <link href="css/mycareteamchatpage.css" rel="stylesheet" />
+            <script src="js/moment.min.js"></script>
+            <script src="js/mycareteamchatpage.js"></script>
+
+        </div>
+
+        <!--My Day schedule page-->
+        <div id="mydayschedulePage" data-role="page">
+            <div id="myday_maindiv">
+                <h1 id="my_dayscheduletitle" class="disabletextselect">My Day Schedule</h1>
+                <a id="myday_medicationleftarrow" data-bind="click: goToPrev"></a>
+
+                <h1 id="myday_medicationday" class="disabletextselect">Day <span data-bind="text:mydaycomplete_Data()[0][index()][0].medication[0].day"></span></h1>
+
+                <a id="myday_medicationrightarrow" data-bind="click: goToNext"></a>
+
+                <div id="myday_innerdiv">
+                    <div id="myday_videos">
+                        <h1 id="my_dayschedulevideos">Videos</h1>
+                        <div id="mydayframe1_listview" data-bind="foreach: mydayvideo_data">
+                            <a href="#mydayschedulevideosPage">
+                                <div onmousedown="return false" id="mydayframe1_frame" data-bind="event: { mouseover: $parent.mydayschedulevideos_click,touchend: $parent.mydayschedulevideos_click}">
+                                    <img id="mydayframe1_img" data-bind="attr:{src:videoimage}" draggable="false" />
+                                    <div id="mydayframe1_playicon"></div>
+                                    <div id="mydayframe1_camicon" draggable="false"></div>
+                                    <h1 id="mydayframe1_title" class="text" data-bind="text: videotitle"></h1>
+                                    <h1 id="mydayframe1_camtime" class="disabletextselect" data-bind="text: videoduration"></h1>
+                                    <h1 id="mydayframe1_watchstatus" class="disabletextselect" data-bind="text: videostatus"></h1>
+                                    <div id="mydayframe1_statusicon" draggable="false"></div>
+
+                                </div>
+                            </a>
+
+                        </div>
+
+
+                    </div>
+                    <h1 id="myday_medicationtitle" class="disabletextselect">My Medication</h1>
+
+                    <div id="myday_frame2details">
+                        <div id="mydayframe2details_frame" data-bind="foreach: mydaymedication_datadetails">
+
+                            <!-- ko if: status === 'normal' -->
+                            <img id="mydayframe2details_picture" data-bind="attr:{src:picture}" draggable="false" />
+                            <!-- /ko -->
+                            <!-- ko if: status === 'active' -->
+                            <img id="mydayframe2details_picture" data-bind="attr:{src:activepicture}" draggable="false" />
+                            <!-- /ko -->
+                            <!-- ko if: status === 'alarm' -->
+                            <img id="mydayframe2details_picture" data-bind="attr:{src:alarmpicture}" draggable="false" />
+                            <!-- /ko -->
+                            <h1 id="mydayframe2details_title" data-bind="text:title"></h1>
+                            <h1 id="mydayframe2details_title2">Supplement Facts</h1>
+                            <h1 id="mydayframe2details_title3">Serving Size :</h1>
+                            <h1 id="mydayframe2details_title4" data-bind="text:servingsize"></h1>
+                            <h1 id="mydayframe2details_title5">Serving Per Container :</h1>
+                            <h1 id="mydayframe2details_title6" data-bind="text:servingpercontainer"></h1>
+                            <div id="mydayframe2details_sep1"></div>
+                            <h1 id="mydayframe2details_title7">Each Serving Contains</h1>
+                            <h1 id="mydayframe2details_title8">Amount per serving</h1>
+                            <h1 id="mydayframe2details_title9">% Daily Value</h1>
+                            <div id="mydayframe2details_sep2"></div>
+                            <h1 id="mydayframe2details_title10" data-bind="text:eachservingcontains"></h1>
+                            <h1 id="mydayframe2details_title11" data-bind="text:amountperserving"></h1>
+                            <h1 id="mydayframe2details_title12" data-bind="text:percentdailyvalue"></h1>
+                            <div id="mydayframe2details_sep3"></div>
+                            <h1 id="mydayframe2details_title13">*Daily Value not Established</h1>
+                            <h1 id="mydayframe2details_title14">INGREDIENTS:</h1>
+                            <h1 id="mydayframe2details_title15" data-bind="text:ingredients"></h1>
+
+                        </div>
+
+                    </div>
+                    <div id="mydayframe2_animateclick"></div>
+                    <div id="myday_remainingframe">
+                        <div id="myday_frame2">
+                            <div id="mydayframe2_listview" data-bind="foreach:mydaycomplete_Data()[0][index()]">
+                                <div data-bind="foreach:medication">
+                                    <div id="mydayframe2_frame" data-bind="click: $parents[1].mydaymedicationclick">
+                                        <div id="mydayframe2_alarmindicator"></div>
+                                        <!-- ko if: status === 'normal' -->
+                                        <img id="mydayframe2_img" data-bind="attr:{src:picture}" draggable="false" />
+                                        <!-- /ko -->
+                                        <!-- ko if: status === 'active' -->
+                                        <img id="mydayframe2_img" data-bind="attr:{src:activepicture}" draggable="false" />
+                                        <!-- /ko -->
+                                        <!-- ko if: status === 'alarm' -->
+                                        <img id="mydayframe2_img" data-bind="attr:{src:alarmpicture}" draggable="false" />
+                                        <!-- /ko -->
+                                        <h1 id="mydayframe2_title" data-bind="text: title" class="disabletextselect"></h1>
+                                        <img id="mydayframe2_tabicon" data-bind="attr:{src:icon1}" draggable="false" />
+                                        <h1 id="mydayframe2_tabvalue" data-bind="text: icon1text" class="disabletextselect"></h1>
+                                        <img id="mydayframe2_foodicon" data-bind="attr:{src:icon2}" draggable="false" />
+                                        <h1 id="mydayframe2_foodtext" data-bind="text: icon2text" class="disabletextselect"></h1>
+                                        <img id="mydayframe2_durationicon" data-bind="attr:{src:icon3}" draggable="false" />
+                                        <h1 id="mydayframe2_durationtext" data-bind="text: icon3text" class="disabletextselect"></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="mydayframe3">
+                            <h1 id="mydayframe3_title" class="disabletextselect">Activity</h1>
+                            <div id="mydayframe3_seg2">
+                                <div id="mydayframe3_seg2frame" data-bind="foreach:mydaycomplete_Data()[0][index()]">
+                                    <div data-bind="foreach:activity">
+                                        <!-- ko if: task === 'task2' -->
+                                        <h1 id="mydayframe3_seg2daytext" class="disabletextselect">Day</h1>
+                                        <h1 id="mydayframe3_seg2dayvalue" class="disabletextselect" data-bind="text:title1"></h1>
+                                        <h1 id="mydayframe3_seg2title" class="disabletextselect" data-bind="text:title2"></h1>
+                                        <h1 id="mydayframe3_seg2desc" class="disabletextselect" data-bind="text:title3"></h1>
+                                        <!-- /ko -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="mydayseg3_loaderwrapper" data-role="none">
+                                <input id="mydayseg3_loader" data-role="none" type="text" value="0" class="dial" data-width="150"
+                                       data-fgcolor="#685a7a"
+                                       data-bgcolor="#685a7a"
+                                       data-skin="tron"
+                                       data-thickness=".2" />
+                                <h1 id="mydayseg3_percent">%</h1>
+                                <h1 id="mydayseg3_complete">Complete</h1>
+                                <div id="mydayseg3_loaderwrappercover"></div>
+                            </div>
+
+
+                            <div id="mydayseg3_task1">
+                                <div id="mydayseg3_task1frame" data-bind="foreach:mydaycomplete_Data()[0][index()]">
+                                    <div data-bind="foreach:activity">
+                                        <!-- ko if: task === 'task3' -->
+                                        <img id="mydayseg3_task1picture" data-bind="attr:{src:picture}">
+                                        <h1 id="mydayseg3_task1title1" class="disabletextselect" data-bind="text:title1"></h1>
+                                        <h1 id="mydayseg3_task1title2" class="disabletextselect" data-bind="text:title2"></h1>
+                                        <h1 id="mydayseg3_task1title3" class="disabletextselect" data-bind="text:title3"></h1>
+                                        <!-- /ko -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="mydayseg3_task2">
+                                <div id="mydayseg3_task2frame" data-bind="foreach:mydaycomplete_Data()[0][index()]">
+                                    <div data-bind="foreach:activity">
+                                        <!-- ko if: task === 'task4' -->
+                                        <img id="mydayseg3_task2picture" data-bind="attr:{src:picture}" />
+                                        <h1 id="mydayseg3_task2title1" class="disabletextselect" data-bind="text:title1"></h1>
+                                        <h1 id="mydayseg3_task2title2" class="disabletextselect" data-bind="text:title2"></h1>
+                                        <!-- /ko -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="mydayseg3_task3">
+                                <div id="mydayseg3_task3frame" data-bind="foreach:mydaycomplete_Data()[0][index()]">
+                                    <div data-bind="foreach:activity">
+                                        <!-- ko if: task === 'task5' -->
+                                        <img id="mydayseg3_task3picture" data-bind="attr:{src:picture}" />
+                                        <h1 id="mydayseg3_task3title1" class="disabletextselect" data-bind="text:title1"></h1>
+                                        <!-- /ko -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="mydayseg3_task4">
+                                <div id="mydayseg3_task4frame" data-bind="foreach:mydaycomplete_Data()[0][index()]">
+                                    <div data-bind="foreach:activity">
+                                        <!-- ko if: task === 'task6' -->
+                                        <img id="mydayseg3_task4picture" data-bind="attr:{src:picture}" />
+                                        <h1 id="mydayseg3_task4title1" class="disabletextselect" data-bind="text:title1"></h1>
+                                        <!-- /ko -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="mydayframe3_seg1" data-bind="foreach:mydaycomplete_Data()[0][index()]">
+                                <div id="mydayframe3_innerframe" data-bind="foreach:activity">
+                                    <!-- ko if: task === 'task1' -->
+                                    <div id="mydayframe3_seg1_img1" draggable="false"></div>
+                                    <h1 id="mydayframe3_seg1_text1" class="disabletextselect" data-bind="text:title1"></h1>
+                                    <h1 id="mydayframe3_seg1_text2" class="disabletextselect" data-bind="text:title2"></h1>
+                                    <h1 id="mydayframe3_seg1_text3" class="disabletextselect" data-bind="text:title3"></h1>
+                                    <!-- /ko -->
+                                </div>
+                            </div>
+                            <div id="mydayframe3_seg1_check"></div>
+                            <div id="mydayframe3_task1_check"></div>
+                            <div id="mydayframe3_task2_check"></div>
+
+                        </div>
+
+                        <div id="mydayframe4">
+                            <h1 id="mydayframe4_title1" class="disabletextselect">How do you feel?</h1>
+                            <h1 id="mydayframe4_titlesep" class="disabletextselect"> | </h1>
+                            <div id="mydayframe4_medicationleftarrow" draggable="false"></div>
+                            <h1 id="mydayframe4_medicationday" class="disabletextselect">Survey 1</h1>
+                            <div id="mydayframe4_medicationrightarrow" draggable="false"></div>
+
+                            <div id="mydayframe4seg2" data-bind="foreach:mydaycomplete_Data()[0][index()]">
+                                <div data-bind="foreach:survey">
+                                    <!-- ko if: survey === 'survey2' -->
+                                    <h1 id="mydayframe4seg2_title1" class="disabletextselect" data-bind="text:title1"></h1>
+                                    <h1 id="mydayframe4seg2_title2" class="disabletextselect" data-bind="text:title2"></h1>
+                                    <h1 id="mydayframe4seg2_title3" class="disabletextselect" data-bind="text:title3"></h1>
+                                    <!-- /ko -->
+                                </div>
+                            </div>
+                            <div id="mydayframe4seg2_nopain">
+                                <h1 id="mydayframe4seg2_stattitle1" class="disabletextselect">No Pain</h1>
+
+                            </div>
+                            <div id="mydayframe4seg2_moderate">
+                                <h1 id="mydayframe4seg2_stattitle2" class="disabletextselect">Moderate</h1>
+                            </div>
+                            <div id="mydayframe4seg2_severepain">
+                                <h1 id="mydayframe4seg2_stattitle3" class="disabletextselect">Severe Pain</h1>
+
+                            </div>
+                            <div id="mydayframe4_seg1" data-bind="foreach:mydaycomplete_Data()[0][index()]">
+                                <div data-bind="foreach:survey">
+                                    <!-- ko if: survey === 'survey1' -->
+                                    <h1 id="mydayframe4_seg1title1" class="disabletextselect" data-bind="text:title1"></h1>
+                                    <h1 id="mydayframe4_seg1title2" class="disabletextselect" data-bind="text:title2"></h1>
+                                    <!-- /ko -->
+                                </div>
+                            </div>
+                        </div>
+                        <div id="myday_blocker"></div>
+                    </div>
+
+                </div>
+                <a data-rel="back" id="myday_backbutton"></a>
+                <div id="mydayheaderWrapper">
+                    <div id="mydaybigwrapper">
+                        <div id="mydaytimeanddatecontainer">
+                            <h1 id="mydayresultContainerdate" class="disabletextselect"></h1>
+                            <br /><br />
+                            <h1 id="mydayresultContainertime" class="disabletextselect"></h1>
+                            <br />
+                            <h1 id="mydaylocationinfo" class="disabletextselect"></h1>
+
+                        </div>
+                        <h6 id="mydayheaderWrapper_seperator" class="disabletextselect"> | </h6>
+                        <div id="mydaynameandlocationwrapper">
+                            <div id="mydaypatientname_container">
+                                <h1 id="mydaypatientname">Jason Flynn</h1>
+                                <div id="mydaywelcome_patientimage" draggable="false"></div>
+
+                                <h1 id="mydaywelcometext" class="disabletextselect">Welcome</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="mydayweatherdetailwrapper">
+                        <div id="mydayweather_icon" draggable="false"></div>
+                        <h1 id="mydayweatherdetailsinfo" class="disabletextselect"></h1>
+
+                    </div>
+
+                </div>
+
+                <div id="mydayglobalmenu_background"></div>
+                <div id="mydayglobalmenu">
+                </div>
+                <a href="#mydayschedulePage" id="mydayglobalmenu_mydaySchedule"></a>
+
+                <a href="#myCareTeamPage" id="mydayglobalmenu_mycareteam"></a>
+                <input id="mydayglobalmenu_myclinicalDashboard" type="button" value="" />
+               
+                <input id="mydayglobalmenu_cafe" type="button" value="" />
+                <input id="mydayglobalmenu_myhospital" type="button" value="" />
+                <input id="mydayglobalmenu_mypatientsurveys" type="button" value="" />
+               
+
+                <a href="#healthnewsPage" id="mydayglobalmenumh_newsfeed">
+                    <h1>News Feed</h1>
+                </a>
+                <a href="#myhospitalvideo_page" id="mydayglobalmenumh_video">
+                    <h1>Video</h1>
+                </a>
+                <a href="#hospitalmapPage" id="mydayglobalmenumh_hospitalmap">
+                    <h1>Hospital Map</h1>
+                </a>
+                <a href="#shoppingmallPage" id="mydayglobalmenucg_shoppingmall">
+                    <h1>Near Shopping Mall</h1>
+                </a>
+                <a href="#cafeandgiftshopPage" id="mydayglobalmenucg_cafengift">
+                    <h1>Cafe and Gift Shops</h1>
+                </a>
+                <a href="#restaurantPage" id="mydayglobalmenucg_restaurant">
+                    <h1>Near Restaurants</h1>
+                </a>
+                <a href="#patientsurveys" id="mydayglobalmenus_generalsurveys">
+                    <h1>General Surveys</h1>
+                </a>
+                <a href="#dailysurveys_page" id="mydayglobalmenus_dailysurveys">
+                    <h1>Daily Surveys</h1>
+                </a>
+            </div>
+            <!-- reference-->
+            <link href="css/mydayschedule.css" rel="stylesheet" />
+
+            <script src="js/mydayschedule.js"></script>
+        </div>
+
+
+        <!--My Day schedule videos page-->
+        <div id="mydayschedulevideosPage" data-role="page">
+
+            <iframe id="ytplayer" class="ytplayerclass" type="text/html" width="1366" height="768"
+                    frameborder="0" allowfullscreen></iframe>
+            <a id="mydayvideos_backbutton" data-rel="back"></a>
+            <script src="js/mydayschedulevideo.js"></script>
+        </div>
+
+        <!--Hospital Map page-->
+        <div id="hospitalmapPage" data-role="page">
+            <div id="hospitalmap">
+            </div>
+
+            <div id="hospitalmapheaderWrapper">
+                <div id="hospitalmapbigwrapper">
+                    <div id="hospitalmaptimeanddatecontainer">
+                        <h1 id="hospitalmapresultContainerdate" class="disabletextselect"></h1>
+                        <br /><br />
+                        <h1 id="hospitalmapresultContainertime" class="disabletextselect"></h1>
+                        <br />
+                        <h1 id="hospitalmaplocationinfo" class="disabletextselect"></h1>
+
+                    </div>
+                    <h6 id="hospitalmapheaderWrapper_seperator" class="disabletextselect"> | </h6>
+                    <div id="hospitalmapnameandlocationwrapper">
+                        <div id="hospitalmappatientname_container">
+                            <h1 id="hospitalmappatientname">Jason Flynn</h1>
+                            <div id="hospitalmapwelcome_patientimage" draggable="false"></div>
+
+                            <h1 id="hospitalmapwelcometext" class="disabletextselect">Welcome</h1>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="hospitalmapweatherdetailwrapper">
+                    <div id="hospitalmapweather_icon" draggable="false"></div>
+                    <h1 id="hospitalmapweatherdetailsinfo" class="disabletextselect"></h1>
+
+                </div>
+
+            </div>
+            <div id="hospitalmapglobalmenu_background"></div>
+            <div id="hospitalmapglobalmenu">
+            </div>
+            <a href="#mydayschedulePage" id="hospitalmapglobalmenu_mydaySchedule"></a>
+            <a href="#myCareTeamPage" id="hospitalmapglobalmenu_mycareteam"></a>
+            <input id="hospitalmapglobalmenu_myclinicalDashboard" type="button" value="" />
+           
+            <input id="hospitalmapglobalmenu_cafe" type="button" value="" />
+            <input id="hospitalmapglobalmenu_myhospital" type="button" value="" />
+            <input id="hospitalmapglobalmenu_mypatientsurveys" type="button" value="" />
+
+            <a href="#healthnewsPage" id="hospitalmapglobalmenumh_newsfeed">
+                <h1>News Feed</h1>
+            </a>
+            <a href="#myhospitalvideo_page" id="hospitalmapglobalmenumh_video">
+                <h1>Video</h1>
+            </a>
+            <a href="#hospitalmapPage" id="hospitalmapglobalmenumh_hospitalmap">
+                <h1>Hospital Map</h1>
+            </a>
+            <a href="#shoppingmallPage" id="hospitalmapglobalmenucg_shoppingmall">
+                <h1>Near Shopping Mall</h1>
+            </a>
+            <a href="#cafeandgiftshopPage" id="hospitalmapglobalmenucg_cafengift">
+                <h1>Cafe and Gift Shops</h1>
+            </a>
+            <a href="#restaurantPage" id="hospitalmapglobalmenucg_restaurant">
+                <h1>Near Restaurants</h1>
+            </a>
+            <a href="#patientsurveys" id="hospitalmapglobalmenus_generalsurveys">
+                <h1>General Surveys</h1>
+            </a>
+            <a href="#dailysurveys_page" id="hospitalmapglobalmenus_dailysurveys">
+                <h1>Daily Surveys</h1>
+            </a>
+            <a data-rel="back" id="hospitalmap_backbutton"></a>
+            <link href="css/hospitalmap.css" rel="stylesheet" />
+            <script src="js/hospitalmap.js"></script>
+        </div>
+
+        <!--Restaurant Page-->
+        <div id="restaurantPage" data-role="page">
+
+            <div id="restaurant_maindiv">
+                <div id="restaurant_inner">
+                    <div id="restaurant_pic">
+                        <h1 class="disabletextselect">Around Us</h1>
+                        <h2 class="disabletextselect">Restaurant</h2>
+                        <div id="restaurant_pic_line"></div>
+                    </div>
+                    <div id="restaurant_details" data-bind="foreach:Restaurantdetail_data">
+
+                        <h1 class="disabletextselect" data-bind="text:title"></h1>
+
+                        <input type="button" id="restaurantdetails_close" data-bind="click:$parent.restaurantdetails_close">
+                        <div id="mapArea" data-bind="style: { backgroundImage: map}">
+
+                        </div>
+                        <h2 class="disabletextselect" data-bind="text:address"></h2>
+                        <h3 class="disabletextselect">Phone Number</h3>
+                        <h4 class="disabletextselect" data-bind="text:phone"></h4>
+                        <h5 class="disabletextselect">Business Website</h5>
+                        <a href="" id="restaurant_website" data-bind="attr: { href: link},text:website"></a>
+
+                        <p class="disabletextselect" data-bind="text:displaytime"></p>
+
+                        <!-- ko if: systemtime > closetime && systemtime < opentime -->
+                        <h1 id="restaurant_closedtext" class="disabletextselect">Closed Now</h1>
+                        <!-- /ko -->
+                        <!-- ko if: systemtime < closetime && systemtime > opentime -->
+                        <h1 id="restaurant_closedtext" class="disabletextselect">Open Now</h1>
+                        <!-- /ko -->
+
+
+
+                    </div>
+                    <div id="restaurant_content">
+                        <div id="restaurant_listview" data-role="none" data-bind="foreach:Restaurant_data">
+                            <div id="restaurant_frame" data-bind="click: $parent.restaurantclick">
+                                <div id="restaurant_picture" draggable="false" data-bind="style: { backgroundImage: picture}"></div>
+                                <h1 id="restaurant_title" class="disabletextselect" data-bind="text:title"></h1>
+                                <div id="restaurant_star1" draggable="false" data-bind="style: { backgroundImage: star1}"></div>
+                                <div id="restaurant_star2" draggable="false" data-bind="style: { backgroundImage: star2}"></div>
+                                <div id="restaurant_star3" draggable="false" data-bind="style: { backgroundImage: star3}"></div>
+                                <div id="restaurant_star4" draggable="false" data-bind="style: { backgroundImage: star4}"></div>
+                                <div id="restaurant_star5" draggable="false" data-bind="style: { backgroundImage: star5}"></div>
+                                <div id="restaurant_mileicon" data-bind="style: { backgroundImage: milesicon}"></div>
+                                <h1 id="restaurant_milevalue" class="disabletextselect" data-bind="text:milesvalue"></h1>
+                                <div id="restaurant_locationicon" draggable="false" data-bind="style: { backgroundImage: locationicon}"></div>
+                                <h1 id="restaurant_locationvalue" data-bind="text:locationvalue" class="disabletextselect"></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="restaurantheaderWrapper">
+                <div id="restaurantbigwrapper">
+                    <div id="restauranttimeanddatecontainer">
+                        <h1 id="restaurantresultContainerdate" class="disabletextselect"></h1>
+                        <br /><br />
+                        <h1 id="restaurantresultContainertime" class="disabletextselect"></h1>
+                        <br />
+                        <h1 id="restaurantlocationinfo" class="disabletextselect"></h1>
+
+                    </div>
+                    <h6 id="restaurantheaderWrapper_seperator" class="disabletextselect"> | </h6>
+                    <div id="restaurantnameandlocationwrapper">
+                        <div id="restaurantpatientname_container">
+                            <h1 id="restaurantpatientname">Jason Flynn</h1>
+                            <div id="restaurantwelcome_patientimage" draggable="false"></div>
+
+                            <h1 id="restaurantwelcometext" class="disabletextselect">Welcome</h1>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="restaurantweatherdetailwrapper">
+                    <div id="restaurantweather_icon" draggable="false"></div>
+                    <h1 id="restaurantweatherdetailsinfo" class="disabletextselect"></h1>
+
+                </div>
+
+            </div>
+
+            <div id="restaurantglobalmenu_background"></div>
+            <div id="restaurantglobalmenu">
+            </div>
+            <a href="#mydayschedulePage" id="restaurantglobalmenu_mydaySchedule"></a>
+            <a href="#myCareTeamPage" id="restaurantglobalmenu_mycareteam"></a>
+            <input id="restaurantglobalmenu_myclinicalDashboard" type="button" value="" />
+            
+            <input id="restaurantglobalmenu_cafe" type="button" value="" />
+            <input id="restaurantglobalmenu_myhospital" type="button" value="" />
+            <input id="restaurantglobalmenu_mypatientsurveys" type="button" value="" />
+            
+
+
+            <a href="#healthnewsPage" id="restaurantglobalmenumh_newsfeed">
+                <h1>News Feed</h1>
+            </a>
+            <a href="#myhospitalvideo_page" id="restaurantglobalmenumh_video">
+                <h1>Video</h1>
+            </a>
+            <a href="#hospitalmapPage" id="restaurantglobalmenumh_hospitalmap">
+                <h1>Hospital Map</h1>
+            </a>
+            <a href="#shoppingmallPage" id="restaurantglobalmenucg_shoppingmall">
+                <h1>Near Shopping Mall</h1>
+            </a>
+            <a href="#cafeandgiftshopPage" id="restaurantglobalmenucg_cafengift">
+                <h1>Cafe and Gift Shops</h1>
+            </a>
+            <a href="#restaurantPage" id="restaurantglobalmenucg_restaurant">
+                <h1>Near Restaurants</h1>
+            </a>
+            <a href="#patientsurveys" id="restaurantglobalmenus_generalsurveys">
+                <h1>General Surveys</h1>
+            </a>
+            <a href="#dailysurveys_page" id="restaurantglobalmenus_dailysurveys">
+                <h1>Daily Surveys</h1>
+            </a>
+            <a data-rel="back" id="restaurant_backbutton"></a>
+
+            <link href="css/restaurant.css" rel="stylesheet" />
+            <script src="js/restaurant.js"></script>
+        </div>
+
+
+        <!--shoppingmall Page-->
+        <div id="shoppingmallPage" data-role="page">
+
+            <div id="shoppingmall_maindiv">
+                <div id="shoppingmall_inner">
+                    <div id="shoppingmall_pic">
+                        <h1 class="disabletextselect">Around Us</h1>
+                        <h2 class="disabletextselect">Shopping mall</h2>
+                        <div id="shoppingmall_pic_line"></div>
+                    </div>
+                    <div id="shoppingmall_details" data-bind="foreach:shoppingmalldetail_data">
+
+                        <h1 class="disabletextselect" data-bind="text:title"></h1>
+
+                        <input type="button" id="shoppingmalldetails_close" data-bind="click:$parent.shoppingmalldetails_close">
+                        <div id="mapArea" data-bind="style: { backgroundImage: map}">
+
+                        </div>
+                        <h2 class="disabletextselect" data-bind="text:address"></h2>
+                        <h3 class="disabletextselect">Phone Number</h3>
+                        <h4 class="disabletextselect" data-bind="text:phone"></h4>
+                        <br />
+                        <h5 class="disabletextselect">Business Website</h5>
+                        <a id="shoppingmall_website" data-bind="attr: { href: link},text:website"></a>
+                        <p class="disabletextselect" data-bind="text:displaytime"></p>
+
+                        <!-- ko if: systemtime > closetime && systemtime < opentime -->
+                        <h1 id="shoppingmall_closedtext" class="disabletextselect">Closed Now</h1>
+                        <!-- /ko -->
+                        <!-- ko if: systemtime < closetime && systemtime > opentime -->
+                        <h1 id="shoppingmall_closedtext" class="disabletextselect">Open Now</h1>
+
+                        <!-- /ko -->
+
+
+
+                    </div>
+                    <div id="shoppingmall_content">
+
+                        <div id="shoppingmall_listview" data-role="none" data-bind="foreach:shoppingmall_data">
+                            <div id="shoppingmall_frame" data-bind="click: $parent.shoppingmallclick">
+                                <div id="shoppingmall_picture" draggable="false" data-bind="style: { backgroundImage: picture}"></div>
+                                <h1 id="shoppingmall_title" class="disabletextselect" data-bind="text:title"></h1>
+                                <div id="starwrapper">
+                                    <div id="shoppingmall_star1" draggable="false" data-bind="style: { backgroundImage: star1}"></div>
+                                    <div id="shoppingmall_star2" draggable="false" data-bind="style: { backgroundImage: star2}"></div>
+                                    <div id="shoppingmall_star3" draggable="false" data-bind="style: { backgroundImage: star3}"></div>
+                                    <div id="shoppingmall_star4" draggable="false" data-bind="style: { backgroundImage: star4}"></div>
+                                    <div id="shoppingmall_star5" draggable="false" data-bind="style: { backgroundImage: star5}"></div>
+                                </div>
+                                <div id="shoppingmall_mileicon" data-bind="style: { backgroundImage: milesicon}"></div>
+                                <h1 id="shoppingmall_milevalue" class="disabletextselect" data-bind="text:milesvalue"></h1>
+                                <div id="shoppingmall_locationicon" draggable="false" data-bind="style: { backgroundImage: locationicon}"></div>
+                                <h1 id="shoppingmall_locationvalue" data-bind="text:locationvalue" class="disabletextselect"></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="shoppingmallheaderWrapper">
+                <div id="shoppingmallbigwrapper">
+                    <div id="shoppingmalltimeanddatecontainer">
+                        <h1 id="shoppingmallresultContainerdate" class="disabletextselect"></h1>
+                        <br /><br />
+                        <h1 id="shoppingmallresultContainertime" class="disabletextselect"></h1>
+                        <br />
+                        <h1 id="shoppingmalllocationinfo" class="disabletextselect"></h1>
+
+                    </div>
+                    <h6 id="shoppingmallheaderWrapper_seperator" class="disabletextselect"> | </h6>
+                    <div id="shoppingmallnameandlocationwrapper">
+                        <div id="shoppingmallpatientname_container">
+                            <h1 id="shoppingmallpatientname">Jason Flynn</h1>
+                            <div id="shoppingmallwelcome_patientimage" draggable="false"></div>
+
+                            <h1 id="shoppingmallwelcometext" class="disabletextselect">Welcome</h1>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="shoppingmallweatherdetailwrapper">
+                    <div id="shoppingmallweather_icon" draggable="false"></div>
+                    <h1 id="shoppingmallweatherdetailsinfo" class="disabletextselect"></h1>
+
+                </div>
+
+            </div>
+
+
+            <div id="shoppingmallglobalmenu_background"></div>
+            <div id="shoppingmallglobalmenu">
+            </div>
+            <a href="#mydayschedulePage" id="shoppingmallglobalmenu_mydaySchedule"></a>
+            <a href="#myCareTeamPage" id="shoppingmallglobalmenu_mycareteam"></a>
+            <input id="shoppingmallglobalmenu_myclinicalDashboard" type="button" value="" />
+           
+            <input id="shoppingmallglobalmenu_cafe" type="button" value="" />
+            <input id="shoppingmallglobalmenu_myhospital" type="button" value="" />
+            <input id="shoppingmallglobalmenu_mypatientsurveys" type="button" value="" />
+           
+
+
+            <a href="#healthnewsPage" id="shoppingmallglobalmenumh_newsfeed">
+                <h1>News Feed</h1>
+            </a>
+            <a href="#myhospitalvideo_page" id="shoppingmallglobalmenumh_video">
+                <h1>Video</h1>
+            </a>
+            <a href="#hospitalmapPage" id="shoppingmallglobalmenumh_hospitalmap">
+                <h1>Hospital Map</h1>
+            </a>
+            <a href="#shoppingmallPage" id="shoppingmallglobalmenucg_shoppingmall">
+                <h1>Near Shopping Mall</h1>
+            </a>
+            <a href="#cafeandgiftshopPage" id="shoppingmallglobalmenucg_cafengift">
+                <h1>Cafe and Gift Shops</h1>
+            </a>
+            <a href="#restaurantPage" id="shoppingmallglobalmenucg_restaurant">
+                <h1>Near Restaurants</h1>
+            </a>
+            <a href="#patientsurveys" id="shoppingmallglobalmenus_generalsurveys">
+                <h1>General Surveys</h1>
+            </a>
+            <a href="#dailysurveys_page" id="shoppingmallglobalmenus_dailysurveys">
+                <h1>Daily Surveys</h1>
+            </a>
+            <a data-rel="back" id="shoppingmall_backbutton"></a>
+
+            <link href="css/shoppingmall.css" rel="stylesheet" />
+            <script src="js/shoppingmall.js"></script>
+        </div>
+
+        <div id="healthnewsPage" data-role="page">
+
+
+            <div id="healthnews_maindiv">
+                <div id="healthnews_bg"></div>
+                <h1 id="healthnews_title" class="disabletextselect">News Feed</h1>
+
+                <div id="healthnews_bgcontent">
+                    <div id="healthnews_listview" data-bind="foreach: healthnews_data">
+
+                        <a href="" id="healthnews_link" data-bind="attr: { href: link}">
+                            <div id="healthnews_frame">
+                                <div id="healthnews_headerwrapper">
+                                    <h1 class="disabletextselect" id="healthnews_header" data-bind="text:title"></h1>
+
+                                    <h1 class="disabletextselect" id="healthnews_datetime" data-bind="text:moment(moment(pubDate,'dddd, D MMM YYYY HH:mm:ss Z').format('YYYYMMDD'),'YYYYMMDD').fromNow()"></h1>
+                                </div>
+
+                                <h1 class="disabletextselect" id="healthnews_description" data-bind="text:description"></h1>
+                                <div id="healthnews_bottomseg"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="healthnews_loader"></div>
+                </div>
+            </div>
+            <a data-rel="back" id="healthnews_backbutton"></a>
+            <div id="healthnewsheaderWrapper">
+                <div id="healthnewsbigwrapper">
+                    <div id="healthnewstimeanddatecontainer">
+                        <h1 id="healthnewsresultContainerdate" class="disabletextselect"></h1>
+                        <br /><br />
+                        <h1 id="healthnewsresultContainertime" class="disabletextselect"></h1>
+                        <br />
+                        <h1 id="healthnewslocationinfo" class="disabletextselect"></h1>
+
+                    </div>
+                    <h6 id="healthnewsheaderWrapper_seperator" class="disabletextselect"> | </h6>
+                    <div id="healthnewsnameandlocationwrapper">
+                        <div id="healthnewspatientname_container">
+                            <h1 id="healthnewspatientname">Jason Flynn</h1>
+                            <div id="healthnewswelcome_patientimage" draggable="false"></div>
+
+                            <h1 id="healthnewswelcometext" class="disabletextselect">Welcome</h1>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="healthnewsweatherdetailwrapper">
+                    <div id="healthnewsweather_icon" draggable="false"></div>
+                    <h1 id="healthnewsweatherdetailsinfo" class="disabletextselect"></h1>
+
+                </div>
+
+            </div>
+            <div id="healthnewsglobalmenu_background"></div>
+            <div id="healthnewsglobalmenu">
+            </div>
+            <a href="#mydayschedulePage" id="healthnewsglobalmenu_mydaySchedule"></a>
+            <a href="#myCareTeamPage" id="healthnewsglobalmenu_mycareteam"></a>
+            <input id="healthnewsglobalmenu_myclinicalDashboard" type="button" value="" />
+            
+            <input id="healthnewsglobalmenu_cafe" type="button" value="" />
+            <input id="healthnewsglobalmenu_myhospital" type="button" value="" />
+            <input id="healthnewsglobalmenu_mypatientsurveys" type="button" value="" />
+           
+
+            <a href="#healthnewsPage" id="healthnewsglobalmenumh_newsfeed">
+                <h1>News Feed</h1>
+            </a>
+            <a href="#myhospitalvideo_page" id="healthnewsglobalmenumh_video">
+                <h1>Video</h1>
+            </a>
+            <a href="#hospitalmapPage" id="healthnewsglobalmenumh_hospitalmap">
+                <h1>Hospital Map</h1>
+            </a>
+            <a href="#shoppingmallPage" id="healthnewsglobalmenucg_shoppingmall">
+                <h1>Near Shopping Mall</h1>
+            </a>
+            <a href="#cafeandgiftshopPage" id="healthnewsglobalmenucg_cafengift">
+                <h1>Cafe and Gift Shops</h1>
+            </a>
+            <a href="#restaurantPage" id="healthnewsglobalmenucg_restaurant">
+                <h1>Near Restaurants</h1>
+            </a>
+            <a href="#patientsurveys" id="healthnewsglobalmenus_generalsurveys">
+                <h1>General Surveys</h1>
+            </a>
+            <a href="#dailysurveys_page" id="healthnewsglobalmenus_dailysurveys">
+                <h1>Daily Surveys</h1>
+            </a>
+            <link href="css/healthnews.css" rel="stylesheet" />
+            <script src="js/healthnews.js"></script>
+        </div>
+        <!--patient surveys general page-->
+        <div id="patientsurveys" data-role="page">
+            <div id="patientsurveys_maindiv">
+                <div id="patientssurveys_bg"></div>
+                <h1 id="patientsurveys_title">Patient Surveys</h1>
+                <h2 id="patientsurveys_subtitle">Promptness of service, cleanliness of facility, quality of care</h2>
+                <div id="patientsurveys_content">
+                    <div id="patientsurveys_listview" data-bind="foreach: patientsurveys_data">
+                        <a id="patientsurveys_anchor" data-bind="click:$parent.patientsurveyclick">
+                            <div id="patientsurveys_frame">
+                                <div id="patientsurveys_picture" data-bind="style: { backgroundImage: picture }"></div>
+
+                                <h1 id="patientsurveys_text" data-bind="text:title"></h1>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div id="patientsurveys_loaderwrapper1" data-role="none">
+                        <input id="patientsurveys_loader1" data-bind="attr:{value:patientsurveysViewModelDetails.viewModel.patientsurveys_data()[0].progressvalue()}" data-role="none" type="text" class="dial1" data-width="150"
+                               data-fgcolor="#685a7a"
+                               data-bgcolor="#685a7a"
+                               data-skin="tron"
+                               data-thickness=".2" />
+                        <h1 id="patientsurveys_percent1">%</h1>
+                        <h1 id="patientsurveys_complete1">Complete</h1>
+                        <div id="patientsurveys_loaderwrapper1cover"></div>
+                    </div>
+                    <div id="patientsurveys_loaderwrapper2" data-role="none">
+                        <input id="patientsurveys_loader2" data-bind="attr:{value:patientsurveysViewModelDetails.viewModel.patientsurveys_data()[1].progressvalue()}" data-role="none" type="text" class="dial2" data-width="150"
+                               data-fgcolor="#685a7a"
+                               data-bgcolor="#685a7a"
+                               data-skin="tron"
+                               data-thickness=".2" />
+                        <h1 id="patientsurveys_percent2">%</h1>
+                        <h1 id="patientsurveys_complete2">Complete</h1>
+                        <div id="patientsurveys_loaderwrapper2cover"></div>
+                    </div>
+                    <div id="patientsurveys_loaderwrapper3" data-role="none">
+                        <input id="patientsurveys_loader3" data-bind="attr:{value:patientsurveysViewModelDetails.viewModel.patientsurveys_data()[2].progressvalue()}" data-role="none" type="text" class="dial3" data-width="150"
+                               data-fgcolor="#685a7a"
+                               data-bgcolor="#685a7a"
+                               data-skin="tron"
+                               data-thickness=".2" />
+                        <h1 id="patientsurveys_percent3">%</h1>
+                        <h1 id="patientsurveys_complete3">Complete</h1>
+                        <div id="patientsurveys_loaderwrapper3cover"></div>
+                    </div>
+                    <div id="patientsurveys_loaderwrapper4" data-role="none">
+                        <input id="patientsurveys_loader4" data-bind="attr:{value:patientsurveysViewModelDetails.viewModel.patientsurveys_data()[3].progressvalue()}" data-role="none" type="text" class="dial4" data-width="150"
+                               data-fgcolor="#685a7a"
+                               data-bgcolor="#685a7a"
+                               data-skin="tron"
+                               data-thickness=".2" />
+                        <h1 id="patientsurveys_percent4">%</h1>
+                        <h1 id="patientsurveys_complete4">Complete</h1>
+                        <div id="patientsurveys_loaderwrapper4cover"></div>
+                    </div>
+                    <div id="patientsurveys_loaderwrapper5" data-role="none">
+                        <input id="patientsurveys_loader5" data-bind="attr:{value:patientsurveysViewModelDetails.viewModel.patientsurveys_data()[4].progressvalue()}" data-role="none" type="text" class="dial5" data-width="150"
+                               data-fgcolor="#685a7a"
+                               data-bgcolor="#685a7a"
+                               data-skin="tron"
+                               data-thickness=".2" />
+                        <h1 id="patientsurveys_percent5">%</h1>
+                        <h1 id="patientsurveys_complete5">Complete</h1>
+                        <div id="patientsurveys_loaderwrapper5cover"></div>
+                    </div>
+                </div>
+            </div>
+            <a data-rel="back" id="patientsurveys_backbutton"></a>
+            <div id="patientsurveysheaderWrapper">
+                <div id="patientsurveysbigwrapper">
+                    <div id="patientsurveystimeanddatecontainer">
+                        <h1 id="patientsurveysresultContainerdate" class="disabletextselect"></h1>
+                        <br /><br />
+                        <h1 id="patientsurveysresultContainertime" class="disabletextselect"></h1>
+                        <br />
+                        <h1 id="patientsurveyslocationinfo" class="disabletextselect"></h1>
+
+                    </div>
+                    <h6 id="patientsurveysheaderWrapper_seperator" class="disabletextselect"> | </h6>
+                    <div id="patientsurveysnameandlocationwrapper">
+                        <div id="patientsurveyspatientname_container">
+                            <h1 id="patientsurveyspatientname">Jason Flynn</h1>
+                            <div id="patientsurveyswelcome_patientimage" draggable="false"></div>
+
+                            <h1 id="patientsurveyswelcometext" class="disabletextselect">Welcome</h1>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="patientsurveysweatherdetailwrapper">
+                    <div id="patientsurveysweather_icon" draggable="false"></div>
+                    <h1 id="patientsurveysweatherdetailsinfo" class="disabletextselect"></h1>
+
+                </div>
+
+            </div>
+            <div id="patientsurveysglobalmenu_background"></div>
+            <div id="patientsurveysglobalmenu">
+            </div>
+            <a href="#mydayschedulePage" id="patientsurveysglobalmenu_mydaySchedule"></a>
+            <a href="#myCareTeamPage" id="patientsurveysglobalmenu_mycareteam"></a>
+            <input id="patientsurveysglobalmenu_myclinicalDashboard" type="button" value="" />
+        
+            <input id="patientsurveysglobalmenu_cafe" type="button" value="" />
+            <input id="patientsurveysglobalmenu_myhospital" type="button" value="" />
+            <input id="patientsurveysglobalmenu_mypatientsurveys" type="button" value="" />
+           
+
+
+            <a href="#healthnewsPage" id="patientsurveysglobalmenumh_newsfeed">
+                <h1>News Feed</h1>
+            </a>
+            <a href="#myhospitalvideo_page" id="patientsurveysglobalmenumh_video">
+                <h1>Video</h1>
+            </a>
+            <a href="#hospitalmapPage" id="patientsurveysglobalmenumh_hospitalmap">
+                <h1>Hospital Map</h1>
+            </a>
+            <a href="#shoppingmallPage" id="patientsurveysglobalmenucg_shoppingmall">
+                <h1>Near Shopping Mall</h1>
+            </a>
+            <a href="#cafeandgiftshopPage" id="patientsurveysglobalmenucg_cafengift">
+                <h1>Cafe and Gift Shops</h1>
+            </a>
+            <a href="#restaurantPage" id="patientsurveysglobalmenucg_restaurant">
+                <h1>Near Restaurants</h1>
+            </a>
+            <a href="#patientsurveys" id="patientsurveysglobalmenus_generalsurveys">
+                <h1>General Surveys</h1>
+            </a>
+            <a href="#dailysurveys_page" id="patientsurveysglobalmenus_dailysurveys">
+                <h1>Daily Surveys</h1>
+            </a>
+            <link href="css/patientsurveys.css" rel="stylesheet" />
+            <script src="js/patientsurveys.js"></script>
+        </div>
+        <div id="patientsurvey_details" data-role="page">
+            <div id="patientsurveydetails_maindiv">
+                <div id="patientsurveydetails_bg" data-bind="style:{backgroundImage:patientsurveydetails_data()[0][categoryindex()].picture}"></div>
+                <h1 id="patientsurveydetails_title" class="disabletextselect" data-bind="text:patientsurveydetails_data()[0][categoryindex()].title">Patient Surveys</h1>
+                <div id="patientsurveydetails_underline"></div>
+                <div id="patientsurveydetails_content">
+                    <h1 id="patientsurveydetails_day" class="disabletextselect" data-bind="text:patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].questionno"></h1>
+                    <h1 id="patientsurveydetails_percent" class="disabletextselect" data-bind="text:patientsurveydetails_data()[0][categoryindex()].progressvalue()+'%'"></h1>
+                    <div id="patientsurveydetails_progressbar"></div>
+                    <h1 id="patientsurveydetails_questions" class="disabletextselect" data-bind="text:patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].question"></h1>
+
+                    <!-- ko if: patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answertype === 'radio' -->
+                    <!-- ko if: !(patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answer1 === '') -->
+
+                    <div id="patientsurveydetails_answer1check" data-bind="click:$root.radio1click,style:{backgroundImage:patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answer1bg}"></div>
+                    <h1 id="patientsurveydetails_answer1" data-bind="text:patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answer1"></h1>
+                    <!-- /ko -->
+                    <br />
+                    <!-- ko if: !(patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answer2 === '') -->
+
+                    <div id="patientsurveydetails_answer2check" data-bind="click:$root.radio2click,style:{backgroundImage:patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answer2bg}"></div>
+
+                    <h1 id="patientsurveydetails_answer2" data-bind="text:patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answer2"></h1>
+                    <!-- /ko -->
+                    <br />
+                    <!-- ko if: !(patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answer3 === '') -->
+
+                    <div id="patientsurveydetails_answer3check" data-bind="click:$root.radio3click,style:{backgroundImage:patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answer3bg}"></div>
+                    <h1 id="patientsurveydetails_answer3" data-bind="text:patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answer3"></h1>
+                    <!-- /ko -->
+                    <br />
+                    <!-- ko if: !(patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answer4 === '') -->
+
+                    <div id="patientsurveydetails_answer4check" data-bind="click:$root.radio4click,style:{backgroundImage:patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answer4bg}"></div>
+
+                    <h1 id="patientsurveydetails_answer4" data-bind="text:patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answer4"></h1>
+                    <!-- /ko -->
+                    <br />
+                    <!-- /ko -->
+                    <!-- ko if: patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answertype === 'smiley' -->
+                    <div id="patientsurveydetails_happy" data-bind="click:$root.happysmileyclick,style:{opacity:patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answer1bgopacity}"></div>
+                    <div id="patientsurveydetails_sad" data-bind="click:$root.sadsmileyclick,style:{opacity:patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answer2bgopacity}"></div>
+                    <div id="patientsurveydetails_normal" data-bind="click:$root.normalsmileyclick,style:{opacity:patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].answer3bgopacity}"></div>
+                    <!-- /ko -->
+                </div>
+                <!--ko ifnot:patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].questionno === 'Survey Complete'-->
+                <input type="button" id="patientsurvey_button" value="NEXT" data-bind="click:$root.nextquestion" />
+                <!-- /ko -->
+                <!--ko if:patientsurveydetails_data()[0][categoryindex()].qmeta[questionindex()].questionno === 'Survey Complete'-->
+
+                <a href="" data-rel="back" id="patientsurvey_button">FINISH</a>
+                <!-- /ko -->
+
+            </div>
+
+            <a id="patientsurveydetails_backbutton" data-rel="back"></a>
+            <div id="patientsurveydetailsheaderWrapper">
+                <div id="patientsurveydetailsbigwrapper">
+                    <div id="patientsurveydetailstimeanddatecontainer">
+                        <h1 id="patientsurveydetailsresultContainerdate" class="disabletextselect"></h1>
+                        <br /><br />
+                        <h1 id="patientsurveydetailsresultContainertime" class="disabletextselect"></h1>
+                        <br />
+                        <h1 id="patientsurveydetailslocationinfo" class="disabletextselect"></h1>
+
+                    </div>
+                    <h6 id="patientsurveydetailsheaderWrapper_seperator" class="disabletextselect"> | </h6>
+                    <div id="patientsurveydetailsnameandlocationwrapper">
+                        <div id="patientsurveydetailspatientname_container">
+                            <h1 id="patientsurveydetailspatientname">Jason Flynn</h1>
+                            <div id="patientsurveydetailswelcome_patientimage" draggable="false"></div>
+
+                            <h1 id="patientsurveydetailswelcometext" class="disabletextselect">Welcome</h1>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="patientsurveydetailsweatherdetailwrapper">
+                    <div id="patientsurveydetailsweather_icon" draggable="false"></div>
+                    <h1 id="patientsurveydetailsweatherdetailsinfo" class="disabletextselect"></h1>
+
+                </div>
+
+            </div>
+            <div id="patientsurveydetailsglobalmenu_background"></div>
+            <div id="patientsurveydetailsglobalmenu">
+            </div>
+            <a href="#mydayschedulePage" id="patientsurveydetailsglobalmenu_mydaySchedule"></a>
+            <a href="#myCareTeamPage" id="patientsurveydetailsglobalmenu_mycareteam"></a>
+            <input id="patientsurveydetailsglobalmenu_myclinicalDashboard" type="button" value="" />
+            
+            <input id="patientsurveydetailsglobalmenu_cafe" type="button" value="" />
+            <input id="patientsurveydetailsglobalmenu_myhospital" type="button" value="" />
+            <input id="patientsurveydetailsglobalmenu_mypatientsurveys" type="button" value="" />
+         
+
+            <a href="#healthnewsPage" id="patientsurveydetailsglobalmenumh_newsfeed">
+                <h1>News Feed</h1>
+            </a>
+            <a href="#myhospitalvideo_page" id="patientsurveydetailsglobalmenumh_video">
+                <h1>Video</h1>
+            </a>
+            <a href="#hospitalmapPage" id="patientsurveydetailsglobalmenumh_hospitalmap">
+                <h1>Hospital Map</h1>
+            </a>
+            <a href="#shoppingmallPage" id="patientsurveydetailsglobalmenucg_shoppingmall">
+                <h1>Near Shopping Mall</h1>
+            </a>
+            <a href="#cafeandgiftshopPage" id="patientsurveydetailsglobalmenucg_cafengift">
+                <h1>Cafe and Gift Shops</h1>
+            </a>
+            <a href="#restaurantPage" id="patientsurveydetailsglobalmenucg_restaurant">
+                <h1>Near Restaurants</h1>
+            </a>
+            <a href="#patientsurveys" id="patientsurveydetailsglobalmenus_generalsurveys">
+                <h1>General Surveys</h1>
+            </a>
+            <a href="#dailysurveys_page" id="patientsurveydetailsglobalmenus_dailysurveys">
+                <h1>Daily Surveys</h1>
+            </a>
+            <script src="js/nanobar.min.js"></script>
+
+
+            <link href="css/patientsurveydetails.css" rel="stylesheet" />
+            <script src="js/patientsurveydetails.js"></script>
+        </div>
+
+
+        <!--Daily Patient surveys-->
+        <div id="dailysurveys_page" data-role="page">
+            <div id="dailysurveys_maindiv">
+                <div id="dailysurveys_bg">
+
+                </div>
+                <h1 id="dailysurveys_title">Patient Surveys |</h1>
+                <div id="dailysurveys_leftarrow"></div>
+                <h1 id="dailysurveys_day">Day 1</h1>
+                <div id="dailysurveys_rightarrow"></div>
+                <h1 id="dailysurveys_subtitle">Promptness of service, cleanliness of facility, quality of care</h1>
+                <div id="dailysurveys_listview" data-bind="foreach:MyDaySchedule">
+                    <div id="dailysurveys_frame">
+                        <div id="dailysurveys_picture" data-bind="style:{backgroundImage:picture}"></div>
+                        <h1 id="dailysurveys_tiletitle" data-bind="text:title"></h1>
+                    </div>
+                </div>
+
+                <div id="dailysurveys_loaderwrapper1" data-role="none">
+                    <input id="dailysurveys_loader1" data-role="none" type="text" value="0" class="dial1" data-width="150"
+                           data-fgcolor="#685a7a"
+                           data-bgcolor="#685a7a"
+                           data-skin="tron"
+                           data-thickness=".2" />
+                    <h1 id="dailysurveys_percent1">%</h1>
+                    <h1 id="dailysurveys_complete1">Complete</h1>
+                    <div id="dailysurveys_loaderwrappercover1"></div>
+                </div>
+
+                <div id="dailysurveys_loaderwrapper2" data-role="none">
+                    <input id="dailysurveys_loader2" data-role="none" type="text" value="0" class="dial2" data-width="150"
+                           data-fgcolor="#685a7a"
+                           data-bgcolor="#685a7a"
+                           data-skin="tron"
+                           data-thickness=".2" />
+                    <h1 id="dailysurveys_percent2">%</h1>
+                    <h1 id="dailysurveys_complete2">Complete</h1>
+                    <div id="dailysurveys_loaderwrappercover2"></div>
+                </div>
+                <a data-rel="back" id="dailysurveys_backbutton"></a>
+                
+                <div id="dailysurveysheaderWrapper">
+                    <div id="dailysurveysbigwrapper">
+                        <div id="dailysurveystimeanddatecontainer">
+                            <h1 id="dailysurveysresultContainerdate" class="disabletextselect"></h1>
+                            <br /><br />
+                            <h1 id="dailysurveysresultContainertime" class="disabletextselect"></h1>
+                            <br />
+                            <h1 id="dailysurveyslocationinfo" class="disabletextselect"></h1>
+
+                        </div>
+                        <h6 id="dailysurveysheaderWrapper_seperator" class="disabletextselect"> | </h6>
+                        <div id="dailysurveysnameandlocationwrapper">
+                            <div id="dailysurveyspatientname_container">
+                                <h1 id="dailysurveyspatientname">Jason Flynn</h1>
+                                <div id="dailysurveyswelcome_patientimage" draggable="false"></div>
+
+                                <h1 id="dailysurveyswelcometext" class="disabletextselect">Welcome</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="dailysurveysweatherdetailwrapper">
+                        <div id="dailysurveysweather_icon" draggable="false"></div>
+                        <h1 id="dailysurveysweatherdetailsinfo" class="disabletextselect"></h1>
+
+                    </div>
+
+                </div>
+                <div id="dailysurveysglobalmenu_background"></div>
+                <div id="dailysurveysglobalmenu">
+                </div>
+                <a href="#mydayschedulePage" id="dailysurveysglobalmenu_mydaySchedule"></a>
+                <a href="#myCareTeamPage" id="dailysurveysglobalmenu_mycareteam"></a>
+                <input id="dailysurveysglobalmenu_myclinicalDashboard" type="button" value="" />
+
+                <input id="dailysurveysglobalmenu_cafe" type="button" value="" />
+                <input id="dailysurveysglobalmenu_myhospital" type="button" value="" />
+                <input id="dailysurveysglobalmenu_mypatientsurveys" type="button" value="" />
+
+
+                <a href="#healthnewsPage" id="dailysurveysglobalmenumh_newsfeed">
+                    <h1>News Feed</h1>
+                </a>
+                <a href="#myhospitalvideo_page" id="dailysurveysglobalmenumh_video">
+                    <h1>Video</h1>
+                </a>
+                <a href="#hospitalmapPage" id="dailysurveysglobalmenumh_hospitalmap">
+                    <h1>Hospital Map</h1>
+                </a>
+                <a href="#shoppingmallPage" id="dailysurveysglobalmenucg_shoppingmall">
+                    <h1>Near Shopping Mall</h1>
+                </a>
+                <a href="#cafeandgiftshopPage" id="dailysurveysglobalmenucg_cafengift">
+                    <h1>Cafe and Gift Shops</h1>
+                </a>
+                <a href="#restaurantPage" id="dailysurveysglobalmenucg_restaurant">
+                    <h1>Near Restaurants</h1>
+                </a>
+                <a href="#patientsurveys" id="dailysurveysglobalmenus_generalsurveys">
+                    <h1>General Surveys</h1>
+                </a>
+                <a href="#dailysurveys_page" id="dailysurveysglobalmenus_dailysurveys">
+                    <h1>Daily Surveys</h1>
+                </a>
+            </div>
+            <link href="css/dailysurveys.css" rel="stylesheet" />
+            <script src="js/dailysurveys.js"></script>
+        </div>
+
+
+        <!--My hospital video page-->
+        <div id="myhospitalvideo_page" data-role="page">
+            <iframe id="ytplayermh" class="ytplayerclass" type="text/html" width="1366" height="768"
+                    frameborder="0" allowfullscreen></iframe>
+            <a id="myhospitalvideo_backbutton" data-rel="back"></a>
+            <link href="css/myhospitalvideo.css" rel="stylesheet" />
+            <script src="js/myhospitalvideo.js"></script>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>

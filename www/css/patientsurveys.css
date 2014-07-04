@@ -1,0 +1,936 @@
+﻿body {
+}
+#patientsurveys_maindiv {
+    height: 768px;
+    width:1366px;
+}
+#patientssurveys_bg{
+	height: 768px;
+    width:1366px;
+	position:absolute;
+	background-image: url('/www/img/patientsurveys/BG.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+#patientsurveys_content{
+	height: 768px;
+    width:1366px;
+	overflow-x:scroll;
+	position:absolute;
+}
+
+#patientsurveys_title {
+	color:black;
+	position:absolute;
+	font-family:'segoe ui';
+	font-size:35px;
+	margin-left:156px;
+	margin-top:60px;
+	
+	font-weight:350;
+}
+#patientsurveys_subtitle{
+	color:black;
+	position:absolute;
+	font-family:'segoe ui';
+	font-size:15px;
+	margin-left:156px;
+	margin-top:98px;
+}
+#patientsurveys_backbutton:hover{
+	opacity:0.7;
+}
+#patientsurveys_backbutton{
+	position:absolute;
+	background-image: url('/www/img/mycareteam/back_btn.png');
+	background-repeat:no-repeat;
+	width:50px;
+	height:50px;
+	background-size:contain;
+	border:none;
+	background-color:transparent;
+	margin-left:60px;
+	margin-top:-713px;
+	border-radius: 25px;
+}
+
+#patientsurveys_listview {
+	width:2622px;
+	height:488px;
+	margin-top:195px;
+	
+	
+	overflow-y:hidden;
+}
+#patientsurveys_anchor{
+	width:340px;
+	height:430px;
+}
+#patientsurveys_frame {
+	width:340px;
+	height:430px;
+	margin-left:148px;
+	text-align:center;
+	display:inline-block;
+}
+
+#patientsurveys_picture {
+	width:340px;
+	height:340px;
+	background-image: url('/www/img/patientsurveys/img_1.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+#patientsurveys_text {
+	text-align:center;
+	color:#238dab;
+	font-family:'segoe ui';
+	font-size:25px;
+}
+
+/*Patient surveys progress bar*/
+
+#patientsurveys_loaderwrapper1 {
+	width:112px;
+	height:112px;
+	position:relative;
+	margin-left:384px;
+	margin-top:-245px;
+	position:absolute;
+}
+#patientsurveys_loaderwrapper1cover{
+	width:112px;
+	height:112px;
+	position:absolute;
+	background-color:black;
+	margin-left:0px;
+	margin-top:-115px;
+	opacity:0.0;
+}
+#patientsurveys_loader1{
+	display:inline-block;
+	width:131px;
+	height:131px;
+}
+#patientsurveys_percent1{
+	color:#685a7a;
+	font-size:18px;
+	margin-top:-72px;
+	position:absolute;
+	text-shadow:none;
+	margin-left:75px;
+}
+#patientsurveys_complete1{
+	color:#685a7a;
+	font-size:13px;
+	margin-top:-55px;
+	position:absolute;
+	text-shadow:none;
+	margin-left:34px;
+}
+
+
+#patientsurveys_loaderwrapper2 {
+	width:112px;
+	height:112px;
+	position:relative;
+	margin-left:884px;
+	margin-top:-245px;
+	position:absolute;
+}
+#patientsurveys_loaderwrapper2cover{
+	width:112px;
+	height:112px;
+	position:absolute;
+	background-color:black;
+	margin-left:0px;
+	margin-top:-115px;
+	opacity:0.0;
+}
+#patientsurveys_loader2{
+	display:inline-block;
+	width:131px;
+	height:131px;
+}
+#patientsurveys_percent2{
+	color:#685a7a;
+	font-size:18px;
+	margin-top:-72px;
+	position:absolute;
+	text-shadow:none;
+	margin-left:75px;
+}
+#patientsurveys_complete2{
+	color:#685a7a;
+	font-size:13px;
+	margin-top:-55px;
+	position:absolute;
+	text-shadow:none;
+	margin-left:34px;
+}
+
+
+
+
+
+#patientsurveys_loaderwrapper3 {
+	width:112px;
+	height:112px;
+	position:relative;
+	margin-left:1374px;
+	margin-top:-245px;
+	position:absolute;
+}
+#patientsurveys_loaderwrapper3cover{
+	width:112px;
+	height:112px;
+	position:absolute;
+	background-color:black;
+	margin-left:0px;
+	margin-top:-115px;
+	opacity:0.0;
+}
+#patientsurveys_loader3{
+	display:inline-block;
+	width:131px;
+	height:131px;
+}
+#patientsurveys_percent3{
+	color:#685a7a;
+	font-size:18px;
+	margin-top:-72px;
+	position:absolute;
+	text-shadow:none;
+	margin-left:75px;
+}
+#patientsurveys_complete3{
+	color:#685a7a;
+	font-size:13px;
+	margin-top:-55px;
+	position:absolute;
+	text-shadow:none;
+	margin-left:34px;
+}
+
+
+#patientsurveys_loaderwrapper4 {
+	width:112px;
+	height:112px;
+	position:relative;
+	margin-left:1864px;
+	margin-top:-245px;
+	position:absolute;
+}
+#patientsurveys_loaderwrapper4cover{
+	width:112px;
+	height:112px;
+	position:absolute;
+	background-color:black;
+	margin-left:0px;
+	margin-top:-115px;
+	opacity:0.0;
+}
+#patientsurveys_loader4{
+	display:inline-block;
+	width:131px;
+	height:131px;
+}
+#patientsurveys_percent4{
+	color:#685a7a;
+	font-size:18px;
+	margin-top:-72px;
+	position:absolute;
+	text-shadow:none;
+	margin-left:75px;
+}
+#patientsurveys_complete4{
+	color:#685a7a;
+	font-size:13px;
+	margin-top:-55px;
+	position:absolute;
+	text-shadow:none;
+	margin-left:34px;
+}
+
+
+#patientsurveys_loaderwrapper5 {
+	width:112px;
+	height:112px;
+	position:relative;
+	margin-left:2364px;
+	margin-top:-245px;
+	position:absolute;
+}
+#patientsurveys_loaderwrapper5cover{
+	width:112px;
+	height:112px;
+	position:absolute;
+	background-color:black;
+	margin-left:0px;
+	margin-top:-115px;
+	opacity:0.0;
+}
+#patientsurveys_loader5{
+	display:inline-block;
+	width:131px;
+	height:131px;
+}
+#patientsurveys_percent5{
+	color:#685a7a;
+	font-size:18px;
+	margin-top:-72px;
+	position:absolute;
+	text-shadow:none;
+	margin-left:75px;
+}
+#patientsurveys_complete5{
+	color:#685a7a;
+	font-size:13px;
+	margin-top:-55px;
+	position:absolute;
+	text-shadow:none;
+	margin-left:34px;
+}
+
+    /*Weather and time*/
+
+#patientsurveysheaderWrapper {
+	position:fixed;
+	margin-top:-740px;
+	margin-left:799px;
+	right: 0px;
+	bottom: 680px;
+	left: -675px;
+	top: 769px;
+	
+}
+#patientsurveysdatetimetext{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:20px;
+	color:black;
+	float:right;
+	margin-right:10px;
+	margin-top:10px;
+	text-shadow:none;
+}
+#patientsurveysheaderWrapper_seperator2{
+	float:right;
+	font-size:20px;
+	color:black;
+	margin-right:10px;
+	text-shadow:none;
+}
+#patientsurveyswelcometext{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	color:black;
+	float:right;
+	margin-right:-54px;
+	margin-top:-9px;
+	
+}
+#patientsurveyslocationinfo{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:12px;
+	color:black;
+	float:left;
+	margin-top:-35px;
+}
+#patientsurveysweatherdetailsinfo{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	color:black;
+	float:right;
+	margin-top:-7px;
+	margin-right:5px;
+}
+#patientsurveysweatherdetailwrapper{
+	float:right;
+	width:700px;
+	margin-top:-12px;
+}
+#patientsurveysnameandlocationwrapper{
+	width:190px;
+	float:right;
+}
+#patientsurveyspatientname_container{
+	width:190px;
+	height:36px;
+	float:right;
+}
+#patientsurveyspatientname{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	font-weight:600;
+	color:black;
+	float:right;
+	margin-right:5px;
+	margin-top:20px;
+	width:120px;
+	text-align:right;
+}
+#patientsurveyswelcome_patientimage{
+	float:right;
+	width: 40px;
+	height: 40px;
+	display:inline;
+	margin-top: -17px;
+	margin-right:-102px;
+	background-size:contain;
+	background-image: url('/www/img/mycareteam/profile_1.png');
+	}
+#patientsurveysweather {
+	height: 46px;
+	position:fixed;
+	top: 24px;
+	right: 10px;
+	left: 1081px;
+}
+
+#patientsurveysresultContainer {
+float:right;
+	
+	display:inline-block;
+	font-size:20px;
+	color:black;
+	margin-top:10px;
+	text-shadow:none;
+
+}
+#patientsurveystimeanddatecontainer{
+	float:right;
+	width:170px;
+}
+#patientsurveysbigwrapper{
+	float:right;
+	width:570px;
+	height:60px;
+}
+#patientsurveysresultContainerdate{
+	float:left;
+	font-weight:600;
+	display:inline-block;
+	font-size:28px;
+	color:black;
+	margin-top:16px;
+	text-shadow:none;
+	margin-top:-15px;
+	position:relative;
+	top:-2px;
+}
+#patientsurveysresultContainertime{
+	float:left;
+	
+	display:inline-block;
+	font-size:12px;
+	color:black;
+	padding-top:0px;
+	margin-top:0px;
+	text-shadow:none;
+	margin-top:-12px;
+	top:-16px;
+	position:relative;
+}
+#patientsurveysweather_icon{
+float:right;
+	width: 20px;
+	height: 20px;
+	display:inline;
+	margin-top: -10px;
+	margin-right:104px;
+	background-size:contain;
+    background-repeat: no-repeat;
+}
+
+#patientsurveysheaderWrapper_seperator{
+	float:right;
+	font-size:50px;
+	color:black;
+	margin-right:5px;
+	text-shadow:none;
+	margin-top:-22px;
+	opacity:0.7;
+}
+
+
+/*Health News Global menu*/
+#patientsurveysglobalmenu_background{
+	position:absolute;
+	background-color:black;
+	width:1366px;
+	height:768px;
+	margin-top:-768px;
+	opacity:0.6;
+	display:none;
+}
+#patientsurveysglobalmenu {
+	position:fixed;
+	margin-left:454px;
+	background-repeat:no-repeat;
+	margin-top:-46px;
+	width:84px;
+	height:51px;
+	background-size:contain;
+	background-image: url('/www/img/globalmenu/Hub_global_ashu_06.png');
+    
+}
+#patientsurveysglobalmenu_mydaySchedule:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-day-schedule.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+
+}
+#patientsurveysglobalmenu_mydaySchedule {
+	display:none;
+background-image: url('/www/img/globalmenu/my-day-schedule.png');
+
+margin-top:-49px;
+margin-left:382px;
+width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+
+border:none;
+
+
+}
+#patientsurveysglobalmenu_mycareteam:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-care-team.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#patientsurveysglobalmenu_mycareteam {
+		width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-care-team.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-101px;
+margin-left:400px;
+border:none;
+display:none;
+}
+#patientsurveysglobalmenu_myclinicalDashboard:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-clinical-dashboard.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#patientsurveysglobalmenu_myclinicalDashboard {
+	display:none;
+			width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-clinical-dashboard.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+/*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-136px;
+margin-left:445px;
+border:none; 
+}
+#patientsurveysglobalmenu_cafe:hover{
+	background-position:center;
+   opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/cafe.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+
+}
+#patientsurveysglobalmenu_cafe {
+	display:none;
+				width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/cafe.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-136px;
+margin-left:500px;
+border:none;}
+#patientsurveysglobalmenu_myhospital:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/My-hospital.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+
+#patientsurveysglobalmenu_myhospital {
+	display:none;
+					width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/My-hospital.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+-ms-grid-column-span: 1;
+margin-top:-101px;
+margin-left:544px;
+border:none;
+}
+#patientsurveysglobalmenu_mypatientsurveys:hover{
+	background-position:center;
+   opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-patient-survay.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#patientsurveysglobalmenu_mypatientsurveys {
+	display:none;
+	width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-patient-survay.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-49px;
+margin-left:561px;
+border:none;
+}
+#patientsurveysglobalmenumh_newsfeed h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:81px;
+	margin-left:26px;
+	width:192px;
+	text-align:center;
+}
+#patientsurveysglobalmenumh_newsfeed{
+	display:none;
+	position:absolute;
+	
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	z-index:9;
+	margin-left:228px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/Newsfeed.png');
+}
+#patientsurveysglobalmenumh_video h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:100px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#patientsurveysglobalmenumh_video{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	z-index:9;
+	margin-left:564px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/Video.png');
+
+}
+
+#patientsurveysglobalmenumh_hospitalmap h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:90px;
+	margin-left:32px;
+	width:192px;
+	text-align:center;
+}
+#patientsurveysglobalmenumh_hospitalmap{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	z-index:9;
+	margin-left:904px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/HospitalMap.png');
+
+}
+/*Access entertainment global sub level*/
+#patientsurveysglobalmenucg_shoppingmall h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:92px;
+	margin-left:26px;
+	width:221px;
+	
+}
+#patientsurveysglobalmenucg_shoppingmall{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	z-index:9;
+	margin-left:228px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/shoppingmallaroundus.png');
+}
+#patientsurveysglobalmenucg_cafengift h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:100px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#patientsurveysglobalmenucg_cafengift{
+	display:none;
+	position:absolute;
+	width:260px;
+	
+	
+	height:260px;
+	margin-top:-537px;
+	z-index:9;
+	margin-left:564px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/cafengiftshop.png');
+
+}
+
+#patientsurveysglobalmenucg_restaurant h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:45px;
+	width:192px;
+	
+}
+#patientsurveysglobalmenucg_restaurant{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	z-index:9;
+	margin-left:904px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/restaurantaroundus.png');
+
+}
+/*Survey global sub level*/
+#patientsurveysglobalmenus_generalsurveys h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#patientsurveysglobalmenus_generalsurveys{
+	display:none;
+	position:absolute;
+	width:260px;
+	
+	height:260px;
+	margin-top:-537px;
+	z-index:9;
+	margin-left:350px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/GeneralSurveys.png');
+
+}
+
+#patientsurveysglobalmenus_dailysurveys h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:32px;
+	width:182px;
+	text-align:center;
+	
+}
+#patientsurveysglobalmenus_dailysurveys{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	z-index:9;
+	margin-left:734px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/DailySurveys.png');
+
+}
+a {
+   outline: 0;
+}
+a:hover, a:active, a:focus {
+   outline: 0;
+   text-decoration:none;
+}

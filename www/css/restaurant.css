@@ -1,0 +1,964 @@
+﻿body {
+}
+.disabletextselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#restaurant_maindiv {
+width:1366px;
+height:768px;
+overflow-x:scroll;
+overflow-y:hidden;
+}
+#restaurant_inner{
+	width:1596px;
+	height:768px;
+	display: -ms-grid;
+	-ms-grid-columns: 700px auto;
+	
+}
+#restaurant_pic h1{
+	text-shadow:none;
+	color:white;
+	font-family:'segoe ui';
+	font-size:50px;
+	margin-top:240px;
+	margin-left:188px;
+}
+#restaurant_pic h2{
+	font-family:'segoe ui';
+	font-size:90px;
+	text-shadow:none;
+	color:white;
+	margin-left:188px;
+	margin-top:-20px;
+}
+#restaurant_pic_line{
+	border:1px solid white;
+	opacity:0.6;
+	margin-left:188px;
+}
+#restaurant_pic{
+	-ms-grid-column: 1;
+	background-image: url('/www/img/restaurant/Around-Us-_01.png');
+	height:768px;
+	width:700px;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+#restaurant_content{
+	-ms-grid-column: 2;
+}
+#restaurant_details{
+	display:none;
+	-ms-grid-column: 2;
+	width:518px;
+	
+	background-color:#1289a7;
+	height:768px;
+	margin-left:-2px;
+}
+#restaurant_details h1:nth-child(1){
+	margin-top:110px;
+	color:white;
+	font-family:'segoe ui';
+	font-size:40px;
+	margin-left:38px;
+	text-shadow:none;
+	
+}
+#mapArea { 
+	
+	position : relative; 
+	margin:10px 10px 10px 0px; 
+	width:410px;
+	 height:196px;
+	  border:1px solid #000;
+	  margin-left:38px;
+	  margin-top:-10px;
+	   }
+	   #restaurant_details h2{
+		text-shadow:none;
+		color:white;
+		margin-left:38px;
+		width:250px;
+		font-family:'segoe ui';
+		font-size:25px;
+		font-weight:lighter;
+	   }
+	   #restaurant_details h3{
+		text-shadow:none;
+		color:white;
+		margin-left:38px;
+		width:250px;
+		font-family:'segoe ui';
+		font-size:25px;
+		font-weight:700;
+		display:inline;
+	   }
+	   #restaurant_details h4{
+		text-shadow:none;
+		color:white;
+		margin-left:8px;
+		width:250px;
+		font-family:'segoe ui';
+		font-size:25px;
+		display:inline;
+		
+	   }
+	   #restaurant_details h5{
+		text-shadow:none;
+		color:white;
+		margin-left:38px;
+		width:250px;
+		font-family:'segoe ui';
+		font-size:25px;
+		font-weight:700;
+		display:inline;
+	   }
+	   #restaurant_website:hover{
+		text-decoration:underline;
+	   }
+	   #restaurant_website{
+		text-decoration:none;
+		text-shadow:none;
+		color:white;
+		margin-left:8px;
+		width:250px;
+		font-family:'segoe ui';
+		font-size:25px;
+		display:inline;
+		font-weight:100;
+	   }
+	   #restaurantdetails_close:hover{
+		opacity:0.7;
+	   }
+	   #restaurantdetails_close{
+		position:relative;
+	
+	background-image: url('/www/img/mydayschedule/Slide_icon_1.png');
+	width:36px;
+	height:36px;
+	min-width:36px;
+	
+	background-size:contain;
+	background-repeat:no-repeat;
+
+	border-color:transparent;
+	background-color:white;
+	border:none;
+	border-radius: 39px/32.5px;
+    margin-left:430px;
+	margin-top:-120px;
+	   }
+	   #restaurant_details p{
+		color:#e6b871;
+		margin-top:30px;
+		font-size:25px;
+		text-shadow:none;
+		font-family:'segoe ui';
+		margin-left:38px;
+	   }
+	   #restaurant_closedtext{
+		color:#e6b871;
+		margin-left:38px;
+		font-size:28px;
+	
+		text-shadow:none;
+		font-family:'segoe ui';
+		margin-top:-5px;
+		position:relative;
+	   }
+#restaurant_listview{
+	width:900px;
+	height:568px;
+	margin-top:124px;
+	position:relative;
+	overflow-y:hidden;
+}
+#restaurant_frame:hover{
+	border: 1px solid #d8c1ba;
+}
+#restaurant_frame{
+	margin-top:20px;
+	margin-left:10px;
+	width:375px;
+	height:162px;
+	
+	margin-left:60px;
+	
+	display:inline-block;
+	position:relative;
+}
+#restaurant_picture{
+	
+height:152px;
+width:143px;
+position:relative;
+background-image: url('/www/img/restaurant/Around-Us-Restaurent-_macd.png');
+background-size:contain;
+background-repeat:no-repeat;
+}
+#restaurant_title{
+	
+	
+	text-shadow:none;
+	font-family:'segoe ui';
+	color:#61a1e2;
+	font-weight:500;
+	font-size:23px;
+	height:28px;
+	margin-top:-123px;
+	margin-left:145px;
+}
+#restaurant_star1{
+	margin-top:-5px;
+	-ms-grid-column:2;
+	height:13px;
+	width:13px;
+	background-image: url('/www/img/restaurant/new_screens_star icon_clicked.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-left:147px;
+	position:absolute;
+}
+#restaurant_star2{
+	position:absolute;
+	margin-top:-5px;
+	-ms-grid-column:2;
+	height:13px;
+	width:13px;
+	background-image: url('/www/img/restaurant/new_screens_star icon_clicked.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-left:163px;
+}
+#restaurant_star3{
+	margin-top:-5px;
+	-ms-grid-column:2;
+	height:13px;
+	width:13px;
+	background-image: url('/www/img/restaurant/new_screens_star icon_clicked.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-left:181px;
+	position:absolute;
+}
+#restaurant_star4{
+	margin-top:-5px;
+	-ms-grid-column:2;
+	height:13px;
+	width:13px;
+	background-image: url('/www/img/restaurant/new_screens_star icon_clicked.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-left:198px;
+	position:absolute;
+}
+#restaurant_star5{
+	position:absolute;
+	margin-top:-5px;
+	-ms-grid-column:2;
+	height:13px;
+	width:13px;
+	background-image: url('/www/img/restaurant/new_screens_star icon_clicked.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-left:216px;
+}
+#restaurant_mileicon{
+	position:absolute;
+	
+	width:20px;
+	height:20px;
+	background-size:contain;
+	margin-top:19px;
+	margin-left:145px;
+	background-image: url('/www/img/restaurant/Around-Us-Restaurent-distance.png');
+}
+#restaurant_milevalue{
+	position:absolute;
+	font-size:13px;
+	text-shadow:none;
+	height:10px;
+	margin-top:21px;
+	margin-left:169px;
+}
+#restaurant_locationicon{
+	position:absolute;
+	width:20px;
+	height:20px;
+	background-size:contain;
+	margin-top:46px;
+	background-image: url('/www/img/restaurant/Around-Us-Restaurent-address.png');
+	background-repeat:no-repeat;
+	background-position-x:3px;
+	margin-left:145px;
+}
+#restaurant_locationvalue{
+	position:relative;
+	font-size:13px;
+	height:20px;
+	
+	margin-top:58px;
+	margin-left:168px;
+	width:160px;
+}
+#restaurant_backbutton:hover{
+	opacity:0.7;
+}
+#restaurant_backbutton{
+position:absolute;
+	background-image: url('/www/img/mycareteam/back_btn.png');
+	background-repeat:no-repeat;
+	width:50px;
+	height:50px;
+	background-size:contain;
+	border:none;
+	background-color:transparent;
+	margin-left:60px;
+	margin-top:-713px;
+	border-radius: 25px;
+	}
+
+
+/*Weather and time*/
+
+#restaurantheaderWrapper {
+	position:fixed;
+	margin-top:-740px;
+	margin-left:799px;
+	right: 0px;
+	bottom: 680px;
+	left: -675px;
+	top: 769px;
+	
+}
+#restaurantdatetimetext{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:20px;
+	color:black;
+	float:right;
+	margin-right:10px;
+	margin-top:10px;
+	text-shadow:none;
+}
+#restaurantheaderWrapper_seperator2{
+	float:right;
+	font-size:20px;
+	color:black;
+	margin-right:10px;
+	text-shadow:none;
+}
+#restaurantwelcometext{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	color:black;
+	float:right;
+	margin-right:-54px;
+	margin-top:-9px;
+	
+}
+#restaurantlocationinfo{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:12px;
+	color:black;
+	float:left;
+	margin-top:-35px;
+}
+#restaurantweatherdetailsinfo{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	color:black;
+	float:right;
+	margin-top:-7px;
+	margin-right:5px;
+}
+#restaurantweatherdetailwrapper{
+	float:right;
+	width:700px;
+	margin-top:-12px;
+}
+#restaurantnameandlocationwrapper{
+	width:190px;
+	float:right;
+}
+#restaurantpatientname_container{
+	width:190px;
+	height:36px;
+	float:right;
+}
+#restaurantpatientname{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	font-weight:600;
+	color:black;
+	float:right;
+	margin-right:5px;
+	margin-top:20px;
+	width:120px;
+	text-align:right;
+}
+#restaurantwelcome_patientimage{
+	float:right;
+	width: 40px;
+	height: 40px;
+	display:inline;
+	margin-top: -17px;
+	margin-right:-102px;
+	background-size:contain;
+	background-image: url('/www/img/mycareteam/profile_1.png');
+	}
+#restaurantweather {
+	height: 46px;
+	position:fixed;
+	top: 24px;
+	right: 10px;
+	left: 1081px;
+}
+
+#restaurantresultContainer {
+float:right;
+	
+	display:inline-block;
+	font-size:20px;
+	color:black;
+	margin-top:10px;
+	text-shadow:none;
+
+}
+#restauranttimeanddatecontainer{
+	float:right;
+	width:170px;
+}
+#restaurantbigwrapper{
+	float:right;
+	width:570px;
+	height:60px;
+}
+#restaurantresultContainerdate{
+	float:left;
+	font-weight:600;
+	display:inline-block;
+	font-size:28px;
+	color:black;
+	margin-top:16px;
+	text-shadow:none;
+	margin-top:-15px;
+	position:relative;
+	top:-2px;
+}
+#restaurantresultContainertime{
+	float:left;
+	
+	display:inline-block;
+	font-size:12px;
+	color:black;
+	padding-top:0px;
+	margin-top:0px;
+	text-shadow:none;
+	margin-top:-12px;
+	top:-16px;
+	position:relative;
+}
+#restaurantweather_icon{
+float:right;
+	width: 20px;
+	height: 20px;
+	display:inline;
+	margin-top: -10px;
+	margin-right:104px;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+#restaurantheaderWrapper_seperator{
+	float:right;
+	font-size:50px;
+	color:black;
+	margin-right:5px;
+	text-shadow:none;
+	margin-top:-22px;
+	opacity:0.7;
+}
+/*Global menu*/
+/*Global menu*/
+#restaurantglobalmenu_background{
+	position:absolute;
+	background-color:black;
+	width:1366px;
+	height:768px;
+	margin-top:-768px;
+	opacity:0.6;
+	display:none;
+	z-index:2;
+}
+#restaurantglobalmenu {
+	z-index:3;
+	position:fixed;
+	margin-left:454px;
+	background-repeat:no-repeat;
+	margin-top:-46px;
+	width:84px;
+	height:51px;
+	background-size:contain;
+	background-image: url('/www/img/globalmenu/Hub_global_ashu_06.png');
+    
+}
+#restaurantglobalmenu_mydaySchedule:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-day-schedule.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+
+}
+#restaurantglobalmenu_mydaySchedule {
+	display:none;
+	z-index:3;
+background-image: url('/www/img/globalmenu/my-day-schedule.png');
+
+margin-top:-49px;
+margin-left:382px;
+width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+
+border:none;
+
+
+}
+#restaurantglobalmenu_mycareteam:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-care-team.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#restaurantglobalmenu_mycareteam {
+	z-index:3;
+		width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-care-team.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-101px;
+margin-left:400px;
+border:none;
+display:none;
+}
+#restaurantglobalmenu_myclinicalDashboard:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-clinical-dashboard.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#restaurantglobalmenu_myclinicalDashboard {
+	display:none;
+	z-index:3;
+			width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-clinical-dashboard.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+/*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-136px;
+margin-left:445px;
+border:none; 
+}
+#restaurantglobalmenu_cafe:hover{
+	background-position:center;
+   opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/cafe.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+
+}
+#restaurantglobalmenu_cafe {
+	display:none;
+	z-index:3;
+				width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/cafe.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-136px;
+margin-left:500px;
+border:none;}
+
+
+#restaurantglobalmenu_myhospital {
+	display:none;
+	z-index:3;
+					width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/My-hospital.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+-ms-grid-column-span: 1;
+margin-top:-101px;
+margin-left:544px;
+border:none;
+}
+#restaurantglobalmenu_mypatientsurveys:hover{
+	background-position:center;
+   opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-patient-survay.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#restaurantglobalmenu_mypatientsurveys {
+	display:none;
+	width:49px;
+	min-width:49px;
+	position:fixed;
+	z-index:3;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-patient-survay.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-49px;
+margin-left:561px;
+border:none;
+}
+
+#restaurantglobalmenumh_newsfeed h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:81px;
+	margin-left:26px;
+	width:192px;
+	text-align:center;
+}
+#restaurantglobalmenumh_newsfeed{
+	display:none;
+	z-index:9;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:228px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/Newsfeed.png');
+}
+#restaurantglobalmenumh_video h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:100px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#restaurantglobalmenumh_video{
+	display:none;
+	z-index:9;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:564px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/Video.png');
+
+}
+
+#restaurantglobalmenumh_hospitalmap h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:90px;
+	margin-left:32px;
+	width:192px;
+	text-align:center;
+}
+#restaurantglobalmenumh_hospitalmap{
+	display:none;
+	position:absolute;
+	width:260px;
+	z-index:9;
+	height:260px;
+	margin-top:-540px;
+	margin-left:904px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/HospitalMap.png');
+
+}
+/*Access entertainment global sub level*/
+#restaurantglobalmenucg_shoppingmall h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:92px;
+	margin-left:26px;
+	width:221px;
+	
+}
+#restaurantglobalmenucg_shoppingmall{
+	display:none;
+	z-index:9;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:228px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/shoppingmallaroundus.png');
+}
+#restaurantglobalmenucg_cafengift h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:100px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#restaurantglobalmenucg_cafengift{
+	display:none;
+	z-index:9;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:564px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/cafengiftshop.png');
+
+}
+
+#restaurantglobalmenucg_restaurant h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:45px;
+	width:192px;
+	
+}
+#restaurantglobalmenucg_restaurant{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	z-index:9;
+	margin-top:-540px;
+	margin-left:904px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/restaurantaroundus.png');
+
+}
+/*Survey global sub level*/
+#restaurantglobalmenus_generalsurveys h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#restaurantglobalmenus_generalsurveys{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	z-index:9;
+	margin-top:-540px;
+	margin-left:350px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/GeneralSurveys.png');
+
+}
+
+#restaurantglobalmenus_dailysurveys h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:32px;
+	width:182px;
+	text-align:center;
+	
+}
+#restaurantglobalmenus_dailysurveys{
+	display:none;
+	position:absolute;
+	width:260px;
+	z-index:9;
+	height:260px;
+	margin-top:-540px;
+	margin-left:734px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/DailySurveys.png');
+
+}
+a {
+   outline: 0;
+}
+a:hover, a:active, a:focus {
+   outline: 0;
+   text-decoration:none;
+}

@@ -1,0 +1,1827 @@
+﻿body {
+}
+
+#myday_maindiv {
+	margin-top:-22px;
+	width:1366px;
+	height:768px;
+	background-image: url('/www/img/mydayschedule/BG.png');
+}
+.disabletextselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#myday_innerdiv {
+	width:3487px;
+	height:768px;
+	margin-top:0px;
+	display: -ms-grid;
+	-ms-grid-columns: 940px 2617px;
+}
+
+#my_dayscheduletitle {
+	position:absolute;
+	font-family:'segoe ui';
+	font-size:34px;
+	font-weight:300;
+	margin-top:70px;
+	margin-left:162px;
+}
+
+#myday_videos {
+	width:100%;
+	height:768px;
+}
+
+#my_dayschedulevideos {
+	font-family:'segoe ui';
+	font-size:25px;
+	margin-top:115px;
+	margin-left:162px;
+}
+#mydayframe1_frame:hover{
+	outline:1px solid white;
+	opacity:0.8;
+}
+#mydayframe1_listview {
+	margin-top:50px;
+	height:476px;
+	width:758px;
+	margin-left:162px;
+	position:relative;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+#mydayframe1_frame{
+	margin-top:10px;
+	margin-left:20px;
+	display:inline-block;
+	height:210px;
+	width:341px;
+}
+#mydayframe1_playicon{
+	position:absolute;
+	width:204px;
+	background-size:contain;
+	background-image: url('/www/img/mydayschedule/Video/play_icon.png');
+	position:absolute;
+	height:204px;
+	margin-top:-204px;
+	border-radius:100px;
+}
+#mydayframe1_img {
+	height:204px;
+	width:204px;
+	background-size:contain;
+	border-radius:100px;
+}
+#mydayframe1_title{
+	position:absolute;
+	font-family:'segoe ui';
+	font-size:15px;
+	margin-left:210px;
+	margin-top:-85px;
+}
+#mydayframe1_camicon {
+	margin-left:210px;
+	width:35px;
+	height:21px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-top:-110px;
+	background-image: url('/www/img/mydayschedule/Video/icon_1.png');
+}
+.text{
+	width:150px;
+	overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   line-height: 16px;     /* fallback */
+   max-height: 32px;      /* fallback */
+   -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+
+
+#mydayframe1_camtime {
+	font-family:'segoe ui';
+	font-size:19px;
+	margin-left:210px;
+	margin-top:0px;
+	text-shadow:none;
+}
+
+#mydayframe1_watchstatus {
+	font-family:'segoe ui';
+	font-size:19px;
+	text-shadow:none;
+	margin-left:210px;
+	margin-top:-10px;
+}
+
+#mydayframe1_statusicon {
+	margin-left:308px;
+	margin-top:-32px;
+	height:29px;
+	background-image: url('/www/img/mydayschedule/Video/icon_2.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+#myday_blocker{
+	height:770px;
+	width:1400px;
+	background-color:red;
+	position:relative;
+	margin-top:-636px;
+	margin-left:00px;
+	opacity:0;
+	display:none;
+}
+#myday_remainingframe {
+	-ms-grid-column: 2;
+	width:auto;
+}
+
+#myday_medicationtitle {
+	margin-top:114px;
+	margin-left:982px;
+	font-family:'segoe ui';
+	font-size:25px;
+	width:183px;
+	height:32px;
+	text-shadow:none;
+}
+
+
+
+#myday_medicationleftarrow {
+	height:22px;
+	width:19px;
+	margin-left:433px;
+	margin-top:80px;
+	display:inline-block;
+	background-size:contain;
+	z-index:4;
+	position:Absolute;
+	background-image: url('/www/img/mydayschedule/My medication/nextArrowBlue.png');
+	transform:rotate(180deg);
+	}
+#myday_medicationleftarrow:hover {
+	cursor:pointer;
+}
+
+#myday_medicationday {
+	margin-left:472px;
+	margin-top:71px;
+	font-family:'segoe ui';
+	font-size:34px;
+	width:95px;
+	text-shadow:none;
+	height:32px;
+	position:absolute;
+	color:#0a667c;
+}
+
+#myday_medicationrightarrow {
+	position:absolute;
+	height:22px;
+	width:19px;
+	margin-left:568px;
+	margin-top:80px;
+	background-size:contain;
+	background-image: url('/www/img/mydayschedule/My medication/nextArrowBlue.png');
+	display:inline-block;
+	z-index:4;
+	
+}
+#myday_medicationrightarrow:hover {
+	cursor:pointer;
+}
+
+#myday_frame2 {
+	width:761px;
+	height:576px;
+}
+
+#mydayframe2_listview {
+	
+	width:745px;
+	height:508px;
+	margin-top:182px;
+	margin-left:50px;
+	
+}
+#mydayframe2_frame:hover{
+	outline:1px solid white;
+}
+#mydayframe2_frame {
+	margin-top:20px;
+	width:367px;
+	height:114px;
+	display:inline-block;
+	margin-left:3px;
+}
+#mydayframe2_alarmindicator{
+	position:Absolute;
+}
+#mydayframe2_img {
+	width:100px;
+	height:100px;
+	margin-top:7px;
+	margin-left:10px;
+	background-size:contain;
+	}
+
+#mydayframe2_title {
+	color:#158bad;
+	font-family:'segoe ui';
+	text-shadow:none;
+	margin-top:-105px;
+	font-size:22px;
+	margin-left:125px;
+	width: 236px;
+	height: 24px;
+}
+
+#mydayframe2_tabvalue {
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-size:15px;
+	margin-left:147px;
+	margin-top:-27px;
+}
+
+#mydayframe2_foodtext {
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-size:15px;
+		margin-left:147px;
+	margin-top:-21px;
+}
+
+#mydayframe2_durationtext {
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-size:15px;
+		margin-left:147px;
+	margin-top:-20px;
+}
+
+#mydayframe2_tabicon {
+	width:17px;
+	height:17px;
+	background-size:contain;
+	margin-left:126px;
+	margin-top:-20px;
+	}
+
+#mydayframe2_foodicon {
+		width:17px;
+	height:17px;
+	background-size:contain;
+	margin-left:126px;
+	margin-top:-10px;
+	
+}
+
+#mydayframe2_durationicon {
+		width:17px;
+	height:17px;
+	background-size:contain;
+	margin-left:126px;
+	margin-top:-10px;
+
+}
+
+#myday_maindiv {
+	margin-top:2px;
+	overflow-x:SCROLL;
+	overflow-y:hidden;
+}
+
+#mydayframe3 {
+	margin-left:847px;
+	width:1009px;
+	height:638px;
+	margin-top:-759px;
+	
+}
+#mydayframe3_innerframe{
+	position:absolute;
+	margin-top:35px;
+}
+#mydayframe3_seg1 {
+	z-index:3;
+	background-size:contain;
+	width:223px;
+	height:223px;
+	margin-top:-423px;
+	background-image: url('/www/img/mydayschedule/Activity/circle_1.png');
+	margin-left:43px;
+	position:relative;
+}
+#mydayframe3_seg1_check:hover{
+	background-image: url('/www/img/mydayschedule/Activity/TickMark.png');
+	
+}
+#mydayframe3_seg1_check{
+	height:57px;
+	width:57px;
+	position:relative;
+	margin-left:200px;
+	margin-top:-220px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-image: url('/www/img/mydayschedule/Activity/TickMark_blank.png');
+	position:relative;
+	z-index:4;
+	border-radius: 29px/28.5px;
+}
+#mydayframe3_title {
+font-family:'segoe ui';
+	font-size:25px;
+	width:183px;
+	height:32px;
+	text-shadow:none;
+margin-top:114px;
+text-shadow:none;
+}
+
+#mydayframe3_seg1_text1 {
+	text-shadow:none;
+	margin-left:25px;
+	color:white;
+	font-size:30px;
+	margin-top:20px;
+}
+
+#mydayframe3_seg1_text2 {
+	text-shadow:none;
+	color:white;
+	text-shadow:none;
+	margin-left:25px;
+	font-size:45px;
+	margin-top:-10px;
+}
+
+#mydayframe3_seg1_text3 {
+	text-shadow:none;
+	color:white;
+	text-shadow:none;
+	font-size:18px;
+	margin-top:-36px;
+	margin-left:120px;
+}
+
+#mydayframe3_seg2 {
+	width:383px;
+	height:383px;
+	margin-top:90px;
+	
+}
+
+#mydayframe3_seg2frame {
+	z-index:0;
+	position:relative;
+	width:383px;
+	height:383px;
+	background-size:contain;
+	margin-left:90px;
+	margin-top:30px;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/mydayschedule/Activity/circle_2.png');
+}
+
+#mydayframe3_seg2daytext {
+	text-shadow:none;
+	font-size:25px;
+	color:white;
+	margin-left:265px;
+	margin-top:123px;
+	position:Absolute;
+}
+
+#mydayframe3_seg2dayvalue {
+	color:white;
+	font-size:62px;
+	font-family:'segoe ui';
+	margin-left:309px;
+	margin-top:88px;
+	position:absolute;
+}
+
+#mydayframe3_seg2title {
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:white;
+	font-size:34px;
+	position:absolute;
+	margin-left:-1600px;
+	margin-top:-94px;
+	font-size:28px;
+	right: 42.06px;
+	left: 1713px;
+	bottom: 147px;
+	top: 266px;
+	text-align:right;
+}
+
+#mydayframe3_seg2desc {
+	text-shadow:none;
+	color:white;
+	font-family:'segoe ui';
+	font-size:11px;
+	margin-top:-6px;
+	position:absolute;
+	margin-left:-1690px;
+	right: 42.06px;
+	left: 1741px;
+	bottom: -51px;
+	top: 246px;
+	text-align:right;
+}
+
+#mydayseg3_loaderwrapper {
+	width:131px;
+	height:131px;
+	position:relative;
+	margin-left:320px;
+	margin-top:-80px;
+}
+#mydayseg3_loaderwrappercover{
+	width:131px;
+	height:135px;
+	position:absolute;
+	background-color:black;
+	margin-left:0px;
+	margin-top:-137px;
+	opacity:0.0;
+}
+#mydayseg3_loader{
+	display:inline-block;
+	width:131px;
+	height:131px;
+}
+#mydayseg3_percent{
+	color:#685a7a;
+	font-size:18px;
+	margin-top:-80px;
+	position:absolute;
+	text-shadow:none;
+	margin-left:87px;
+}
+#mydayseg3_complete{
+	color:#685a7a;
+	font-size:13px;
+	margin-top:-55px;
+	position:absolute;
+	text-shadow:none;
+	margin-left:40px;
+}
+#mydayseg3_task1 {
+	height:203px;
+	width:203px;
+	margin-top:-464px;
+	margin-left:513px;
+	position:relative;
+}
+#mydayframe3_task1_check{
+	height:57px;
+	width:57px;
+	position:absolute;
+	margin-left:650px;
+	margin-top:-60px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-image: url('/www/img/mydayschedule/Activity/TickMark_blank.png');
+	position:relative;
+	z-index:4;
+	border-radius: 29px/28.5px;
+}
+#mydayframe3_task1_check:hover{
+	background-image: url('/www/img/mydayschedule/Activity/TickMark.png');
+	
+}
+#mydayframe3_task2_check{
+	height:57px;
+	width:57px;
+	position:absolute;
+	margin-left:657px;
+	margin-top:160px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-image: url('/www/img/mydayschedule/Activity/TickMark_blank.png');
+	position:relative;
+	z-index:4;
+	border-radius: 29px/28.5px;
+}
+#mydayframe3_task2_check:hover{
+	background-image: url('/www/img/mydayschedule/Activity/TickMark.png');
+	
+}
+
+#mydayseg3_task1frame {
+	height:203px;
+	width:203px;
+	background-size:contain;
+	
+}
+
+
+#mydayseg3_task2 {
+	height:203px;
+	width:203px;
+	margin-top:8px;
+	margin-left:513px;
+	position:relative;
+}
+
+
+
+#mydayseg3_task2frame {
+		height:203px;
+	width:203px;
+	background-size:contain;
+	
+}
+
+#mydayseg3_task3 {
+	height:203px;
+	width:203px;
+	margin-top:-414px;
+	margin-left:727px;
+	position:relative;
+}
+
+#mydayseg3_task3frame {
+	height:203px;
+	width:203px;
+	background-size:contain;
+	text-shadow:none;
+	color:white;
+	font-size:25px;
+}
+
+#mydayseg3_task4 {
+	height:203px;
+	width:203px;
+	margin-top:8px;
+	margin-left:727px;
+	position:relative;
+}
+
+#mydayseg3_task4frame {
+	height:203px;
+	width:203px;
+	background-size:contain;
+	
+}
+#mydayseg3_task2picture{
+	position:absolute;
+}
+#mydayseg3_task2title1 {
+	text-shadow:none;
+	color:white;
+	font-family:'segoe ui';
+	font-size:13px;
+	width: 135px;
+	height: 44px;
+	text-align:center;
+	position:absolute;
+	margin-left:33px;
+	margin-top:25px;
+}
+
+#mydayseg3_task2title2 {
+	text-shadow:none;
+	color:white;
+	font-family:'segoe ui';
+	font-size:22px;
+	margin-top:54px;
+	position:Absolute;
+	left: 26px;
+	text-align:center;
+	margin-left:-25px;
+}
+#mydayseg3_task1picture{
+	position:absolute;
+}
+#mydayseg3_task1title1 {
+	
+	text-shadow:none;
+	color:white;
+	font-family:'segoe ui';
+	font-size:24px;
+	margin-left:75px;
+	margin-top:40px;
+	position:absolute;
+}
+
+#mydayseg3_task1title2 {
+	color:white;
+	text-shadow:none;
+	font-size:40px;
+	margin-left:70px;
+	margin-top:120px;
+	position:absolute;
+	width:30px;
+	text-align:right;
+}
+
+#mydayseg3_task1title3 {
+	text-shadow:none;
+	color:white;
+	font-family:'segoe ui';
+	font-size:25px;
+	margin-left:106px;
+	margin-top:134px;
+	position:absolute;
+}
+#mydayseg3_task3picture{
+	position:absolute;
+	
+}
+#mydayseg3_task3title1 {
+	text-shadow:none;
+	color:white;
+	font-family:'segoe ui';
+	font-size:20px;
+	margin-left:86px;
+	margin-top:114px;
+	position:absolute;
+	left: -52px;
+	bottom: -31px;
+	top: -8px;
+}
+#mydayseg3_task4picture{
+	position:Absolute;
+}
+#mydayseg3_task4title1 {
+	text-shadow:none;
+	color:white;
+	font-size:18px;
+	width: 107px;
+	height: 79px;
+	margin-left:34px;
+	margin-top:34px;
+	position:absolute;
+	left: 36px;
+}
+
+#mydayframe4 {
+	position:relative;
+	width:571px;
+	height:516px;
+	margin-left:1863px;
+	margin-top:-641px;
+}
+#mydayframe4_titlesep{
+	position:absolute;
+	font-family:'segoe ui';
+	font-size:30px;
+	text-shadow:none;
+}
+#mydayframe4_titlesep{
+	position:absolute;
+	font-size:25px;
+	font-family:'segoe ui';
+	text-shadow:none;
+	margin-top:-39px;
+	margin-left:194px;
+}
+#mydayframe4_title1 {
+	font-family:'segoe ui';
+	font-size:25px;
+	text-shadow:none;
+	margin-top:-9px;
+}
+
+#mydayframe4_seg1 {
+	width:219px;
+	height:219px;
+	background-image: url('/www/img/mydayschedule/How do u feel/circle_1.png');
+	background-size:contain;
+	margin-left:53px;
+	margin-top:-256px;
+	z-index:5;
+	position:Relative;
+}
+
+#mydayframe4_seg1title1 {
+color:white;
+font-family:'segoe ui';
+font-size:25px;
+width: 149px;
+position:absolute;
+margin-left:35px;
+margin-top:40px;
+font-weight:100;
+text-shadow:none;
+}
+
+#mydayframe4_seg1title2 {
+	color:white;
+	text-shadow:none;
+	font-family:'segoe ui';
+	font-size:16px;
+	margin-top:32px;
+	position:Absolute;
+	right: 10px;
+	left: 53px;
+	bottom: -10px;
+	top: 70px;
+	margin-left:-17px;
+}
+
+#mydayframe4seg2 {
+	z-index:2;
+	
+	margin-left:95px;
+	margin-top:98px;
+	position:relative;
+	width:383px;
+	height:383px;
+	background-size:contain;
+	
+	background-repeat:no-repeat;
+	background-image: url('/www/img/mydayschedule/Activity/circle_2.png');
+
+}
+
+#mydayframe4seg2_title1 {
+	text-shadow:none;
+	color:white;
+	position:absolute;
+	margin-top:130px;
+	margin-left:160px;
+	right: 43px;
+	left: 0px;
+	bottom: 178px;
+	top: 0px;
+	font-family:'segoe ui';
+	font-size:22px;
+	text-align:right;
+	font-weight:400;
+}
+
+#mydayframe4seg2_title2 {
+	text-shadow:none;
+	color:white;
+	font-family:'segoe ui';
+	font-size:22px;
+	margin-top:160px;
+	position:absolute;
+	margin-left:162px;
+	right: 43px;
+	bottom: 178px;
+	left: 0px;
+	top: 0px;
+	text-align:right;
+}
+
+#mydayframe4seg2_title3 {
+	color:white;
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-size:11px;
+	margin-top:200px;
+	position:Absolute;
+	left: 88px;
+	bottom: 97px;
+	top: 0px;
+	right: 43px;
+	text-align:right;
+	text-shadow:none;
+	}
+
+#mydayframe4seg2_nopain {
+	width:93px;
+	height:93px;
+	margin-left:300px;
+	background-size:contain;
+	margin-top:-423px;
+	z-index:3;
+	background-repeat:no-repeat;
+	position:relative;
+	background-image: url('/www/img/mydayschedule/nonactive/no-pain.png');
+	border-radius: 47px/46.5px;
+}
+#mydayframe4seg2_moderate {
+		width:93px;
+	height:93px;
+	margin-left:380px;
+	background-size:contain;
+	margin-top:-400px;
+	z-index:3;
+	position:relative;
+	background-image: url('/www/img/mydayschedule/nonactive/no-pain.png');
+	margin-top:-10px;
+	top: -30px;
+	background-repeat:no-repeat;
+	left: 0px;
+	border-radius: 47px/46.5px;
+}
+#mydayframe4seg2_severepain {
+	width:93px;
+	height:93px;
+	margin-left:440px;
+	background-size:contain;
+	margin-top:-400px;
+	z-index:3;
+	position:relative;
+	background-image: url('/www/img/mydayschedule/nonactive/no-pain.png');
+	margin-top:-10px;
+	top: -35px;
+	background-repeat:no-repeat;
+	left: 0px;
+	border-radius: 47px/46.5px;
+}
+
+#mydayframe4seg2_stattitle1 {
+	text-shadow:none;
+	font-family:'segoe ui';
+	font-size:12px;
+	color:#656565;
+	margin-top:63px;
+	position:absolute;
+	margin-left:26px;
+}
+#mydayframe4seg2_stattitle2 {
+	text-shadow:none;
+	font-family:'segoe ui';
+	font-size:12px;
+	color:#656565;
+	margin-top:63px;
+	position:absolute;
+	margin-left:20px;
+}
+#mydayframe4seg2_stattitle3 {
+	text-shadow:none;
+	font-family:'segoe ui';
+	font-size:12px;
+	color:#656565;
+	margin-top:63px;
+	position:absolute;
+	margin-left:17px;
+}
+#mydayframe4seg2_nopain:hover {
+	background-image: url('/www/img/mydayschedule/How do u feel/no-pain.png');
+}
+#mydayframe4seg2_moderate:hover {
+	background-image: url('/www/img/mydayschedule/How do u feel/Moderate.png');
+}
+
+#mydayframe4_medicationleftarrow {
+	position:absolute;
+	height:22px;
+	width:19px;
+	margin-left:208px;
+	margin-top:-34px;
+	background-size:contain;
+	background-image: url('/www/img/mydayschedule/My medication/previousArrowgray.png');
+}
+
+#mydayframe4_medicationday {
+	position:absolute;
+	margin-left:240px;
+	margin-top:-37px;
+	font-family:'segoe ui';
+	font-size:25px;
+	width:89px;
+	text-shadow:none;
+	height:32px;
+}
+
+#mydayframe4_medicationrightarrow {
+	position:absolute;
+	height:22px;
+	width:19px;
+	margin-left:339px;
+	margin-top:-33px;
+	background-size:contain;
+	background-image: url('/www/img/mydayschedule/My medication/nextArrowBlue.png');
+
+}
+
+#mydayframe4seg2_severepain:hover {
+	background-image: url('/www/img/mydayschedule/How do u feel/SeverePain.png');
+}
+
+#myday_frame2details {
+	margin-top:172px;
+	width:420px;
+	height:570px;
+	margin-left:923px;
+	display:none;
+}
+
+#mydayframe2details_frame {
+	margin-left:75px;
+	width:420px;
+	height:570px;
+}
+
+#mydayframe2details_picture {
+	width:126px;
+	height:126px;
+	background-image: url('/www/img/mydayschedule/My medication/Normal/1.png');
+	background-size:contain;
+	margin-top:24px;
+	background-repeat:no-repeat;
+}
+
+#mydayframe2details_title {
+	text-shadow:none;
+	font-family:'segoe ui';
+	font-size:30px;
+	color:#46849c;
+	font-weight:500;
+	margin-top:9px;
+}
+
+#mydayframe2details_title2 {
+	text-shadow:none;
+	font-family:'segoe ui';
+	font-size:21px;
+	font-weight:500;
+}
+
+#mydayframe2details_title3 {
+	text-shadow:none;
+	font-family:'segoe ui';
+	font-size:19px;
+	margin-top:5px;
+}
+
+#mydayframe2details_title4 {
+	text-shadow:none;
+	font-family:'segoe ui';
+	font-size:19px;
+	margin-top:-30.3px;
+	margin-left:111px;
+}
+
+#mydayframe2details_title5 {
+	text-shadow:none;
+	font-family:'segoe ui';
+	font-size:19px;
+	margin-top:-5px;
+}
+
+#mydayframe2details_title6 {
+	text-shadow:none;
+	font-family:'segoe ui';
+	font-size:19px;
+	margin-top:-30px;
+	margin-left:186px;
+	
+}
+
+#mydayframe2details_sep1 {
+	border:2px solid #95928d;
+}
+
+#mydayframe2details_title7 {
+	font-family:'segoe ui';
+	font-size:19px;
+	width: 126px;
+	height: 40px;
+	font-weight:500;
+	display:inline-block;
+	text-shadow:none;
+	position:Relative;
+	top:-12px;
+}
+
+#mydayframe2details_title8 {
+	font-family:'segoe ui';
+	font-size:19px;
+	width: 126px;
+	height: 40px;
+	font-weight:500;
+	display:inline-block;
+	text-shadow:none;
+	position:Relative;
+	top:-12px;
+	margin-left:15px;
+}
+
+#mydayframe2details_title9 {
+	font-family:'segoe ui';
+	font-size:19px;
+	width: 96px;
+	height: 40px;
+	font-weight:500;
+	display:inline-block;
+	text-shadow:none;
+	position:Relative;
+	top:-12px;
+	margin-left:15px;
+	
+}
+
+#mydayframe2details_title10 {
+	font-family:'segoe ui';
+	font-size:19px;
+	width: 126px;
+	height: 40px;
+	
+	display:inline-block;
+	text-shadow:none;
+	position:Relative;
+	top:-12px;
+	
+	margin-top:4px;
+	text-align:center;
+}
+
+#mydayframe2details_title11 {
+	font-family:'segoe ui';
+	font-size:19px;
+	width: 126px;
+	height: 40px;
+	
+	display:inline-block;
+	text-shadow:none;
+	position:Relative;
+	top:-12px;
+	
+	margin-top:4px;
+	text-align:center;
+}
+
+#mydayframe2details_title12 {
+	font-family:'segoe ui';
+	font-size:19px;
+	width: 126px;
+	height: 40px;
+	
+	display:inline-block;
+	text-shadow:none;
+	position:Relative;
+	top:-12px;
+	
+	margin-top:4px;
+	text-align:center;
+}
+
+#mydayframe2details_sep2 {
+	border:1px solid #4f4a3e;
+	margin-bottom:18px;
+	margin-top:-6px;
+}
+#mydayframe2details_sep3 {
+	border:2px solid #95928d;
+	margin-top:-22px;
+}
+
+#mydayframe2details_title13 {
+	font-family:'segoe ui';
+	font-size:19px;
+	text-shadow:none;
+	margin-top:4px;
+	font-weight:500;
+}
+
+#mydayframe2details_title14 {
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-size:20px;
+	font-weight:500;
+}
+
+#mydayframe2details_title15 {
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-size:15px;
+	margin-top:-6px;
+}
+
+#mydayframe2_animateclick {
+	display:none;
+	background-repeat:no-repeat;
+	height:36px;
+	width:36px;
+	margin-left:1294px;
+	margin-top:112px;
+	background-size:contain;
+	background-image: url('/www/img/mydayschedule/Slide_icon_1.png');
+	border-radius: 18px;
+}
+#mydayframe2_animateclick:hover {
+	opacity:0.7;
+}
+
+#\#login_delllogo {
+	width:192px;
+	height:60px;
+	background-repeat:no-repeat;
+	background-size:contain;
+	margin-left:22px;
+	margin-top:22px;
+	background-image: url('/www/img/login/dell-logo.png');
+}
+
+#login_inpatientlogo {
+	height:158px;
+	width:100%;
+	margin-top:78px;
+	background-size:185px 158px;
+	background-position-x:center;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/login/logo.png');
+}
+
+#myday_backbutton {
+	position:absolute;
+	background-image: url('/www/img/mycareteam/back_btn.png');
+	background-repeat:no-repeat;
+	width:50px;
+	height:50px;
+	background-size:contain;
+	border:none;
+	background-color:transparent;
+	margin-left:60px;
+	margin-top:-700px;
+	border-radius: 25px;
+}
+#myday_backbutton:hover{
+	opacity:0.7;
+}
+
+/*Weather and time*/
+
+#mydayheaderWrapper {
+	position:fixed;
+	margin-top:-740px;
+	margin-left:799px;
+	right: 0px;
+	bottom: 680px;
+	left: -675px;
+	top: 769px;
+	
+}
+#mydaydatetimetext{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:20px;
+	color:black;
+	float:right;
+	margin-right:10px;
+	margin-top:10px;
+	text-shadow:none;
+}
+#mydayheaderWrapper_seperator2{
+	float:right;
+	font-size:20px;
+	color:black;
+	margin-right:10px;
+	text-shadow:none;
+}
+#mydaywelcometext{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	color:black;
+	float:right;
+	margin-right:-54px;
+	margin-top:-9px;
+	
+}
+#mydaylocationinfo{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:12px;
+	color:black;
+	float:left;
+	margin-top:-35px;
+}
+#mydayweatherdetailsinfo{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	color:black;
+	float:right;
+	margin-top:-7px;
+	margin-right:5px;
+}
+#mydayweatherdetailwrapper{
+	float:right;
+	width:700px;
+	margin-top:-12px;
+}
+#mydaynameandlocationwrapper{
+	width:190px;
+	float:right;
+}
+#mydaypatientname_container{
+	width:190px;
+	height:36px;
+	float:right;
+}
+#mydaypatientname{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	font-weight:600;
+	color:black;
+	float:right;
+	margin-right:5px;
+	margin-top:20px;
+	width:120px;
+	text-align:right;
+}
+#mydaywelcome_patientimage{
+	float:right;
+	width: 40px;
+	height: 40px;
+	display:inline;
+	margin-top: -17px;
+	margin-right:-102px;
+	background-size:contain;
+	background-image: url('/www/img/mycareteam/profile_1.png');
+	}
+#mydayweather {
+	height: 46px;
+	position:fixed;
+	top: 24px;
+	right: 10px;
+	left: 1081px;
+}
+
+#mydayresultContainer {
+float:right;
+	
+	display:inline-block;
+	font-size:20px;
+	color:black;
+	margin-top:10px;
+	text-shadow:none;
+
+}
+#mydaytimeanddatecontainer{
+	float:right;
+	width:170px;
+}
+#mydaybigwrapper{
+	float:right;
+	width:570px;
+	height:60px;
+}
+#mydayresultContainerdate{
+	float:left;
+	font-weight:600;
+	display:inline-block;
+	font-size:28px;
+	color:black;
+	margin-top:16px;
+	text-shadow:none;
+	margin-top:-15px;
+	position:relative;
+	top:-2px;
+}
+#mydayresultContainertime{
+	float:left;
+	
+	display:inline-block;
+	font-size:12px;
+	color:black;
+	padding-top:0px;
+	margin-top:0px;
+	text-shadow:none;
+	margin-top:-12px;
+	top:-16px;
+	position:relative;
+}
+#mydayweather_icon{
+float:right;
+	width: 20px;
+	height: 20px;
+	display:inline;
+	margin-top: -10px;
+	margin-right:104px;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+#mydayheaderWrapper_seperator{
+	float:right;
+	font-size:50px;
+	color:black;
+	margin-right:5px;
+	text-shadow:none;
+	margin-top:-22px;
+	opacity:0.7;
+}
+
+
+
+/*Global menu*/
+#mydayglobalmenu_background{
+display:none;
+	position:absolute;
+	background-color:black;
+	width:1366px;
+	height:768px;
+	margin-top:-769px;
+	margin-left:0px;
+	opacity:0.6;
+	z-index:7;
+}
+#mydayglobalmenu {
+	position:fixed;
+	margin-left:454px;
+	background-repeat:no-repeat;
+	margin-top:-50px;
+	width:84px;
+	height:51px;
+	background-size:contain;
+	background-image: url(/www/img/globalmenu/Hub_global_ashu_06.png);
+    z-index:8;
+}
+#mydayglobalmenu_mydaySchedule:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-day-schedule.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+
+}
+#mydayglobalmenu_mydaySchedule {
+	display:none;
+	
+background-image: url('/www/img/globalmenu/my-day-schedule.png');
+
+margin-top:-65px;
+margin-left:382px;
+width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+
+border:none;
+
+z-index:8;
+}
+#mydayglobalmenu_mycareteam:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-care-team.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#mydayglobalmenu_mycareteam {
+	z-index:8;
+	display:none;
+		width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-care-team.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-118px;
+margin-left:400px;
+border:none;
+}
+#mydayglobalmenu_myclinicalDashboard:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-clinical-dashboard.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#mydayglobalmenu_myclinicalDashboard {
+			z-index:8;
+			display:none;
+			width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-clinical-dashboard.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+/*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-158px;
+margin-left:445px;
+border:none; 
+}
+#mydayglobalmenu_cafe:hover{
+	background-position:center;
+   opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/cafe.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+background-position-x:10px;
+
+}
+#mydayglobalmenu_cafe {
+	z-index:8;
+	display:none;
+				width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/cafe.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+background-position-x:10px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-158px;
+margin-left:500px;
+border:none;}
+#mydayglobalmenu_myhospital:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/My-hospital.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+
+#mydayglobalmenu_myhospital {
+	z-index:8;
+	display:none;
+					width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/My-hospital.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-118px;
+margin-left:544px;
+border:none;
+}
+#mydayglobalmenu_mypatientsurveys:hover{
+	background-position:center;
+   opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-patient-survay.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#mydayglobalmenu_mypatientsurveys {
+	z-index:8;
+	display:none;
+	width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-patient-survay.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+-ms-grid-column-span: 1;
+margin-top:-65px;
+margin-left:561px;
+border:none;
+
+}
+#mydayglobalmenumh_newsfeed h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:81px;
+	margin-left:26px;
+	width:192px;
+	text-align:center;
+}
+#mydayglobalmenumh_newsfeed{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	margin-left:228px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	z-index:9;
+	background-image: url('/www/img/globalmenu/Newsfeed.png');
+}
+#mydayglobalmenumh_video h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:100px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#mydayglobalmenumh_video{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	margin-left:564px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/Video.png');
+	z-index:9;
+}
+
+#mydayglobalmenumh_hospitalmap h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:90px;
+	margin-left:32px;
+	width:192px;
+	text-align:center;
+}
+#mydayglobalmenumh_hospitalmap{
+	display:none;
+	z-index:9;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	margin-left:904px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/HospitalMap.png');
+
+}
+/*Access entertainment global sub level*/
+#mydayglobalmenucg_shoppingmall h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:92px;
+	margin-left:26px;
+	width:221px;
+	
+}
+#mydayglobalmenucg_shoppingmall{
+	z-index:9;
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:228px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/shoppingmallaroundus.png');
+}
+#mydayglobalmenucg_cafengift h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:100px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#mydayglobalmenucg_cafengift{
+	z-index:9;
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:564px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/cafengiftshop.png');
+
+}
+
+#mydayglobalmenucg_restaurant h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:45px;
+	width:192px;
+	
+}
+#mydayglobalmenucg_restaurant{
+	z-index:9;
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:904px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/restaurantaroundus.png');
+
+}
+/*Survey global sub level*/
+#mydayglobalmenus_generalsurveys h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#mydayglobalmenus_generalsurveys{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:350px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/GeneralSurveys.png');
+	z-index:9;
+}
+
+#mydayglobalmenus_dailysurveys h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:32px;
+	width:182px;
+	text-align:center;
+	
+}
+#mydayglobalmenus_dailysurveys{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-540px;
+	margin-left:734px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/DailySurveys.png');
+	z-index:9;
+}
+a {
+   outline: 0;
+}
+a:hover, a:active, a:focus {
+   outline: 0;
+   text-decoration:none;
+}
+#ytplayer {
+	position:absolute;
+	height:768px;
+	width:1366px;
+	
+	
+	
+}
+
+#mydayvideos_backbutton {
+	position:absolute;
+	background-image: url('/www/img/mycareteam/back_btn.png');
+	background-repeat:no-repeat;
+	width:50px;
+	height:50px;
+	background-size:contain;
+	border:none;
+	background-color:transparent;
+	margin-left:60px;
+	margin-top:55px;
+	border-radius: 25px;
+}
+#mydayvideos_backbutton:hover {
+	opacity:0.7;
+}

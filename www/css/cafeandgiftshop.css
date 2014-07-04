@@ -1,0 +1,1395 @@
+﻿.cafeandgiftshop section[role=main] {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+/*disabling text select*/
+.disabletextselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+}
+#back_button {
+	outline: 0;
+	text-decoration:none;
+	position:absolute;
+	margin-top:50px;
+	margin-left:60px;	
+	width:48px;
+	height:45px;
+	
+	border-radius: 5px;
+	font-size:70px;
+	color:#306e8b;
+	border-radius:10px;
+	top: 15px;
+}
+#back_button:hover{
+	opacity:0.5;
+	text-decoration:none;
+}
+#back_button_icon {
+	position:inherit;
+}
+
+/*Weather and time*/
+
+#cafeheaderWrapper {
+	position:fixed;
+	margin-top:-740px;
+	margin-left:799px;
+	right: 0px;
+	bottom: 680px;
+	left: -675px;
+	top: 769px;
+	
+}
+#cafedatetimetext{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:20px;
+	color:black;
+	float:right;
+	margin-right:10px;
+	margin-top:10px;
+	text-shadow:none;
+}
+#cafeheaderWrapper_seperator2{
+	float:right;
+	font-size:20px;
+	color:black;
+	margin-right:10px;
+	text-shadow:none;
+}
+#cafewelcometext{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	color:black;
+	float:right;
+	margin-right:-54px;
+	margin-top:-9px;
+	
+}
+#cafelocationinfo{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:12px;
+	color:black;
+	float:left;
+	margin-top:-35px;
+}
+#cafeweatherdetailsinfo{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	color:black;
+	float:right;
+	margin-top:-7px;
+	margin-right:5px;
+}
+#cafeweatherdetailwrapper{
+	float:right;
+	width:700px;
+	margin-top:-12px;
+}
+#cafenameandlocationwrapper{
+	width:190px;
+	float:right;
+}
+#cafepatientname_container{
+	width:190px;
+	height:36px;
+	float:right;
+}
+#cafepatientname{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	font-weight:600;
+	color:black;
+	float:right;
+	margin-right:5px;
+	margin-top:20px;
+	width:120px;
+	text-align:right;
+}
+#cafewelcome_patientimage{
+	float:right;
+	width: 40px;
+	height: 40px;
+	display:inline;
+	margin-top: -17px;
+	margin-right:-102px;
+	background-size:contain;
+	background-image: url('/www/img/mycareteam/profile_1.png');
+	
+	}
+#cafeweather {
+	height: 46px;
+	position:fixed;
+	top: 24px;
+	right: 10px;
+	left: 1081px;
+}
+
+#caferesultContainer {
+float:right;
+	
+	display:inline-block;
+	font-size:20px;
+	color:black;
+	margin-top:10px;
+	text-shadow:none;
+
+}
+#cafetimeanddatecontainer{
+	float:right;
+	width:170px;
+}
+#cafebigwrapper{
+	float:right;
+	width:570px;
+	height:60px;
+}
+#caferesultContainerdate{
+	float:left;
+	font-weight:600;
+	display:inline-block;
+	font-size:28px;
+	color:black;
+	margin-top:16px;
+	text-shadow:none;
+	margin-top:-15px;
+	position:relative;
+	top:-2px;
+}
+#caferesultContainertime{
+	float:left;
+	
+	display:inline-block;
+	font-size:12px;
+	color:black;
+	padding-top:0px;
+	margin-top:0px;
+	text-shadow:none;
+	margin-top:-12px;
+	top:-16px;
+	position:relative;
+}
+#cafeweather_icon{
+float:right;
+	width: 20px;
+	height: 20px;
+	display:inline;
+	margin-top: -10px;
+	margin-right:104px;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+#cafeheaderWrapper_seperator{
+	float:right;
+	font-size:50px;
+	color:black;
+	margin-right:5px;
+	text-shadow:none;
+	margin-top:-22px;
+	opacity:0.7;
+}
+
+
+
+
+
+#cafeandgiftHost {
+	position:Absolute;
+	top:1px;
+	left:1px;
+	width:100%;
+	height:100%;
+	background-image: url('/www/img/cafeandgiftshop/bg.png');
+	background-size: contain;
+	background-repeat:no-repeat;
+	display: -ms-grid;
+	
+}
+
+#cafeandgiftshop_Listview{
+	margin-left:130px;
+	width:350px;
+	height:516px;
+	margin-top:50px;
+
+}
+#cafeandgiftshop_blocker{
+	position:absolute;
+	background-color:red;
+	
+	width:1366px;
+	height:768px;
+	opacity:0;
+	left:-1px;
+	margin-top:-1px;
+	display:none;
+}
+#cafeandgiftshop_Listview2{
+	padding-top:14px;
+	-ms-grid-column: 2;
+	-ms-grid-row: 1;
+	width:55.06%;
+	height:500px;
+	margin: 36px 0px 230px 560px;
+	-ms-grid-row-span: 2;
+	margin-left:450px;
+}
+#cafeandgiftshop_img{
+	height: 136px; 
+    width: 134px;
+}
+
+#cafeandgiftshop_title {
+	margin-top:5px;
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:#00a651;
+	font-size:21px;
+	font-weight:400;
+	-ms-grid-column-span: 2;
+}
+
+#cafeandgiftshop_frame {
+	width:329px;
+	height:136px;
+	display:-ms-grid;
+	margin-bottom:40px;
+}
+    #cafeandgiftshop_frame:hover {
+    outline:1px solid white;
+    }
+
+#cafeandgiftshop_details {
+	-ms-grid-column: 2;
+	display:-ms-grid;
+	-ms-grid-columns:28px auto;
+	font-family:'segoe ui';
+	color:#424242;
+	margin-left:10px;
+}
+
+#cafeandgiftshop_phone {
+	font-family:'segoe ui';
+	font-weight:300;
+	font-size:14px;
+	text-shadow:none;
+	margin-top:34px;
+	bottom:10px;
+	-ms-grid-column: 2;
+	color:#424242;
+}
+#cafeandgiftshop_duration {
+	font-weight:300;
+	font-size:14px;
+	text-shadow:none;
+	margin-top:57px;
+	-ms-grid-column: 2;
+	bottom:10px;
+	font-family:'segoe ui';
+	color:#424242;
+}
+#cafeandgiftshop_time {
+	font-weight:300;
+	font-size:14px;
+	text-shadow:none;
+	margin-top:57px;
+	-ms-grid-column: 2;
+	bottom:10px;
+	font-family:'segoe ui';
+	color:#424242;
+	font-weight:300;
+	font-size:13px;
+}
+
+
+#cafeandgiftshop_address {
+	font-weight:300;
+	font-size:14px;
+	text-shadow:none;
+	margin-top:80px;
+	-ms-grid-column: 2;
+	font-family:'segoe ui';
+	color:#424242;
+}
+#cafeandgiftshop_pincode{
+	font-weight:300;
+	font-size:14px;
+	text-shadow:none;
+	margin-top:113px;
+	-ms-grid-column: 2;
+	font-family:'segoe ui';
+	color:#424242;
+}
+
+#cafeandgiftshop_phonepic {
+	margin-top:34px;
+	width:20px;
+	height:22px;
+}
+
+#cafeandgiftshop_durationpic {
+	margin-top:57px;
+	width:20px;
+	height:22px;
+}
+
+#cafeandgiftshop_addresspic {
+	margin-top:80px;
+	width:20px;
+	height:22px;
+}
+/*Listview 2 elements*/
+#cafeandgiftshop_img2{
+	height: 136px; 
+    width: 134px;
+}
+
+#cafeandgiftshop_title2 {
+	margin-top:5px;
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:#00a651;
+	font-size:21px;
+	font-weight:400;
+	-ms-grid-column-span: 2;
+}
+
+#cafeandgiftshop_frame2 {
+	
+	width:329px;
+	height:136px;
+	display:-ms-grid;
+	margin-bottom:40px;
+	top:0px;
+}
+    #cafeandgiftshop_frame2:hover {
+    outline:1px solid white;
+    }
+
+#cafeandgiftshop_details2 {
+	-ms-grid-column: 2;
+	display:-ms-grid;
+	-ms-grid-columns:28px auto;
+	font-family:'segoe ui';
+	color:#424242;
+	margin-left:10px;
+}
+
+#cafeandgiftshop_phone2 {
+	font-family:'segoe ui';
+	font-weight:300;
+	font-size:14px;
+	text-shadow:none;
+	margin-top:34px;
+	bottom:10px;
+	-ms-grid-column: 2;
+	color:#424242;
+}
+#cafeandgiftshop_duration2 {
+	font-weight:300;
+	font-size:14px;
+	text-shadow:none;
+	margin-top:57px;
+	-ms-grid-column: 2;
+	bottom:10px;
+	font-family:'segoe ui';
+	color:#424242;
+}
+#cafeandgiftshop_time2 {
+	font-weight:300;
+	font-size:14px;
+	text-shadow:none;
+	margin-top:57px;
+	-ms-grid-column: 2;
+	bottom:10px;
+	font-family:'segoe ui';
+	color:#424242;
+	font-weight:300;
+	font-size:13px;
+}
+
+
+#cafeandgiftshop_address2 {
+	font-weight:300;
+	font-size:14px;
+	text-shadow:none;
+	margin-top:80px;
+	-ms-grid-column: 2;
+	font-family:'segoe ui';
+	color:#424242;
+}
+#cafeandgiftshop_pincode2{
+	font-weight:300;
+	font-size:14px;
+	text-shadow:none;
+	margin-top:113px;
+	-ms-grid-column: 2;
+	font-family:'segoe ui';
+	color:#424242;
+}
+
+#cafeandgiftshop_phonepic2 {
+	margin-top:34px;
+	width:20px;
+	height:22px;
+}
+
+#cafeandgiftshop_durationpic2 {
+	margin-top:57px;
+	width:20px;
+	height:22px;
+}
+
+#cafeandgiftshop_addresspic2 {
+	margin-top:80px;
+	width:20px;
+	height:22px;
+}
+
+.metro .tile {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+    .metro .tile *:focus {
+        outline: 0;
+    }
+
+    .metro .tile:hover {
+        outline: none;
+    }
+
+
+#cafeandgiftshopframe1_Listview {
+	-ms-grid-column: 2;
+	-ms-grid-row: 2;
+	margin-top:95px;
+	margin-left:207px;
+	width:389px;
+	height:389px;
+	
+} 
+#cafeandgiftshopframe1_frame{
+	width:383px;
+	height:384px;
+}
+#cafeandgiftshopframe1_img{
+	position:absolute;
+	width:383px;
+	height:384px;
+}
+#cafeandgiftshopframe1_duration{
+	text-shadow:none;
+	color:white;
+	position:Absolute;
+	margin-left:62px;
+	margin-top:70px;
+	font-family:'segoe ui';
+	font-size:35px;	
+}
+#cafeandgiftshopframe1_time{
+	text-shadow:none;
+	color:white;
+	position:Absolute;
+	margin-left:62px;
+	margin-top:70px;
+	font-family:'segoe ui';
+	font-size:15px;	
+}
+
+#cafeandgiftshopframe1_durationtext{
+	position:Absolute;
+	margin-left:62px;
+	font-family:'segoe ui';
+	font-size:20px;
+	margin-top:107px;
+	text-shadow:none;
+	color:white;
+}
+#cafeandgiftshopframe1_title{
+	text-shadow:none;
+	word-wrap:break-word;
+	white-space:normal;
+	line-height:1.1em;
+	position:absolute;
+	margin-left:269px;
+	font-family:'segoe ui';
+	font-size:30px;
+	margin-top:373px;
+	right: 903px;
+	bottom: 307px;
+	top: 0px;
+	left: 0px;
+	text-shadow:none;
+	color:white;
+}
+#cafeandgiftshopframe1_description{
+position:ABSOLUTE;
+word-wrap:break-word;
+white-space:normal;
+line-height:18px;
+	margin-left:9px;
+	margin-top:228px;
+	font-family:'segoe ui';
+	font-size:13px;
+	right: 806px;
+	top: 228px;
+	bottom: 161px;
+	word-wrap:break-word;
+	color:black;
+	left: 262px;
+	text-shadow:none;
+}
+#cafeandgiftshopframe2_Listview{
+	
+	width:232px;
+	height:242px;
+	margin-left:413px;
+	margin-top:-435px;
+}
+#cafeandgiftshopframe2_img {
+	position:absolute;
+	width:222px;
+	height:232px;
+}
+#cafeandgiftshopframe2_frame {
+	width:222px;
+	height:232px;
+}
+
+#cafeandgiftshopframe2_wrapper {
+	width:222px;
+	height:232px;
+	display:-ms-grid;
+	-ms-grid-columns: 64px auto;
+}
+
+#cafeandgiftshopframe2_phonepic {
+	width:20px;
+	height:22px;
+	position:relative;
+	margin-top:73px;
+	margin-left:42px;
+}
+
+#cafeandgiftshopframe2_durationpic {
+width:20px;
+	height:22px;
+position:relative;
+margin-left:42px;
+margin-top:98px;}
+
+#cafeandgiftshopframe2_addresspic {
+width:20px;
+	height:22px;
+position:relative;
+margin-left:42px;
+margin-top:122px;}
+
+#cafeandgiftshopframe2_phone {
+	text-shadow:none;
+	position:absolute;
+	font-family:'segoe ui';
+	font-weight:300;
+	margin-top:73px;
+	-ms-grid-column: 2;
+	color:white;
+}
+
+#cafeandgiftshopframe2_duration {
+	text-shadow:none;
+	position:absolute;
+	font-family:'segoe ui';
+	font-weight:300;
+	margin-top:98px;
+	-ms-grid-column: 2;
+	color:white;
+}
+#cafeandgiftshopframe2_time {
+	position:absolute;
+	font-family:'segoe ui';
+	font-weight:300;
+	margin-top:98px;
+	-ms-grid-column: 2;
+	color:white;
+	text-shadow:none;
+}
+
+#cafeandgiftshopframe2_address {
+	position:absolute;
+	font-family:'segoe ui';
+	font-weight:300;
+	margin-top:122px;
+	margin-right: 9px;
+	-ms-grid-column: 2;
+	color:white;
+	right: 732px;
+	left: 477px;
+	bottom: 437px;
+	top: 177px;
+	word-wrap:break-word;
+	white-space:normal;
+	text-shadow:none;
+	line-height:21px;
+}
+
+#cafeandgiftshopframe3_Listview {
+	
+	margin-top:0px;
+	margin-left:664px;
+	width: 171px;
+	top: 0px;
+	
+}
+#cafeandgiftshopframe3_frame{
+	width:171px;
+	height:34px;
+	
+}
+#cafeandgiftshopframe3_frame:hover {
+    outline:1px solid white;
+    }
+	#cafeandgiftshopframe3_cal{
+		font-weight:400;
+	font-family:'segoe ui';
+	font-size:10px;
+	color:#7a7672;
+	text-shadow:none;
+	color:#674021;
+	margin-top:-10px;
+	}
+#cafeandgiftshopframe3_text {
+	font-weight:400;
+	font-family:'segoe ui';
+	font-size:18px;
+	color:#7a7672;
+	text-shadow:none;
+}
+/*frame4 cafe menu*/
+#cafeandgiftshopframe4_Listview {
+	
+	margin-top:-262px;
+	margin-left:843px;
+	width: 182px;
+	
+	
+}
+#cafeandgiftshopframe4_frame{
+	width:171px;
+	height:34px;
+	margin-bottom:10px;
+}
+#cafeandgiftshopframe4_frame:hover {
+    outline:1px solid white;
+    }
+#cafeandgiftshopframe4_text {
+	font-weight:400;
+	font-family:'segoe ui';
+	font-size:18px;
+	color:#7a7672;
+	text-shadow:none;
+}
+#cafeandgiftshopframe4_cal{
+font-weight:400;
+	font-family:'segoe ui';
+	font-size:10px;
+	color:#7a7672;
+	text-shadow:none;
+	color:#674021;
+	margin-top:-10px;
+	}
+/*frame5 cafe menu*/
+#cafeandgiftshopframe5_Listview {
+	
+	margin-top:-396px;
+	margin-left:1025px;
+	width: 177px;
+	top: 0px;
+	
+}
+#cafeandgiftshopframe5_frame{
+	margin-bottom:18px;
+	width:171px;
+	height:34px;
+}
+#cafeandgiftshopframe5_frame:hover {
+    outline:1px solid white;
+    }
+#cafeandgiftshopframe5_text {
+	font-weight:400;
+	font-family:'segoe ui';
+	font-size:18px;
+	color:#7a7672;
+	text-shadow:none;
+}
+
+#cafemenu_title {
+	position:absolute;
+	margin-left:664px;
+	text-shadow:none;
+	margin-top:-234px;
+	font-family:'segoe ui';
+	font-size:23px;
+	color:white;
+	font-weight:500;
+}
+
+#cafemenufood_title {
+
+	margin-left:664px;
+	margin-top:-190px;
+	text-shadow:none;
+	font-family:'segoe ui';
+	font-size:19px;
+	color:#674021;
+	font-weight:400;
+}
+
+#cafemenubeverages_title {
+	text-shadow:none;
+	margin-left:843px;
+	margin-top:-31px;
+	
+	font-family:'segoe ui';
+	font-size:19px;
+	color:#674021;
+	font-weight:400;
+}
+
+#cafemenuothers_title {
+	text-shadow:none;
+	margin-left:1025px;
+	margin-top:-31px;
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;
+	font-family:'segoe ui';
+	font-size:19px;
+	color:#674021;
+	font-weight:400;
+	width: 194px;
+}
+#cafemenu_icon {
+	position:Absolute;
+	margin-left:783px;
+	margin-top:-244px;
+	width:39px;
+	height:39px;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/cafeandgiftshop/coffeeOrderIcon.png');
+	background-size: contain;
+}
+
+#cafeandgiftshop_detailview {
+	width:1366px;
+	
+	display:none;
+	-ms-grid-column: 2;
+	-ms-grid-row: 2;
+	height:640px;
+	margin-bottom: 33px;
+	margin-top: 98px;
+	
+}
+
+#scrollcontent_button {
+	position:absolute;
+	display:none;
+	background-image: url('/www/img/mydayschedule/Slide_icon_1.png');
+	width:45px;
+	height:45px;
+	min-width:78px;
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-left:1100px;
+	border-color:transparent;
+	background-color:transparent;
+	margin-top:110px;
+	
+	border-radius: 39px/32.5px;
+    
+}
+#scrollcontent_button:hover{
+	opacity:0.5;
+}
+#cafe_backbutton{
+	position:absolute;
+	background-image: url('/www/img/mycareteam/back_btn.png');
+	background-repeat:no-repeat;
+	width:50px;
+	height:50px;
+	background-size:contain;
+	border:none;
+	background-color:transparent;
+	margin-left:60px;
+	margin-top:55px;
+	border-radius: 25px;
+}
+#cafe_backbutton:hover{
+	opacity:0.5;
+}
+
+.disableclick {
+   pointer-events: none;
+   cursor: default;
+}
+#cafeandgift_container {
+	display:none;
+	position:Absolute;
+	top:1px;
+	left:1px;
+	width:100%;
+	height:80.1%;
+	
+	display: -ms-grid;
+	-ms-grid-rows: 151.91px 1fr;
+	-ms-grid-columns: 120px 1246px;
+	
+	
+	margin-top:142px;
+	
+	
+	
+
+}
+
+/*Global menu*/
+#cafeglobalmenu_background{
+	display:none;
+	position:absolute;
+	background-color:black;
+	width:1366px;
+	height:768px;
+	margin-top:-1px;
+	margin-left:-1px;
+	opacity:0.6;
+	
+}
+#cafeglobalmenu {
+	position:fixed;
+	margin-left:454px;
+	background-repeat:no-repeat;
+	margin-top:719px;
+	width:84px;
+	height:51px;
+	background-size:contain;
+	background-image: url('/www/img/globalmenu/Hub_global_ashu_06.png');
+    
+}
+#cafeglobalmenu_mydaySchedule:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-day-schedule.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+
+}
+#cafeglobalmenu_mydaySchedule {
+	display:none;
+	
+background-image: url('/www/img/globalmenu/my-day-schedule.png');
+
+margin-top:706px;
+margin-left:382px;
+width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+
+border:none;
+
+
+}
+#cafeglobalmenu_mycareteam:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-care-team.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#cafeglobalmenu_mycareteam {
+	display:none;
+		width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-care-team.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:652px;
+margin-left:400px;
+border:none;
+}
+#cafeglobalmenu_myclinicalDashboard:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-clinical-dashboard.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#cafeglobalmenu_myclinicalDashboard {
+			display:none;
+			width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-clinical-dashboard.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+/*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:616px;
+margin-left:445px;
+border:none; 
+}
+#cafeglobalmenu_cafe:hover{
+	background-position:center;
+   opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/cafe.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+background-position-x:10px;
+
+}
+#cafeglobalmenu_cafe {
+	display:none;
+				width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/cafe.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+background-position-x:10px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:616px;
+margin-left:500px;
+border:none;}
+#cafeglobalmenu_myhospital:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/My-hospital.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+
+#cafeglobalmenu_myhospital {
+	display:none;
+					width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/My-hospital.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:652px;
+margin-left:544px;
+border:none;
+}
+#cafeglobalmenu_mypatientsurveys:hover{
+	background-position:center;
+   opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-patient-survay.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#cafeglobalmenu_mypatientsurveys {
+	width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-patient-survay.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+-ms-grid-column-span: 1;
+margin-top:706px;
+margin-left:561px;
+border:none;
+display:none;
+}
+#cafeglobalmenumh_newsfeed h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:81px;
+	margin-left:26px;
+	width:192px;
+	text-align:center;
+}
+#cafeglobalmenumh_newsfeed{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:230px;
+	margin-left:228px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/Newsfeed.png');
+}
+#cafeglobalmenumh_video h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:100px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#cafeglobalmenumh_video{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:230px;
+	margin-left:564px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/Video.png');
+
+}
+
+#cafeglobalmenumh_hospitalmap h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:90px;
+	margin-left:32px;
+	width:192px;
+	text-align:center;
+}
+#cafeglobalmenumh_hospitalmap{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:230px;
+	margin-left:904px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/HospitalMap.png');
+
+}
+/*Access entertainment global sub level*/
+#cafeglobalmenucg_shoppingmall h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:92px;
+	margin-left:26px;
+	width:221px;
+	
+}
+#cafeglobalmenucg_shoppingmall{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:230px;
+	margin-left:228px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/shoppingmallaroundus.png');
+}
+#cafeglobalmenucg_cafengift h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:100px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#cafeglobalmenucg_cafengift{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:230px;
+	margin-left:564px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/cafengiftshop.png');
+
+}
+
+#cafeglobalmenucg_restaurant h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:45px;
+	width:192px;
+	
+}
+#cafeglobalmenucg_restaurant{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:230px;
+	margin-left:904px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/restaurantaroundus.png');
+
+}
+/*Survey global sub level*/
+#cafeglobalmenus_generalsurveys h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#cafeglobalmenus_generalsurveys{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:230px;
+	margin-left:350px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/GeneralSurveys.png');
+
+}
+
+#cafeglobalmenus_dailysurveys h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:32px;
+	width:182px;
+	text-align:center;
+	
+}
+#cafeglobalmenus_dailysurveys{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:230px;
+	margin-left:734px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/DailySurveys.png');
+
+}
+a {
+   outline: 0;
+}
+a:hover, a:active, a:focus {
+   outline: 0;
+   text-decoration:none;
+}
+
+
+
+
+#cafe_title1{
+	text-shadow:none;
+	margin-left:138px;
+	position:absolute;
+	display:block;
+	font-family:'segoe ui';
+	font-size:25px;
+    font-weight:lighter;
+	margin-top:0px;
+    color:#646464;
+    
+    width: 360px;
+    height: 35.72px;
+	position:relative;
+}
+
+#giftshops_title{
+	text-shadow:none;
+	margin-left:570px;
+	position:absolute;
+	display:block;
+	font-family:'segoe ui';
+	font-size:25px;
+    font-weight:lighter;
+	margin-top:0px;
+    color:#646464;
+    
+    width: 360px;
+    height: 35.72px;
+}
+#maintitle{
+	
+	margin-left:140px;
+	position:absolute;
+	top:50px;
+    font-family:'Segoe UI';
+	font-size:35px;
+	margin-top:11px;
+    color:#414141;
+    font-weight:500;
+	text-shadow:none;
+}
+#cafeandgiftshopPage {
+	overflow-y:hidden;
+}
+#text_accessEntertainmentServicesinner {
+    position: absolute;
+    text-shadow: none;
+    font-family: 'Segoe UI';
+    font-size: 15pt;
+    font-weight: 100;
+    color: #646464;
+    text-align: left;
+    margin-top: 99px;
+	margin-left:140px;
+}

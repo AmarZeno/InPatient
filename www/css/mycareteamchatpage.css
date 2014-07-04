@@ -1,0 +1,895 @@
+﻿body {
+}
+
+#mycareteam_chatpage_chats {
+	position:absolute;
+	width:842px;
+	height:120px;
+	margin-top:181px;
+	margin-left:246px;
+	border-color:1px solid #959593;
+}
+
+#mycareteamChatPage_ListView {
+	width:842px;
+	height:190px;
+	overflow-y: auto;
+	background-color:white;
+	border:1px solid #959593;
+	border-width: 1.5px;
+	overflow-x:hidden;
+}
+
+#mycareteamChatPage_patienticon {
+	background-image: url('/www/img/mycareteam/profile_1.png');
+	background-size:contain;
+	height:45px;
+	width:45px;
+	margin-left:10px;
+	margin-top:10px;
+	
+}
+
+#mycareteamChatPage_frame {
+
+	
+}
+
+#mycareteamChatPage_title {
+	position:relative;
+	margin-top:8px;
+	font-family:'segoe ui';
+	font-size:19px;
+	margin-left:5px;
+	
+}
+#mycareteamchat_timestamp{
+	text-shadow:none;
+	display:block;
+	margin-top:-95px;
+	font-family:'segoe ui';
+	font-size:13px;
+	margin-left:70px;
+	overflow:hidden;
+	position:Absolute;
+	right: -232px;
+	left: 0px;
+	bottom: 26px;
+	top: -1px;
+}
+#mycareteamchat_doctortimestamp{
+	
+	
+	display:block;
+	float:right;
+	font-family:'segoe ui';
+	font-size:13px;
+	margin-right:-233px;
+	overflow:hidden;
+	height:58px;
+	margin-top:-38px;
+	padding-top:15px;
+	text-shadow:none;
+	width: 153.8px;
+	text-align:right;
+}
+#mycareteamchat_textcontainer{
+position:relative;
+display:inline;
+}
+#mycareteamChatPage_subtitle {
+	font-family:'segoe ui';
+	font-size:20px;
+	position:relative;
+	margin-top:-80px;
+	margin-left:67px;
+	display:inline-block;
+	float:left;
+	background-color: #707070;
+	color:white;
+	padding:0.3em;
+	max-width:400px;
+	
+}
+
+#mycareteamChatPage_doctoricon {
+	/*background-image: url('/www/img/mycareteam/profile_2.png');
+	*/background-size:contain;
+	height:45px;
+	width:45px;
+	position:relative;
+	text-align:right;
+	float:right;
+	margin-right:14px;
+	margin-top:5px;
+	
+}
+
+#mycareteamChatPage_doctortitle {
+	width:100%;
+	margin-top:43px;
+	font-family:'segoe ui';
+	font-size:19px;
+	
+	text-align:right;
+	
+	margin-right:-48px;
+	
+	display:block;
+}
+#mycareteamchatdoctor_timestamp{
+	position:relative;
+	margin-top:52px;
+	font-family:'segoe ui';
+	font-size:19px;
+	
+	text-align:right;
+	float:right;
+	margin-right:-48px;
+	display:inline-block;
+}
+
+#mycareteamChatPage_doctorsubtitle {
+	font-family:'segoe ui';
+	font-size:20px;
+	position:relative;
+	margin-top:12px;
+	margin-right:-2px;
+	text-align:right;
+	width:auto;
+	display:inline-block;
+	float:right;
+	background-color: #48bdea;
+	color:white;
+	padding:0.3em;
+	max-width:400px;
+	word-wrap:break-word;
+	white-space:normal;
+}
+
+#mycareteamChatPage_doctorwrapper {
+width:auto;
+height:auto;
+overflow:auto;
+	display:block;
+}
+
+#mycareteamChatPage_patientwrapper {
+
+width:auto;
+height:auto;
+overflow:auto;
+	display:block;}
+
+#mycateteamchat_input {
+	
+	background-color:white;
+	color:#585856;
+	position:absolute;
+	width:842px;
+	height:auto;
+	max-width:842px;
+	margin-top:361px;
+	margin-left:245px;
+	font-family:'segoe ui';
+	font-size:23px;
+	border:1px solid #959593;
+	border-width:1.5px;
+	border-radius: 0px;
+}
+
+#mycareteamChat_picture {
+	width:114px;
+	height:114px;
+	margin-left:108px;
+	margin-top:54px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	}
+
+#mycareteamChat_title {
+	display:inline-block;
+	position:Absolute;
+	font-family:'segoe ui';
+	font-size:20px;
+	margin-left:260px;
+	color:#8ec24d;
+	margin-top:-106px;
+	font-weight:400;
+	text-shadow:none;
+}
+
+#mycareteamChat_subtitle {
+	position:Absolute;
+	display:inline-block;
+	text-shadow:none;
+	font-size:19px;
+	margin-left:260px;
+	margin-top:-80px;
+}
+
+#mycareteamChat_onlinestatus {
+	background-image: url('/www/img/mycareteam/online_icon.png');
+	background-repeat:no-repeat;
+	margin-left:238px;
+	margin-top:-101.5px;
+	width:15px;
+	height:15px;
+	background-size:contain;
+}
+
+#mycareteamChat_icon {
+	background-image: url('/www/img/mycareteam/chat_icon_select.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	width:45px;
+	height:45px;
+	margin-top:34px;
+	margin-left:260px;
+}
+
+#mycareteamChat_backbtn {
+	
+	position:absolute;
+	background-image: url('/www/img/mycareteam/back_btn.png');
+	background-repeat:no-repeat;
+	width:50px;
+	height:50px;
+	background-size:contain;
+	border:none;
+	background-color:transparent;
+	margin-left:40px;
+	margin-top:-100px;
+	border-radius: 25px;
+}
+#mycareteamChat_backbtn:hover{
+	opacity:0.5;
+}
+#frame2data3_ListView {
+	position:Absolute;
+	width:141px;
+	height:141px;
+	margin-left:366px;
+	margin-top:90px;
+}
+
+#frame2data3_img {
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+#frame2data3_title {
+	position:absolute;
+	margin-top:-98px;
+	margin-left:70px;
+	font-family:'segoe ui';
+	font-size:15px;
+	color:red;
+}
+
+/*Weather and time*/
+
+#mycarechatheaderWrapper {
+	position:fixed;
+	margin-top:-740px;
+	margin-left:799px;
+	right: 0px;
+	bottom: 680px;
+	left: -675px;
+	top: 769px;
+	
+}
+#mycarechatdatetimetext{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:20px;
+	color:black;
+	float:right;
+	margin-right:10px;
+	margin-top:10px;
+	text-shadow:none;
+}
+#mycarechatheaderWrapper_seperator2{
+	float:right;
+	font-size:20px;
+	color:black;
+	margin-right:10px;
+	text-shadow:none;
+}
+#mycarechatwelcometext{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	color:black;
+	float:right;
+	margin-right:-54px;
+	margin-top:-9px;
+	
+}
+#mycarechatlocationinfo{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:12px;
+	color:black;
+	float:left;
+	margin-top:-35px;
+}
+#mycarechatweatherdetailsinfo{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	color:black;
+	float:right;
+	margin-top:-7px;
+	margin-right:5px;
+}
+#mycarechatweatherdetailwrapper{
+	float:right;
+	width:700px;
+	margin-top:-12px;
+}
+#mycarechatnameandlocationwrapper{
+	width:190px;
+	float:right;
+}
+#mycarechatpatientname_container{
+	width:190px;
+	height:36px;
+	float:right;
+}
+#mycarechatpatientname{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	font-weight:600;
+	color:black;
+	float:right;
+	margin-right:5px;
+	margin-top:20px;
+	width:120px;
+	text-align:right;
+}
+#mycarechatwelcome_patientimage{
+	float:right;
+	width: 40px;
+	height: 40px;
+	display:inline;
+	margin-top: -17px;
+	margin-right:-102px;
+	background-size:contain;
+	background-image: url('/www/img/mycareteam/profile_1.png');
+	}
+#mycarechatweather {
+	height: 46px;
+	position:fixed;
+	top: 24px;
+	right: 10px;
+	left: 1081px;
+}
+
+#mycarechatresultContainer {
+float:right;
+	
+	display:inline-block;
+	font-size:20px;
+	color:black;
+	margin-top:10px;
+	text-shadow:none;
+
+}
+#mycarechattimeanddatecontainer{
+	float:right;
+	width:170px;
+}
+#mycarechatbigwrapper{
+	float:right;
+	width:570px;
+	height:60px;
+}
+#mycarechatresultContainerdate{
+	float:left;
+	font-weight:600;
+	display:inline-block;
+	font-size:28px;
+	color:black;
+	margin-top:16px;
+	text-shadow:none;
+	margin-top:-15px;
+	position:relative;
+	top:-2px;
+}
+#mycarechatresultContainertime{
+	float:left;
+	
+	display:inline-block;
+	font-size:12px;
+	color:black;
+	padding-top:0px;
+	margin-top:0px;
+	text-shadow:none;
+	margin-top:-12px;
+	top:-16px;
+	position:relative;
+}
+#mycarechatweather_icon{
+float:right;
+	width: 20px;
+	height: 20px;
+	display:inline;
+	margin-top: -10px;
+	margin-right:104px;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+#mycarechatheaderWrapper_seperator{
+	float:right;
+	font-size:50px;
+	color:black;
+	margin-right:5px;
+	text-shadow:none;
+	margin-top:-22px;
+	opacity:0.7;
+}
+/*Global menu*/
+#mycarechatglobalmenu_background{
+	position:absolute;
+	background-color:black;
+	width:1366px;
+	height:768px;
+	margin-top:-162px;
+	opacity:0.6;
+	display:none;
+}
+#mycarechatglobalmenu {
+	position:fixed;
+	margin-left:454px;
+	background-repeat:no-repeat;
+	margin-top:555px;
+	width:84px;
+	height:51px;
+	background-size:contain;
+	background-image: url(/www/img/globalmenu/Hub_global_ashu_06.png);
+    
+}
+#mycarechatglobalmenu_mydaySchedule:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-day-schedule.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+
+}
+#mycarechatglobalmenu_mydaySchedule {
+	display:none;
+background-image: url('/www/img/globalmenu/my-day-schedule.png');
+
+margin-top:550px;
+margin-left:379px;
+width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+
+border:none;
+
+
+}
+#mycarechatglobalmenu_mycareteam:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-care-team.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#mycarechatglobalmenu_mycareteam {
+	display:none;
+		width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-care-team.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+-ms-grid-column-span: 1;
+margin-top:500px;
+margin-left:400px;
+border:none;
+}
+#mycarechatglobalmenu_myclinicalDashboard:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-clinical-dashboard.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#mycarechatglobalmenu_myclinicalDashboard {
+			display:none;
+			width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-clinical-dashboard.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+/*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:460px;
+margin-left:444px;
+border:none; 
+}
+#mycarechatglobalmenu_cafe:hover{
+	background-position:center;
+   opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/cafe.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+
+}
+#mycarechatglobalmenu_cafe {
+				display:none;
+				width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/cafe.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+-ms-grid-column-span: 1;
+margin-top:460px;
+margin-left:499px;
+border:none;}
+#mycarechatglobalmenu_myhospital:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/My-hospital.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+
+#mycarechatglobalmenu_myhospital {
+					display:none;
+					width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/My-hospital.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+-ms-grid-column-span: 1;
+margin-top:500px;
+margin-left:544px;
+border:none;
+}
+#mycarechatglobalmenu_mypatientsurveys:hover{
+	background-position:center;
+   opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-patient-survay.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#mycarechatglobalmenu_mypatientsurveys {
+
+display:none;	width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-patient-survay.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:550px;
+margin-left:566px;
+border:none;
+}
+
+
+#mycarechatglobalmenumh_newsfeed h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:81px;
+	margin-left:26px;
+	width:192px;
+	text-align:center;
+}
+#mycarechatglobalmenumh_newsfeed{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:80px;
+	margin-left:228px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/Newsfeed.png');
+}
+#mycarechatglobalmenumh_video h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:100px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#mycarechatglobalmenumh_video{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:80px;
+	margin-left:564px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/Video.png');
+
+}
+
+#mycarechatglobalmenumh_hospitalmap h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:90px;
+	margin-left:32px;
+	width:192px;
+	text-align:center;
+}
+#mycarechatglobalmenumh_hospitalmap{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:80px;
+	margin-left:904px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/HospitalMap.png');
+
+}
+/*Access entertainment global sub level*/
+#mycarechatglobalmenucg_shoppingmall h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:92px;
+	margin-left:26px;
+	width:221px;
+	
+}
+#mycarechatglobalmenucg_shoppingmall{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:80px;
+	margin-left:228px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/shoppingmallaroundus.png');
+}
+#mycarechatglobalmenucg_cafengift h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:100px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#mycarechatglobalmenucg_cafengift{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:80px;
+	margin-left:564px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/cafengiftshop.png');
+
+}
+
+#mycarechatglobalmenucg_restaurant h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:45px;
+	width:192px;
+	
+}
+#mycarechatglobalmenucg_restaurant{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:80px;
+	margin-left:904px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/restaurantaroundus.png');
+
+}
+/*Survey global sub level*/
+#mycarechatglobalmenus_generalsurveys h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#mycarechatglobalmenus_generalsurveys{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:80px;
+	margin-left:350px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/GeneralSurveys.png');
+
+}
+
+#mycarechatglobalmenus_dailysurveys h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:32px;
+	width:182px;
+	text-align:center;
+	
+}
+#mycarechatglobalmenus_dailysurveys{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:80px;
+	margin-left:734px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/DailySurveys.png');
+
+}
+a {
+   outline: 0;
+}
+a:hover, a:active, a:focus {
+   outline: 0;
+   text-decoration:none;
+}

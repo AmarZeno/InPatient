@@ -1,0 +1,214 @@
+﻿html, body {
+-ms-content-zooming: none;
+overflow:hidden;
+}
+
+
+.disabletextselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+}
+#loginPage input#pintext{
+	
+	height:50px;
+	width:400px;
+	float:right;
+	margin-right:10%;
+	text-shadow: none;
+	margin-top:15%;
+	font-size:20px;
+	font-weight:lighter;
+	background-color:#fff;border-color:#ddd;color:#333;text-shadow:0 1px 0 #f3f3f3;
+	
+}
+#loginPage input#passwordtext{
+	text-shadow: none;
+	height:50px;
+	width:400px;
+	float:right;
+	margin-right:10%;	
+	font-size:20px;
+	font-weight:lighter;
+	background-color:white;
+	margin-top:10px;
+}
+#loginPage button#signin{
+	text-align: center;
+	line-height:17px;
+	text-shadow: none;
+	width:400px;
+	height:50px;
+	float:right;
+	margin-right:10%;
+	margin-top:20px;
+	font-size:25px;
+	background-color: #0e3947;
+	border:1px solid white;
+	font-weight:lighter;
+	color: #FBFBFB;
+}
+#loginPage button#signin:hover{
+	background-color: #0c2e39;
+	
+}
+#loginPage #loginmaindiv {
+	-ms-overflow-y: hidden;
+	overflow-y:hidden;
+	position:absolute;
+	height: 100%;
+    width: 100%;
+	left:0px;
+	top:1px;
+	background-color:white;
+	background-image: url('/www/img/login/bg.png');
+	background-size: contain;
+	background-repeat:no-repeat;
+	margin-top:-1px;
+}
+#loginPage #loginwrapper {
+	position:relative;
+	height: 767px;
+	float:right;
+	width: 491px;
+	float:right;
+	top: 0px;
+	}
+#loginPage #loginwrapperbg {
+	margin-left:64%;
+	position:absolute;
+	height: 768px;	
+	width: 492px;
+	background-color: #0e3947;
+	
+	
+	left: 0px;
+}
+@media screen and (max-width: 1030px) and (min-width:959px) {
+	#loginPage #loginwrapperbg {
+		margin-left:50%;
+		width:50%;
+	float:right;
+	
+}
+} 
+@media screen and (max-width: 959px) and (min-width:689px) {
+	#loginPage #loginwrapperbg {
+		margin-left:auto;
+		width:100%;
+		height:100%
+	
+	
+}
+
+#loginPage #loginwrapper {
+	position:absolute;
+	height: 771.4px;
+	float:right;
+	width: 491px;
+	float:right;
+	margin-left:20%;
+	
+	
+	
+}
+} 
+
+@media screen and (max-width: 491px) {
+#loginPage #loginwrapper{
+	margin-right:800px;	
+}
+
+
+}
+@media screen and (max-width: 688px) and (min-width:539px){
+#loginPage #loginwrapper{
+	float:left;
+	margin-left:12%;
+	
+}
+#loginPage #loginwrapperbg {
+		width:100%;
+	margin-left:auto;
+	
+}
+}
+@media screen and (max-width: 539px) and (min-width:501px){
+#loginPage #loginwrapper{
+	float:left;
+	margin-left:6%;
+	
+}
+#loginPage #loginwrapperbg {
+		width:100%;
+	margin-left:auto;
+	
+}
+}
+@media screen and (max-width: 501px) {
+#loginPage #loginwrapper{
+	float:left;	
+}
+#loginPage #loginwrapperbg {
+		width:100%;
+	margin-left:auto;	
+}
+}
+@media screen and (max-width: 772px) and (min-height:1371px) {
+#loginPage #loginwrapper{
+	margin-right:730px;	
+	margin-top:10%;
+}
+}
+
+#loginPage #errormsg {
+	font-family:'segoe ui';
+	
+	text-shadow: none;
+	margin-top:55%;
+	font-size:20px;
+	color:red;
+	margin-left:9%;
+}
+
+#loginPage #logintext {
+	position:absolute;
+	color:white;
+	margin-top:6%;
+	margin-left:9%;
+	font-size:20px;
+	font-family:'segoe ui';	
+	background-color:transparent;
+	text-shadow: none;
+}
+
+#loginPage #inpatienttext {
+	position:absolute;
+	margin-top:12%;
+	margin-left:28%;
+	font-size:20px;
+	font-family:'segoe ui';
+	font-size:50px;
+	text-shadow:none;
+	color:white;
+}
+
+#loginPage {
+	overflow-y:hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+

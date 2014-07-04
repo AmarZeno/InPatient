@@ -1,0 +1,969 @@
+﻿body {
+}
+.disabletextselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#shoppingmall_maindiv {
+width:1366px;
+height:768px;
+overflow-x:scroll;
+overflow-y:hidden;
+}
+#shoppingmall_inner{
+	width:1360px;
+	height:768px;
+	display: -ms-grid;
+	-ms-grid-columns: 700px auto;
+	
+}
+#shoppingmall_pic h1{
+	text-shadow:none;
+	color:brown;
+	font-family:'segoe ui';
+	font-size:50px;
+	margin-top:320px;
+	margin-left:188px;
+}
+#shoppingmall_pic h2{
+	font-family:'segoe ui';
+	font-size:85px;
+	text-shadow:none;
+	color:brown;
+	margin-left:188px;
+	margin-top:-20px;
+}
+#shoppingmall_pic_line{
+	border:1px solid brown;
+	opacity:0.6;
+	margin-left:188px;
+}
+#shoppingmall_pic{
+	-ms-grid-column: 1;
+	background-image: url('/www/img/shoppingmall/Around US_Shopping_Main.png');
+	height:768px;
+	width:700px;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+#shoppingmall_content{
+	-ms-grid-column: 2;
+}
+#shoppingmall_details{
+	display:none;
+	-ms-grid-column: 2;
+	width:548px;
+	
+	background-color:#1289a7;
+	height:768px;
+	margin-left:-2px;
+}
+#shoppingmall_details h1:nth-child(1){
+	margin-top:110px;
+	color:white;
+	font-family:'segoe ui';
+	font-size:40px;
+	margin-left:38px;
+	text-shadow:none;
+	width: 400px;
+	
+	
+}
+#mapArea { 
+	
+	position : relative; 
+	margin:10px 10px 10px 0px; 
+	width:410px;
+	 height:196px;
+	  border:1px solid #000;
+	  margin-left:38px;
+	  margin-top:-10px;
+	   }
+	   #shoppingmall_details h2{
+		text-shadow:none;
+		color:white;
+		margin-left:38px;
+		width:250px;
+		font-family:'segoe ui';
+		font-size:25px;
+		font-weight:lighter;
+	   }
+	   #shoppingmall_details h3{
+		text-shadow:none;
+		color:white;
+		margin-left:38px;
+		width:250px;
+		font-family:'segoe ui';
+		font-size:25px;
+		font-weight:700;
+		display:inline;
+	   }
+	   #shoppingmall_details h4{
+		text-shadow:none;
+		color:white;
+		margin-left:8px;
+		width:250px;
+		font-family:'segoe ui';
+		font-size:25px;
+		display:inline;
+		
+	   }
+	   #shoppingmall_details h5{
+		text-shadow:none;
+		color:white;
+		margin-left:38px;
+		width:250px;
+		font-family:'segoe ui';
+		font-size:25px;
+		font-weight:700;
+		display:inline;
+	   }
+	   #shoppingmall_website:hover{
+		text-decoration:underline;
+	   }
+	   #shoppingmall_website{
+		text-decoration:none;
+		text-shadow:none;
+		color:white;
+		margin-left:8px;
+		width:250px;
+		font-family:'segoe ui';
+		font-size:25px;
+		display:inline;
+		font-weight:100;
+	   }
+	   #shoppingmalldetails_close:hover{
+		opacity:0.7;
+	   }
+	   #shoppingmalldetails_close{
+		float:right;
+		position:relative;
+	
+	background-image: url('/www/img/mydayschedule/Slide_icon_1.png');
+	width:36px;
+	height:36px;
+	min-width:36px;
+	
+	background-size:contain;
+	background-repeat:no-repeat;
+
+	border-color:transparent;
+	background-color:white;
+	border:none;
+	border-radius: 39px/32.5px;
+    margin-left:430px;
+	margin-top:-72px;
+	margin-right:70px;
+	   }
+	   #shoppingmall_details p{
+		color:#e6b871;
+		margin-top:30px;
+		font-size:25px;
+		text-shadow:none;
+		font-family:'segoe ui';
+		margin-left:38px;
+	   }
+	   #shoppingmall_closedtext{
+		color:#e6b871;
+		margin-left:38px;
+		font-size:28px;
+	
+		text-shadow:none;
+		font-family:'segoe ui';
+		margin-top:-5px;
+		position:relative;
+	   }
+#shoppingmall_listview{
+	width:645px;
+	height:588px;
+	margin-top:124px;
+	position:relative;
+	overflow-y:hidden;
+}
+#shoppingmall_frame:hover{
+	border: 1px solid #d8c1ba;
+}
+#shoppingmall_frame{
+	margin-top:20px;
+	margin-left:10px;
+	width:375px;
+	height:162px;
+	
+	margin-left:60px;
+	
+	display:inline-block;
+	position:relative;
+}
+#shoppingmall_picture{
+	
+height:152px;
+width:143px;
+position:relative;
+
+background-size:contain;
+background-repeat:no-repeat;
+}
+#shoppingmall_title{
+	
+	
+	text-shadow:none;
+	font-family:'segoe ui';
+	color:#61a1e2;
+	font-weight:500;
+	font-size:23px;
+	
+	margin-top:-138px;
+	margin-left:149px;
+}
+#shoppingmall_star1{
+	margin-top:-5px;
+	-ms-grid-column:2;
+	height:13px;
+	width:13px;
+	background-image: url('/www/img/shoppingmall/new_screens_star icon_clicked.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-left:152px;
+	position:absolute;
+}
+#shoppingmall_star2{
+	position:absolute;
+	margin-top:-5px;
+	-ms-grid-column:2;
+	height:13px;
+	width:13px;
+	background-image: url('/www/img/shoppingmall/new_screens_star icon_clicked.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-left:168px;
+}
+#shoppingmall_star3{
+	margin-top:-5px;
+	-ms-grid-column:2;
+	height:13px;
+	width:13px;
+	background-image: url('/www/img/shoppingmall/new_screens_star icon_clicked.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-left:186px;
+	position:absolute;
+}
+#shoppingmall_star4{
+	margin-top:-5px;
+	-ms-grid-column:2;
+	height:13px;
+	width:13px;
+	background-image: url('/www/img/shoppingmall/new_screens_star icon_clicked.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-left:203px;
+	position:absolute;
+}
+#shoppingmall_star5{
+	position:absolute;
+	margin-top:-5px;
+	-ms-grid-column:2;
+	height:13px;
+	width:13px;
+	background-image: url('/www/img/shoppingmall/new_screens_star icon_clicked.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-left:221px;
+}
+#shoppingmall_mileicon{
+	position:absolute;
+	
+	width:20px;
+	height:20px;
+	background-size:contain;
+	margin-top:19px;
+	margin-left:149px;
+	background-image: url('/www/img/shoppingmall/Around-Us-Restaurent-distance.png');
+}
+#shoppingmall_milevalue{
+	position:absolute;
+	font-size:13px;
+	text-shadow:none;
+	height:10px;
+	margin-top:21px;
+	margin-left:173px;
+}
+#shoppingmall_locationicon{
+	position:absolute;
+	width:20px;
+	height:20px;
+	background-size:contain;
+	margin-top:46px;
+	background-image: url('/www/img/shoppingmall/Around-Us-Restaurent-address.png');
+	background-repeat:no-repeat;
+	background-position-x:3px;
+	margin-left:149px;
+}
+#shoppingmall_locationvalue{
+	position:relative;
+	font-size:13px;
+	height:20px;
+	
+	margin-top:58px;
+	margin-left:173px;
+	width:160px;
+}
+#shoppingmall_backbutton:hover{
+	opacity:0.7;
+}
+#shoppingmall_backbutton{
+position:absolute;
+	background-image: url('/www/img/mycareteam/back_btn.png');
+	background-repeat:no-repeat;
+	width:50px;
+	height:50px;
+	background-size:contain;
+	border:none;
+	background-color:transparent;
+	margin-left:60px;
+	margin-top:-713px;
+	border-radius: 25px;
+	}
+
+
+/*Weather and time*/
+
+#shoppingmallheaderWrapper {
+	position:fixed;
+	margin-top:-740px;
+	margin-left:799px;
+	right: 0px;
+	bottom: 680px;
+	left: -675px;
+	top: 769px;
+	
+}
+#shoppingmalldatetimetext{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:20px;
+	color:black;
+	float:right;
+	margin-right:10px;
+	margin-top:10px;
+	text-shadow:none;
+}
+#shoppingmallheaderWrapper_seperator2{
+	float:right;
+	font-size:20px;
+	color:black;
+	margin-right:10px;
+	text-shadow:none;
+}
+#shoppingmallwelcometext{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	color:black;
+	float:right;
+	margin-right:-54px;
+	margin-top:-9px;
+	
+}
+#shoppingmalllocationinfo{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:12px;
+	color:black;
+	float:left;
+	margin-top:-35px;
+}
+#shoppingmallweatherdetailsinfo{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	color:black;
+	float:right;
+	margin-top:-7px;
+	margin-right:5px;
+}
+#shoppingmallweatherdetailwrapper{
+	float:right;
+	width:700px;
+	margin-top:-12px;
+}
+#shoppingmallnameandlocationwrapper{
+	width:190px;
+	float:right;
+}
+#shoppingmallpatientname_container{
+	width:190px;
+	height:36px;
+	float:right;
+}
+#shoppingmallpatientname{
+	font-family:'segoe ui';
+	text-shadow:none;
+	color:black;
+	text-shadow:none;
+	font-size:15px;
+	font-weight:600;
+	color:black;
+	float:right;
+	margin-right:5px;
+	margin-top:20px;
+	width:120px;
+	text-align:right;
+}
+#shoppingmallwelcome_patientimage{
+	float:right;
+	width: 40px;
+	height: 40px;
+	display:inline;
+	margin-top: -17px;
+	margin-right:-102px;
+	background-size:contain;
+	background-image: url('/www/img/mycareteam/profile_1.png');
+	}
+#shoppingmallweather {
+	height: 46px;
+	position:fixed;
+	top: 24px;
+	right: 10px;
+	left: 1081px;
+}
+
+#shoppingmallresultContainer {
+float:right;
+	
+	display:inline-block;
+	font-size:20px;
+	color:black;
+	margin-top:10px;
+	text-shadow:none;
+
+}
+#shoppingmalltimeanddatecontainer{
+	float:right;
+	width:170px;
+}
+#shoppingmallbigwrapper{
+	float:right;
+	width:570px;
+	height:60px;
+}
+#shoppingmallresultContainerdate{
+	float:left;
+	font-weight:600;
+	display:inline-block;
+	font-size:28px;
+	color:black;
+	margin-top:16px;
+	text-shadow:none;
+	margin-top:-15px;
+	position:relative;
+	top:-2px;
+}
+#shoppingmallresultContainertime{
+	float:left;
+	
+	display:inline-block;
+	font-size:12px;
+	color:black;
+	padding-top:0px;
+	margin-top:0px;
+	text-shadow:none;
+	margin-top:-12px;
+	top:-16px;
+	position:relative;
+}
+#shoppingmallweather_icon{
+float:right;
+	width: 20px;
+	height: 20px;
+	display:inline;
+	margin-top: -10px;
+	margin-right:104px;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+#shoppingmallheaderWrapper_seperator{
+	float:right;
+	font-size:50px;
+	color:black;
+	margin-right:5px;
+	text-shadow:none;
+	margin-top:-22px;
+	opacity:0.7;
+}
+
+
+/*Global menu*/
+#shoppingmallglobalmenu_background{
+	position:absolute;
+	background-color:black;
+	width:1366px;
+	height:768px;
+	margin-top:-768px;
+	opacity:0.6;
+	display:none;
+	z-index:2;
+}
+#shoppingmallglobalmenu {
+	z-index:3;
+	position:fixed;
+	margin-left:454px;
+	background-repeat:no-repeat;
+	margin-top:-46px;
+	width:84px;
+	height:51px;
+	background-size:contain;
+	background-image: url('/www/img/globalmenu/Hub_global_ashu_06.png');
+    
+}
+#shoppingmallglobalmenu_mydaySchedule:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-day-schedule.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+
+}
+#shoppingmallglobalmenu_mydaySchedule {
+	display:none;
+	z-index:3;
+background-image: url('/www/img/globalmenu/my-day-schedule.png');
+
+margin-top:-49px;
+margin-left:382px;
+width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+
+border:none;
+
+
+}
+#shoppingmallglobalmenu_mycareteam:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-care-team.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#shoppingmallglobalmenu_mycareteam {
+	z-index:3;
+		width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-care-team.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-101px;
+margin-left:400px;
+border:none;
+display:none;
+}
+#shoppingmallglobalmenu_myclinicalDashboard:hover{
+	background-position:center;
+    opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-clinical-dashboard.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#shoppingmallglobalmenu_myclinicalDashboard {
+	display:none;
+	z-index:3;
+			width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-clinical-dashboard.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+/*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-136px;
+margin-left:445px;
+border:none; 
+}
+#shoppingmallglobalmenu_cafe:hover{
+	background-position:center;
+   opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/cafe.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+
+}
+#shoppingmallglobalmenu_cafe {
+	display:none;
+	z-index:3;
+				width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/cafe.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-136px;
+margin-left:500px;
+border:none;}
+
+
+#shoppingmallglobalmenu_myhospital {
+	display:none;
+	z-index:3;
+					width:49px;
+	min-width:49px;
+	position:fixed;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/My-hospital.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+-ms-grid-column-span: 1;
+margin-top:-101px;
+margin-left:544px;
+border:none;
+}
+#shoppingmallglobalmenu_mypatientsurveys:hover{
+	background-position:center;
+   opacity:1;
+background:#000000;
+background-image: url('/www/img/globalmenu/my-patient-survay.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size:35px;
+
+}
+#shoppingmallglobalmenu_mypatientsurveys {
+	display:none;
+	width:49px;
+	min-width:49px;
+	position:fixed;
+	z-index:3;
+ /*same as the height*/
+height:49px; /*same as the width*/
+background-color:#156c8a;
+background-image: url('/www/img/globalmenu/my-patient-survay.png');
+background-repeat:no-repeat;
+background-position:center;
+overflow:hidden;
+ /*same colour as the background*/
+color:#fff;
+
+background-size:35px;
+/*set the border-radius at half the size of the width and height*/
+
+border-radius: 40px;
+/*give the button a small drop shadow*/
+
+
+
+-ms-grid-column-span: 1;
+margin-top:-49px;
+margin-left:561px;
+border:none;
+}
+#shoppingmallglobalmenumh_newsfeed h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:81px;
+	margin-left:26px;
+	width:192px;
+	text-align:center;
+}
+#shoppingmallglobalmenumh_newsfeed{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	z-index:9;
+	margin-left:228px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/Newsfeed.png');
+}
+#shoppingmallglobalmenumh_video h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:100px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#shoppingmallglobalmenumh_video{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	z-index:9;
+	margin-left:564px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/Video.png');
+
+}
+
+#shoppingmallglobalmenumh_hospitalmap h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:43px;
+	margin-top:90px;
+	margin-left:32px;
+	width:192px;
+	text-align:center;
+}
+#shoppingmallglobalmenumh_hospitalmap{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	z-index:9;
+	margin-left:904px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/HospitalMap.png');
+
+}
+/*Access entertainment global sub level*/
+#shoppingmallglobalmenucg_shoppingmall h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:92px;
+	margin-left:26px;
+	width:221px;
+	
+}
+#shoppingmallglobalmenucg_shoppingmall{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	z-index:9;
+	z-index:9;
+	margin-left:228px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/shoppingmallaroundus.png');
+}
+#shoppingmallglobalmenucg_cafengift h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:100px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#shoppingmallglobalmenucg_cafengift{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	z-index:9;
+	margin-left:564px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/cafengiftshop.png');
+
+}
+
+#shoppingmallglobalmenucg_restaurant h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:45px;
+	width:192px;
+	
+}
+#shoppingmallglobalmenucg_restaurant{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	z-index:9;
+	margin-left:904px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/home/restaurantaroundus.png');
+
+}
+/*Survey global sub level*/
+#shoppingmallglobalmenus_generalsurveys h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:30px;
+	text-align:center;
+	width:192px;
+	
+}
+#shoppingmallglobalmenus_generalsurveys{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	z-index:9;
+	margin-left:350px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/GeneralSurveys.png');
+
+}
+
+#shoppingmallglobalmenus_dailysurveys h1{
+	font-family:'segoe ui';
+	text-shadow:none;
+	font-weight:300;
+	color:white;
+	font-size:35px;
+	margin-top:90px;
+	margin-left:32px;
+	width:182px;
+	text-align:center;
+	
+}
+#shoppingmallglobalmenus_dailysurveys{
+	display:none;
+	position:absolute;
+	width:260px;
+	height:260px;
+	margin-top:-537px;
+	z-index:9;
+	margin-left:734px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image: url('/www/img/globalmenu/DailySurveys.png');
+
+}
+a {
+   outline: 0;
+}
+a:hover, a:active, a:focus {
+   outline: 0;
+   text-decoration:none;
+}
